@@ -51,12 +51,15 @@ def blossomBetter(bank,specialLetter,prevPlayed):
   prevPlayed.append(word)
   return word
 
-def getPlayerResponse(msg, valids):
+def getPlayerResponseBy(msg,cond,invalidMsg):
   while True:
-    attempt = input(msg + "\n > ").lower()
-    if attempt in valids:
+    attempt = input(msg + "\n > ")
+    if cond(attempt):
       return attempt
-    print(f"Valid responses: {valids}")
+    print(invalidMsg)
+
+def getPlayerResponse(msg,valids):
+  return getPlayerResponseBy(msg,lambda r: r in valids,f"Invalid response. Valid responses: {', '.join(valids)}.")
 
 def playBlossom(engine):
   playAgain = "yes"
@@ -75,7 +78,7 @@ def playBlossom(engine):
     score = 0
     invalidFlag = False
     pendingWord = False
-    bank = list(input("What's the word bank? (Center letter first)\n  > ").lower())
+    bank = list(getPlayerResponseBy("What's the word bank? (Center letter first)",lambda b : len(b) == 7 and b.isalpha(),"Please enter seven letters.").lower())
     if bank in ["quit","q"]:
       return
     print("Okay, let's play!")
@@ -86,9 +89,9 @@ def playBlossom(engine):
           response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
         else:
           if not pendingWord: # We only need to get the special letter from the player.
-            response = getPlayerResponse("Special letter?",bank + ["quit"])
+            response = getPlayerResponse("Special letter?",bank[1:] + ["quit"])
           else: # We need to get both the special letter and whether the last word was invalid.
-            response = getPlayerResponse("Special letter? (Or \"invalid\" if the last word was invalid.)",bank + ["quit", "invalid"])
+            response = getPlayerResponse("Special letter? (Or \"invalid\" if the last word was invalid.)",bank[1:] + ["invalid","quit"])
 
 
         if response in ["quit"]:
