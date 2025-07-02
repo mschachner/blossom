@@ -1,4 +1,7 @@
 import os
+import subprocess
+from datetime import datetime
+import atexit
 
 def isValid(bank, prevPlayed, word):
   return any(c == bank[0] for c in word) and all(c in bank for c in word) and len(word) >= 4 and word not in prevPlayed
@@ -61,7 +64,59 @@ def getPlayerResponseBy(msg,cond,invalidMsg):
 def getPlayerResponse(msg,valids):
   return getPlayerResponseBy(msg,lambda r: r in valids,f"Invalid response. Valid responses: {', '.join(valids)}.")
 
+def removeAndCommit(wordsToRemove):
+  if not wordsToRemove or getPlayerResponse(f"Ok to remove: {', '.join(wordsToRemove)}? (yes/no)",["yes","no"]) == "no":
+    return
+  
+  # Read current lines
+  with open("wordlist.txt", "r") as f:
+      lines = f.readlines()
+
+  # Filter out lines
+  new_lines = [line for line in lines if line.strip() not in wordsToRemove]
+
+  # Write updated lines
+  with open("wordlist.txt", "w") as f:
+      f.writelines(new_lines)
+
+    # Git add
+  subprocess.run(
+    ["git", "add", "wordlist.txt"],
+    check=True,
+    stdout=subprocess.DEVNULL,
+    stderr=subprocess.DEVNULL,
+  )
+
+  # Commit message and body
+  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+  summary = f"Removed {len(wordsToRemove)} words at {timestamp}"
+  body = "\n".join(sorted(wordsToRemove))
+
+  subprocess.run(
+      ["git", "commit", "-m", summary, "-m", body],
+      check=True,
+      stdout=subprocess.DEVNULL,
+      stderr=subprocess.DEVNULL,
+  )
+
+  # Get current branch
+  result = subprocess.run(
+      ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+      capture_output=True, text=True, check=True
+  )
+  branch = result.stdout.strip()
+
+  subprocess.run(
+      ["git", "push", "origin", branch],
+      check=True,
+      stdout=subprocess.DEVNULL,
+      stderr=subprocess.DEVNULL,
+  )
+  print(f"Removed: {" ,".join(wordsToRemove)}.")
+  return
+
 def playBlossom(engine):
+  wordsToRemove = set()
   playAgain = "yes"
   while playAgain in ["yes"]:
     os.system("clear")
@@ -78,7 +133,7 @@ def playBlossom(engine):
     score = 0
     invalidFlag = False
     pendingWord = False
-    bank = list(getPlayerResponseBy("What's the word bank? (Center letter first)",lambda b : len(b) == 7 and b.isalpha(),"Please enter seven letters.").lower())
+    bank = list(getPlayerResponseBy("What's the word bank? (Center letter first)",lambda b : len(b) == 7 and len(set(b)) == 7 and b.isalpha(),"Please enter seven unique letters.").lower())
     if bank in ["quit","q"]:
       return
     print("Okay, let's play!")
@@ -100,6 +155,7 @@ def playBlossom(engine):
         if response in ["no","invalid"]:
           # The last word was invalid.
           invalidFlag = True
+          wordsToRemove.add(word)
           # play another word and head back to the top.
           word = engine(bank,specialLetter,prevPlayed)
           print(f"Okay, then instead I play: {word.upper()}")
@@ -154,6 +210,7 @@ def playBlossom(engine):
 
     print(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
     playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"])
+  removeAndCommit(wordsToRemove)
   return
 
 playBlossom(blossomBetter)
