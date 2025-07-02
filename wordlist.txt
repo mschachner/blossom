@@ -8615,7 +8615,6 @@ allegorize
 allegorized
 allegorizer
 allegorizing
-allegresse
 allegretto
 allegrettos
 allegro
@@ -264394,7 +264393,6 @@ redresses
 redressible
 redressing
 redressive
-redressless
 redressment
 redressor
 redrew
