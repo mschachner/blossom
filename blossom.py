@@ -1,7 +1,6 @@
 import os
 import subprocess
 from datetime import datetime
-import atexit
 
 def isValid(bank, prevPlayed, word):
   return any(c == bank[0] for c in word) and all(c in bank for c in word) and len(word) >= 4 and word not in prevPlayed
@@ -23,7 +22,7 @@ def greedyScores(bank, specialLetter, prevPlayed):
   words = allValidWords(bank,prevPlayed)
   return sorted(words,key = lambda word: scoreWord(bank,specialLetter,word))[-20:-1]
 
-def blossomGreedy(bank,specialLetter,prevPlayed):
+def blossomGreedy(bank,specialLetter,petalCounts,prevPlayed):
   words = allValidWords(bank,prevPlayed)
   word = max(words,key = lambda word: scoreWord(bank,specialLetter,word))
   prevPlayed.append(word)
@@ -31,26 +30,20 @@ def blossomGreedy(bank,specialLetter,prevPlayed):
 
 def allScores(bank,prevPlayed):
   words = allValidWords(bank,prevPlayed)
-  tuples = [(i, word) for word in words for i in range(1,7)]
-  return sorted(tuples,key=lambda t: scoreWord(bank,bank[t[0]],t[1]),reverse=True)
+  tuples = [(c, word) for word in words for c in bank[1:]]
+  return sorted(tuples,key=lambda t: scoreWord(bank,t[0],t[1]),reverse=True)
 
-def getBestPlays(bank):
-  plays = [[],[],[],[],[],[],[]]
+def blossomBetter(bank,specialLetter,petalCounts,prevPlayed):
+  plays = {c:[] for c in bank[1:]}
   placedWords = []
-  tuples = allScores(bank,[])
-  for i in range(10):
-    for t in tuples:
-      if len(placedWords) == 12 * i:
-        break
-      if len(plays[t[0]]) < 2 * i and t[1] not in placedWords:
-        plays[t[0]].append(t[1])
-        placedWords.append(t[1])
-        continue
-  return plays
-
-def blossomBetter(bank,specialLetter,prevPlayed):
-  plays = getBestPlays(bank)
-  word = list(filter(lambda a: a not in prevPlayed,plays[bank.index(specialLetter)]))[0]
+  tuples = allScores(bank,prevPlayed)
+  for (ch,wd) in tuples:
+    count = petalCounts[ch]
+    if len(plays[ch]) < (2-count) and wd not in placedWords:
+      plays[ch].append(wd)
+      placedWords.append(wd)
+      continue
+  word = plays[specialLetter][0]
   prevPlayed.append(word)
   return word
 
@@ -112,8 +105,11 @@ def removeAndCommit(wordsToRemove):
       stdout=subprocess.DEVNULL,
       stderr=subprocess.DEVNULL,
   )
-  print(f"Removed: {" ,".join(wordsToRemove)}.")
+  print(f"Removed: {", ".join(wordsToRemove)}.")
   return
+
+def sevenUniques(s):
+  return len(s) == 7 and len(set(s)) == 7 and s.isalpha()
 
 def playBlossom(engine):
   wordsToRemove = set()
@@ -133,9 +129,13 @@ def playBlossom(engine):
     score = 0
     invalidFlag = False
     pendingWord = False
-    bank = list(getPlayerResponseBy("What's the word bank? (Center letter first)",lambda b : len(b) == 7 and len(set(b)) == 7 and b.isalpha(),"Please enter seven unique letters.").lower())
+    bank = getPlayerResponseBy("What's the word bank? (Center letter first)",lambda b : sevenUniques(b) or b == "quit","Please enter seven unique letters, or \"quit\".").lower()
     if bank in ["quit","q"]:
       return
+    else:
+      bank = list(bank)
+      petals = bank[1:]
+      petalCounts = {c: 0 for c in petals}
     print("Okay, let's play!")
     print(f"Engine: {engine}")
     for i in range(13):
@@ -144,9 +144,9 @@ def playBlossom(engine):
           response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
         else:
           if not pendingWord: # We only need to get the special letter from the player.
-            response = getPlayerResponse("Special letter?",bank[1:] + ["quit"])
+            response = getPlayerResponse("Special letter?",petals + ["quit"])
           else: # We need to get both the special letter and whether the last word was invalid.
-            response = getPlayerResponse("Special letter? (Or \"invalid\" if the last word was invalid.)",bank[1:] + ["invalid","quit"])
+            response = getPlayerResponse("Special letter? (Or \"invalid\" if the last word was invalid.)",petals + ["invalid","quit"])
 
 
         if response in ["quit"]:
@@ -179,10 +179,12 @@ def playBlossom(engine):
             # reason out the last special letter
             specialLetter = [c for c in bank[1:] if c not in specials][0]
             specials.append(specialLetter)
+            petalCounts[specialLetter] += 1
 
 
           if i >= 6:
             specialLetter = specials[i-6]
+            petalCounts[specialLetter] += 1
             print(f"Next special letter: {specialLetter.upper()}")
 
           if i >= 5:
@@ -200,10 +202,11 @@ def playBlossom(engine):
             # player's response was the next special letter
 
             specialLetter = response
+            petalCounts[specialLetter] += 1
             specials.append(specialLetter)
 
             # play a word
-            word = engine(bank,specialLetter,prevPlayed)
+            word = engine(bank,specialLetter,petalCounts,prevPlayed)
             print(f"I play: {word.upper()}")
             pendingWord = True
             break
@@ -211,6 +214,7 @@ def playBlossom(engine):
     print(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
     playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"])
   removeAndCommit(wordsToRemove)
+  print("Thanks for playing!")
   return
 
 playBlossom(blossomBetter)
