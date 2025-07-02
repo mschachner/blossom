@@ -168,6 +168,7 @@ def playBlossom(engine):
             # There is a previous word to be scored
             wordScore = scoreWord(bank,specialLetter,word)
             score += wordScore
+            petalCounts[specialLetter] += 1
             print(f"Okay, last word was valid. We scored {wordScore} additional points, for a total of {score} points.")
             pendingWord = False
           
@@ -179,17 +180,15 @@ def playBlossom(engine):
             # reason out the last special letter
             specialLetter = [c for c in bank[1:] if c not in specials][0]
             specials.append(specialLetter)
-            petalCounts[specialLetter] += 1
 
 
           if i >= 6:
             specialLetter = specials[i-6]
-            petalCounts[specialLetter] += 1
             print(f"Next special letter: {specialLetter.upper()}")
 
           if i >= 5:
             # play a word
-            word = engine(bank,specialLetter,prevPlayed)
+            word = engine(bank,specialLetter,petalCounts,prevPlayed)
             print(f"I play: {word.upper()}")
             pendingWord = True
             break
@@ -202,7 +201,6 @@ def playBlossom(engine):
             # player's response was the next special letter
 
             specialLetter = response
-            petalCounts[specialLetter] += 1
             specials.append(specialLetter)
 
             # play a word
