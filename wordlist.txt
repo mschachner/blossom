@@ -133652,7 +133652,6 @@ hardheaded
 hardheadedly
 hardheadedness
 hardheads
-hardhearted
 hardheartedly
 hardheartedness
 hardhewer
@@ -134853,7 +134852,6 @@ hearthsides
 hearthstead
 hearthstone
 hearthstones
-hearthward
 hearthwarming
 hearty
 heartier
@@ -134899,7 +134897,6 @@ heartstring
 heartstrings
 heartthrob
 heartthrobs
-heartward
 heartwarming
 heartwater
 heartweed
@@ -264124,7 +264121,6 @@ redheadedly
 redheadedness
 redheads
 redheart
-redhearted
 redhibition
 redhibitory
 redhoop
@@ -265941,7 +265937,6 @@ reheal
 reheap
 rehear
 reheard
-rehearheard
 rehearhearing
 rehearing
 rehearings
@@ -320689,7 +320684,6 @@ theatergoing
 theaterless
 theaterlike
 theaters
-theaterward
 theaterwards
 theaterwise
 theatine
@@ -322550,7 +322544,6 @@ threadmaker
 threadmaking
 threads
 threadway
-threadweed
 threadworm
 threap
 threaped
@@ -364451,7 +364444,6 @@ wheam
 wheat
 wheatbird
 wheatear
-wheateared
 wheatears
 wheaten
 wheatflakes
