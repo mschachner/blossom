@@ -20853,7 +20853,6 @@ asaphidae
 asaphus
 asaprol
 asarabacca
-asaraceae
 asarh
 asarin
 asarite
@@ -46036,7 +46035,6 @@ canals
 canalside
 canamary
 canamo
-cananaean
 cananga
 canangium
 canap
@@ -46256,7 +46254,6 @@ canelas
 canelike
 canell
 canella
-canellaceae
 canellaceous
 canellas
 canelle
@@ -47910,8 +47907,6 @@ careening
 careens
 career
 careered
-careerer
-careerers
 careering
 careeringly
 careerism
@@ -262976,7 +262971,6 @@ recleanse
 recleansed
 recleansing
 reclear
-reclearance
 reclimb
 reclimbed
 reclimbing
@@ -269009,7 +269003,6 @@ resamples
 resampling
 resanctify
 resanction
-resarcelee
 resat
 resatisfaction
 resatisfy
@@ -281547,7 +281540,6 @@ scranch
 scrank
 scranky
 scrannel
-scrannels
 scranny
 scrannier
 scranniest
