@@ -1,12 +1,11 @@
 import os
 
-
 def isValid(bank, prevPlayed, word):
   return any(c == bank[0] for c in word) and all(c in bank for c in word) and len(word) >= 4 and word not in prevPlayed
 
 def allValidWords(bank,prevPlayed):
   words = []
-  with open("../wordlists/dwyl/words_alpha.txt") as infile:
+  with open("wordlist.txt") as infile:
     for line in infile:
       words.append(line[0:-1])
     return filter(lambda word: isValid(bank,prevPlayed,word),words)
