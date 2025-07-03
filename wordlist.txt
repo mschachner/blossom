@@ -475,7 +475,6 @@ abirritate
 abirritated
 abirritating
 abirritation
-abirritative
 abys
 abysm
 abysmal
@@ -30362,7 +30361,6 @@ beer
 beerage
 beerbachite
 beerbelly
-beerbibber
 beeregar
 beerhouse
 beerhouses
@@ -106186,7 +106184,6 @@ eversive
 eversporting
 evert
 evertebral
-evertebrata
 evertebrate
 everted
 evertile
@@ -159460,7 +159457,6 @@ italophile
 itamalate
 itamalic
 itatartaric
-itatartrate
 itauba
 itaves
 itch
@@ -261370,7 +261366,6 @@ reabandon
 reabandoned
 reabandoning
 reabandons
-reabbreviate
 reabbreviated
 reabbreviates
 reabbreviating
@@ -261913,7 +261908,6 @@ reaps
 rear
 rearanged
 rearanging
-rearbitrate
 rearbitrated
 rearbitrating
 rearbitration
@@ -358357,7 +358351,6 @@ verbenol
 verbenone
 verberate
 verberation
-verberative
 verbesina
 verbesserte
 verby
@@ -360690,7 +360683,6 @@ vivariia
 vivariiums
 vivarium
 vivariums
-vivarvaria
 vivas
 vivat
 vivax
