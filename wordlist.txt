@@ -21699,7 +21699,6 @@ assertorical
 assertorically
 assertorily
 assertors
-assertress
 assertrix
 asserts
 assertum
@@ -318845,10 +318844,7 @@ tennantite
 tenne
 tenner
 tenners
-tennessean
-tennesseans
 tennessee
-tennesseeans
 tennis
 tennisdom
 tennises
@@ -319502,7 +319498,6 @@ terremotive
 terrence
 terrene
 terrenely
-terreneness
 terrenes
 terreno
 terreous
@@ -327800,7 +327795,6 @@ transferals
 transferase
 transferee
 transference
-transferent
 transferential
 transferer
 transferography
