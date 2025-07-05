@@ -327796,7 +327796,6 @@ transferase
 transferee
 transference
 transferential
-transferer
 transferography
 transferor
 transferotype
