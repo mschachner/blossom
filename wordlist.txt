@@ -292441,7 +292441,6 @@ sisith
 siskin
 siskins
 sisley
-sislowet
 sismotherapy
 sysout
 siss
@@ -294362,7 +294361,6 @@ slotten
 slotter
 slottery
 slotting
-slotwise
 sloubbie
 slouch
 slouched
@@ -297294,7 +297292,6 @@ sooke
 sooky
 sookie
 sool
-sooloos
 soom
 soon
 sooner
@@ -305019,7 +305016,6 @@ stolenly
 stolenness
 stolenwise
 stoles
-stolewise
 stolid
 stolider
 stolidest
@@ -319677,7 +319673,6 @@ tessellates
 tessellating
 tessellation
 tessellations
-tessellite
 tessera
 tesseract
 tesseradecade
@@ -365769,7 +365764,6 @@ willowers
 willowherb
 willowy
 willowier
-willowiest
 willowiness
 willowing
 willowish
