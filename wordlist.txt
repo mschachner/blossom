@@ -17582,7 +17582,6 @@ apparition
 apparitional
 apparitions
 apparitor
-appartement
 appassionata
 appassionatamente
 appassionate
@@ -101675,7 +101674,6 @@ entrepeneur
 entrepeneurs
 entrepot
 entrepots
-entreprenant
 entrepreneur
 entrepreneurial
 entrepreneurs
@@ -224858,7 +224856,6 @@ pantaloon
 pantalooned
 pantaloonery
 pantaloons
-pantameter
 pantamorph
 pantamorphia
 pantamorphic
@@ -248722,7 +248719,6 @@ prepare
 prepared
 preparedly
 preparedness
-preparement
 preparental
 preparer
 preparers
@@ -248755,7 +248751,6 @@ prepeduncle
 prepend
 prepended
 prepending
-prepenetrate
 prepenetrated
 prepenetrating
 prepenetration
@@ -249825,7 +249820,6 @@ pretelephone
 pretelephonic
 pretell
 pretelling
-pretemperate
 pretemperately
 pretemporal
 pretempt
@@ -268075,7 +268069,6 @@ repen
 repenalize
 repenalized
 repenalizing
-repenetrate
 repenned
 repenning
 repension
@@ -270672,7 +270665,6 @@ retreatingness
 retreatism
 retreatist
 retreative
-retreatment
 retreats
 retree
 retrench
