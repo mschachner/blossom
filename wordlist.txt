@@ -125299,7 +125299,6 @@ ginny
 ginnier
 ginniest
 ginning
-ginnings
 ginnle
 gynobase
 gynobaseous
@@ -130016,7 +130015,6 @@ griseous
 grisette
 grisettes
 grisettish
-grisgris
 griskin
 griskins
 grisled
@@ -141686,7 +141684,6 @@ hisses
 hissy
 hissing
 hissingly
-hissings
 hyssop
 hyssops
 hyssopus
@@ -153571,7 +153568,6 @@ inshore
 inshrine
 inshrined
 inshrines
-inshrining
 inside
 insident
 insider
@@ -153608,7 +153604,6 @@ insincerely
 insincerity
 insincerities
 insinew
-insinking
 insinuant
 insinuate
 insinuated
@@ -164941,7 +164936,6 @@ kinnikinic
 kinnikinick
 kinnikinnic
 kinnikinnick
-kinnikinnik
 kinnor
 kino
 kinofluous
@@ -289230,7 +289224,6 @@ shrover
 shrovetide
 shrovy
 shroving
-shrrinkng
 shrub
 shrubbed
 shrubbery
