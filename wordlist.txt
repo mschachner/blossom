@@ -102096,7 +102096,6 @@ ephebos
 ephebus
 ephectic
 ephedra
-ephedraceae
 ephedras
 ephedrin
 ephedrine
@@ -245478,8 +245477,6 @@ preadequacy
 preadequate
 preadequately
 preadequateness
-preadhere
-preadhered
 preadherence
 preadherent
 preadherently
@@ -246652,7 +246649,6 @@ predeclination
 predecline
 predeclined
 predeclining
-predecree
 predecreeing
 predecrement
 prededicate
@@ -261357,7 +261353,6 @@ reabsorbs
 reabsorption
 reabuse
 reaccede
-reacceded
 reaccedes
 reacceding
 reaccelerate
@@ -268415,7 +268410,6 @@ repremised
 repremising
 repreparation
 reprepare
-reprepared
 repreparing
 represcribe
 represcribed
