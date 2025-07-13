@@ -105,7 +105,7 @@ def removeAndCommit(wordsToRemove):
       stdout=subprocess.DEVNULL,
       stderr=subprocess.DEVNULL,
   )
-  print(f"Removed: {", ".join(wordsToRemove)}.")
+  print(f"Removed.")
   return
 
 def sevenUniques(s):
@@ -157,7 +157,7 @@ def playBlossom(engine):
           invalidFlag = True
           wordsToRemove.add(word)
           # play another word and head back to the top.
-          word = engine(bank,specialLetter,prevPlayed)
+          word = engine(bank,specialLetter,petalCounts,prevPlayed)
           print(f"Okay, then instead I play: {word.upper()}")
           pendingWord = True
           continue
