@@ -6114,8 +6114,6 @@ aggravative
 aggravator
 aggregable
 aggregant
-aggregata
-aggregatae
 aggregate
 aggregated
 aggregately
@@ -230517,7 +230515,6 @@ perennibranchiata
 perennibranchiate
 perennity
 perequitate
-pererrate
 pererration
 peres
 pereskia
@@ -248707,7 +248704,6 @@ preparingly
 preparliamentary
 preparoccipital
 preparoxysmal
-prepartake
 prepartaken
 prepartaking
 preparticipation
@@ -267952,7 +267948,6 @@ reparel
 repark
 repart
 repartable
-repartake
 repartee
 reparteeist
 repartees
