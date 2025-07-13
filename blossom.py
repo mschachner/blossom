@@ -2,6 +2,8 @@ import os
 import subprocess
 from datetime import datetime
 
+# Helpers: determine if a word's valid, get all valid words, score words.
+
 def isValid(bank, prevPlayed, word):
   return any(c == bank[0] for c in word) and all(c in bank for c in word) and len(word) >= 4 and word not in prevPlayed
 
@@ -18,15 +20,19 @@ def scoreWord(bank,specialLetter,word):
   pangramScore = 7 if all(c in word for c in bank) else 0
   return baseScore + specialLetterScore + pangramScore
 
+# The blossomGreedy agent just always plays the highest-scoring word available.
+
 def greedyScores(bank, specialLetter, prevPlayed):
   words = allValidWords(bank,prevPlayed)
   return sorted(words,key = lambda word: scoreWord(bank,specialLetter,word))[-20:-1]
 
-def blossomGreedy(bank,specialLetter,petalCounts,prevPlayed):
+def blossomGreedy(bank,specialLetter, _, prevPlayed):
   words = allValidWords(bank,prevPlayed)
   word = max(words,key = lambda word: scoreWord(bank,specialLetter,word))
   prevPlayed.append(word)
   return word
+
+# The blossomBetter agent plans ahead. I don't think it's optimal though.
 
 def allScores(bank,prevPlayed):
   words = allValidWords(bank,prevPlayed)
@@ -46,6 +52,8 @@ def blossomBetter(bank,specialLetter,petalCounts,prevPlayed):
   word = plays[specialLetter][0]
   prevPlayed.append(word)
   return word
+
+# Helpers for getting player responses and automatically updating the wordlist after each game.
 
 def getPlayerResponseBy(msg,cond,invalidMsg):
   while True:
@@ -110,6 +118,8 @@ def removeAndCommit(wordsToRemove):
 
 def sevenUniques(s):
   return len(s) == 7 and len(set(s)) == 7 and s.isalpha()
+
+# Time to play!
 
 def playBlossom(engine):
   wordsToRemove = set()
