@@ -179,10 +179,10 @@ playBlossom(blossomBetter)
 
 # Some high scores:
 # 
-# R EINOST : 579 points
-# T EILNRS : 578 points
-# N EIORST : 577 points
-# T EINORS : 575 points
-# R ENOSTU : 574 points
+# R ENOSTU : 617 points
+# R EINOST : 599 points
+# N EIORST : 580 points
+# T EINORS : 585 points
+# T EILNRS : 571 points
 #
 #
