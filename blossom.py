@@ -42,7 +42,9 @@ def blossomBetter(bank,specialLetter,petalCounts,prevPlayed):
     if len(plays[ch]) < (2-count) and wd not in placedWords:
       plays[ch].append(wd)
       placedWords.append(wd)
+      print(f"Placed {wd} in {ch}")
       continue
+  print(f"Plays: {plays}")
   word = plays[specialLetter][0]
   prevPlayed.append(word)
   return word
@@ -125,89 +127,49 @@ def playBlossom(engine):
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
   """)
     prevPlayed = []
-    specials = []
     score = 0
-    invalidFlag = False
     pendingWord = False
-    bank = getPlayerResponseBy("What's the word bank? (Center letter first)",lambda b : sevenUniques(b) or b == "quit","Please enter seven unique letters, or \"quit\".").lower()
-    if bank in ["quit","q"]:
+    response = getPlayerResponseBy("What's the word bank? (Center letter first)",lambda b : sevenUniques(b) or b == "quit","Please enter seven unique letters, or \"quit\".").lower()
+    if response in ["quit","q"]:
       return
     else:
-      bank = list(bank)
-      petals = bank[1:]
+      petals = sorted(list(response)[1:])
+      bank = [response[0]] + petals
+      specialLetter = petals[0]
       petalCounts = {c: 0 for c in petals}
     print("Okay, let's play!")
     print(f"Engine: {engine}")
-    for i in range(13):
+    for i in range(12):
+      # Get valid word.
       while True:
-        if i >= 5 or invalidFlag: # We already know the special letter (or can reason it out), but we still need to know whether the last word was valid
-          response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
+        if pendingWord:
+          # We already tried a word and it failed.
+          wordsToRemove.add(word)
+          word = engine(bank,specialLetter,petalCounts,prevPlayed)
+          print(f"Okay, then instead I play: {word.upper()}")
+
         else:
-          if not pendingWord: # We only need to get the special letter from the player.
-            response = getPlayerResponse("Special letter?",petals + ["quit"])
-          else: # We need to get both the special letter and whether the last word was invalid.
-            response = getPlayerResponse("Special letter? (Or \"invalid\" if the last word was invalid.)",petals + ["invalid","quit"])
+          specialLetter = petals[i % 6]
+          word = engine(bank,specialLetter,petalCounts,prevPlayed)
+          print(f"Round {i+1}. Special letter: {specialLetter.upper()}")
+          print(f"I play: {word.upper()}")
+          pendingWord = True
 
-
+        response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
         if response in ["quit"]:
           return
         
-        if response in ["no","invalid"]:
-          # The last word was invalid.
-          invalidFlag = True
-          wordsToRemove.add(word)
-          # play another word and head back to the top.
-          word = engine(bank,specialLetter,petalCounts,prevPlayed)
-          print(f"Okay, then instead I play: {word.upper()}")
-          pendingWord = True
+        if response in ["no"]:
           continue
 
         else:
-          # The last word (if any) was valid and the player has possibly specified a special letter
-          if pendingWord:
-            # There is a previous word to be scored
-            wordScore = scoreWord(bank,specialLetter,word)
-            score += wordScore
-            petalCounts[specialLetter] += 1
-            print(f"Okay, last word was valid. We scored {wordScore} additional points, for a total of {score} points.")
-            pendingWord = False
-          
-          if i == 12:
-            # The game is over!
-            break
-
-          if i == 5:
-            # reason out the last special letter
-            specialLetter = [c for c in bank[1:] if c not in specials][0]
-            specials.append(specialLetter)
-
-
-          if i >= 6:
-            specialLetter = specials[i-6]
-            print(f"Next special letter: {specialLetter.upper()}")
-
-          if i >= 5:
-            # play a word
-            word = engine(bank,specialLetter,petalCounts,prevPlayed)
-            print(f"I play: {word.upper()}")
-            pendingWord = True
-            break
-          
-          if response in ["yes"] and invalidFlag:
-            invalidFlag = False
-            continue
-
-          elif not pendingWord:
-            # player's response was the next special letter
-
-            specialLetter = response
-            specials.append(specialLetter)
-
-            # play a word
-            word = engine(bank,specialLetter,petalCounts,prevPlayed)
-            print(f"I play: {word.upper()}")
-            pendingWord = True
-            break
+          # Score previous word.
+          wordScore = scoreWord(bank,specialLetter,word)
+          score += wordScore
+          petalCounts[specialLetter] += 1
+          print(f"Great! We scored {wordScore} additional points, for a total of {score} points.")
+          pendingWord = False
+          break
 
     print(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
     playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"])
