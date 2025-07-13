@@ -42,9 +42,7 @@ def blossomBetter(bank,specialLetter,petalCounts,prevPlayed):
     if len(plays[ch]) < (2-count) and wd not in placedWords:
       plays[ch].append(wd)
       placedWords.append(wd)
-      print(f"Placed {wd} in {ch}")
       continue
-  print(f"Plays: {plays}")
   word = plays[specialLetter][0]
   prevPlayed.append(word)
   return word
