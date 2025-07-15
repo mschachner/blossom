@@ -24606,7 +24606,6 @@ avars
 avascular
 avast
 avatar
-avatara
 avatars
 avaunt
 avdp
@@ -24678,7 +24677,6 @@ avernus
 averrable
 averral
 averred
-averrer
 averrhoa
 averring
 averroism
@@ -24700,7 +24698,6 @@ avert
 avertable
 averted
 avertedly
-averter
 avertible
 avertiment
 avertin
@@ -134382,7 +134379,6 @@ havercake
 havered
 haverel
 haverels
-haverer
 havergrass
 havering
 havermeal
@@ -316679,7 +316675,6 @@ tartarated
 tartare
 tartarean
 tartareous
-tartaret
 tartary
 tartarian
 tartaric
@@ -321175,7 +321170,6 @@ thereuntil
 thereunto
 thereup
 thereupon
-thereva
 therevid
 therevidae
 therewhile
@@ -322436,7 +322430,6 @@ thrast
 thratch
 thraupidae
 thrave
-thraver
 thraves
 thraw
 thrawart
@@ -322503,7 +322496,6 @@ threating
 threatless
 threatproof
 threats
-threave
 three
 threedimensionality
 threefold
@@ -363727,7 +363719,6 @@ weevilly
 weevillike
 weevilproof
 weevils
-weewaw
 weewee
 weeweed
 weeweeing
