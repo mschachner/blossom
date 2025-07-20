@@ -96280,7 +96280,6 @@ egueiite
 egurgitate
 egurgitated
 egurgitating
-eguttulate
 eh
 ehatisaht
 eheu
@@ -121275,7 +121274,6 @@ gallantries
 gallants
 gallate
 gallates
-gallature
 gallberry
 gallberries
 gallbladder
@@ -131578,7 +131576,6 @@ gutted
 guttee
 gutter
 guttera
-gutteral
 gutterblood
 guttered
 guttery
@@ -170001,7 +169998,6 @@ legatory
 legatorial
 legators
 legatos
-legature
 legatus
 legbar
 lege
@@ -315464,7 +315460,6 @@ talecarrier
 talecarrying
 taled
 taleful
-talegalla
 talegallinae
 talegallus
 taleysim
@@ -315483,7 +315478,6 @@ talers
 tales
 talesman
 talesmen
-taleteller
 taletelling
 talewise
 tali
