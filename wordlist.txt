@@ -1644,7 +1644,6 @@ acta
 actability
 actable
 actaea
-actaeaceae
 actaeon
 acted
 actg
@@ -27219,7 +27218,6 @@ capelline
 caper
 capercaillie
 capercally
-capercut
 capered
 caperer
 caperers
@@ -27412,7 +27410,6 @@ captor
 captors
 captress
 capture
-capturer
 capuan
 capuche
 capuched
@@ -127816,7 +127813,6 @@ preburn
 prec
 precancel
 precant
-precapture
 precardiac
 precary
 precaria
@@ -134749,7 +134745,6 @@ recapper
 recaps
 recaptor
 recapture
-recapturer
 recarbon
 recarpet
 recarry
@@ -173621,7 +173616,6 @@ tucum
 tucuma
 tucuman
 tucuna
-tucutucu
 tudel
 tudesque
 tudor
