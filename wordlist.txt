@@ -44972,7 +44972,6 @@ desertless.
 desertlessly.
 desertness.
 desertnesses.
-desertress.
 desertrice.
 deserts.
 desertward.
@@ -45172,7 +45171,6 @@ destool.
 destour.
 destrer.
 destress.
-destressed.
 destry.
 destrier.
 destriers.
@@ -139328,7 +139326,6 @@ retwine.
 retwined.
 retwining.
 retwist.
-retwisted.
 retwists.
 retzian.
 reub.
@@ -169761,7 +169758,6 @@ titteration.
 tittered.
 titterel.
 titterer.
-titterers.
 tittery.
 tittering.
 titters.
