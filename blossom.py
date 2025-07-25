@@ -15,9 +15,9 @@ def tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
         return
 
     # Tuned speeds
-    cps = 120                     # characters per second
-    punct_pause = 0.20           # pause after . ! ?
-    mid_pause = 0.12             # pause after , ; : – —
+    cps = 150                    # characters per second
+    punct_pause = 0.10           # pause after . ! ?
+    mid_pause = 0.10             # pause after , ; : – —
     base = 1.0 / cps
 
     for ch in text:
