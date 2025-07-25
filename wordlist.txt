@@ -7065,7 +7065,6 @@ anemogram.
 anemometer.
 anemonal.
 anemone.
-anemonella.
 anemones.
 anemony.
 anemonin.
@@ -41614,7 +41613,6 @@ daddies.
 dadding.
 daddynut.
 daddle.
-daddled.
 daddles.
 daddling.
 daddock.
@@ -43960,7 +43958,6 @@ delawn.
 delbert.
 dele.
 delead.
-deleaded.
 deleading.
 deleads.
 deleatur.
@@ -44307,7 +44304,6 @@ demonisms.
 demonize.
 demonized.
 demonkind.
-demonland.
 demonomanie.
 demonomy.
 demonry.
@@ -54095,7 +54091,6 @@ endogenic.
 endogenies.
 endogenous.
 endogens.
-endolemma.
 endome.
 endomesoderm.
 endopod.
@@ -91131,7 +91126,6 @@ lame.
 lamed.
 lamedh.
 lamedhs.
-lamedlamella.
 lameds.
 lamel.
 lamely.
@@ -91293,8 +91287,6 @@ lancination.
 lancing.
 land.
 landage.
-landamman.
-landammann.
 landau.
 landaulet.
 landaulette.
@@ -100360,7 +100352,6 @@ meloid.
 meloidae.
 meloids.
 melologue.
-melomame.
 melomane.
 melomania.
 melon.
