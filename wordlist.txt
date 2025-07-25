@@ -4717,7 +4717,7 @@ alienists.
 alienize.
 alienly.
 alienness.
-aliennesses.
+aliennesses!
 alienor.
 aliens.
 aliesterase.
@@ -92248,8 +92248,8 @@ lazying.
 lazyish.
 lazylegs.
 lazily.
-laziness.
-lazinesses.
+laziness!
+lazinesses!
 lazing.
 lazule.
 lazuli.
@@ -107369,7 +107369,7 @@ nasalism.
 nasality.
 nasalities.
 nasalize.
-nasalizes.
+nasalizes!
 nasalizing.
 nasally.
 nasals.
@@ -143326,12 +143326,12 @@ saline.
 salinella.
 salinelle.
 salineness.
-salinenesses.
+salinenesses!
 salines.
 salinity.
 salinities.
 salinize.
-salinizes.
+salinizes!
 salinizing.
 salique.
 salisburia.
@@ -147764,8 +147764,8 @@ sensed.
 senseful.
 senseless.
 senselessly.
-senselessness.
-senselessnesses.
+senselessness!
+senselessnesses!
 senses.
 sensibilia.
 sensibilisin.
@@ -151181,7 +151181,7 @@ sillyism.
 sillikin.
 sillily.
 silliness.
-sillinesses.
+sillinesses!
 syllis.
 sillyton.
 sillock.
@@ -151774,7 +151774,7 @@ sinkstone.
 sinless.
 sinlessly.
 sinlessness.
-sinlessnesses.
+sinlessnesses!
 sinlike.
 sinnable.
 sinnableness.
@@ -153164,8 +153164,8 @@ sleazy.
 sleazier.
 sleaziest.
 sleazily.
-sleaziness.
-sleazinesses.
+sleaziness!
+sleazinesses!
 sleb.
 sleck.
 sled.
