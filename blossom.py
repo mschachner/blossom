@@ -5,6 +5,7 @@ from datetime import datetime
 # Helpers: determine if a word's valid, get all valid words, score words.
 
 def isValid(bank, prevPlayed, word):
+  word = word[0:-1] # Remove trailing punctuation
   return any(c == bank[0] for c in word) and all(c in bank for c in word) and len(word) >= 4 and word not in prevPlayed
 
 def allValidWords(bank,prevPlayed):
@@ -15,6 +16,8 @@ def allValidWords(bank,prevPlayed):
     return filter(lambda word: isValid(bank,prevPlayed,word),words)
 
 def scoreWord(bank,specialLetter,word):
+  # Assumption: word ends with punctuation, which we remove for scoring.
+  word = word[0:-1]  # Remove trailing punctuation
   baseScore = 2*len(word)-6 if len(word) < 7 else 3*len(word)-9
   specialLetterScore = 5 * word.count(specialLetter)
   pangramScore = 7 if all(c in word for c in bank) else 0
@@ -50,10 +53,10 @@ def blossomBetter(bank,specialLetter,petalCounts,prevPlayed):
       placedWords.append(wd)
       continue
   word = plays[specialLetter][0]
-  prevPlayed.append(word)
+  prevPlayed.append(word[0:-1])  # Remove trailing punctuation
   return word
 
-# Helpers for getting player responses and automatically updating the wordlist after each game.
+# Helpers for getting player responses.
 
 def getPlayerResponseBy(msg,cond,invalidMsg):
   while True:
@@ -65,7 +68,10 @@ def getPlayerResponseBy(msg,cond,invalidMsg):
 def getPlayerResponse(msg,valids):
   return getPlayerResponseBy(msg,lambda r: r in valids,f"Invalid response. Valid responses: {', '.join(valids)}.")
 
+# Wordlist management: remove words and commit to git.
+
 def removeAndCommit(wordsToRemove):
+  # Assumption: input is set of words to remove, without trailing punctuation.
   if not wordsToRemove or getPlayerResponse(f"Ok to remove: {', '.join(wordsToRemove)}? (yes/no)",["yes","no"]) == "no":
     return
   
@@ -80,7 +86,7 @@ def removeAndCommit(wordsToRemove):
   with open("wordlist.txt", "w") as f:
       f.writelines(new_lines)
 
-    # Git add
+  # Git add
   subprocess.run(
     ["git", "add", "wordlist.txt"],
     check=True,
@@ -116,6 +122,65 @@ def removeAndCommit(wordsToRemove):
   print(f"Removed.")
   return
 
+# Wordlist management: validate words and commit to git.
+
+def validateAndCommit(wordstoValidate):
+  # Assumption: input is set of words to validate, without trailing punctuation.
+  if not wordstoValidate or getPlayerResponse(f"Ok to validate: {', '.join(wordstoValidate)}? (yes/no)",["yes","no"]) == "no":
+    return
+  
+  # Read current lines
+  with open("wordlist.txt", "r") as f:
+    lines = f.readlines()
+
+  # Replace each matching word with the validated version (ending with '!')
+  new_lines = []
+  for line in lines:
+    word = line.rstrip('\n')
+    if word in wordstoValidate:
+      new_lines.append(word + '!\n')
+    else:
+      new_lines.append(line)
+
+  # Write updated lines
+  with open("wordlist.txt", "w") as f:
+    f.writelines(new_lines)
+
+  subprocess.run(
+    ["git", "add", "wordlist.txt"],
+    check=True,
+    stdout=subprocess.DEVNULL,
+    stderr=subprocess.DEVNULL,
+  )
+
+  # Commit message and body
+  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+  summary = f"Validated {len(wordstoValidate)} words at {timestamp}"
+  body = "\n".join(sorted(wordstoValidate))
+
+  subprocess.run(
+      ["git", "commit", "-m", summary, "-m", body],
+      check=True,
+      stdout=subprocess.DEVNULL,
+      stderr=subprocess.DEVNULL,
+  )
+
+  # Get current branch
+  result = subprocess.run(
+      ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+      capture_output=True, text=True, check=True
+  )
+  branch = result.stdout.strip()
+
+  subprocess.run(
+      ["git", "push", "origin", branch],
+      check=True,
+      stdout=subprocess.DEVNULL,
+      stderr=subprocess.DEVNULL,
+  )
+  print(f"Validated.")
+  return
+
 def sevenUniques(s):
   return len(s) == 7 and len(set(s)) == 7 and s.isalpha()
 
@@ -123,6 +188,7 @@ def sevenUniques(s):
 
 def playBlossom(engine):
   wordsToRemove = set()
+  wordstoValidate = set()
   playAgain = "yes"
   while playAgain in ["yes"]:
     os.system("clear")
@@ -154,33 +220,40 @@ def playBlossom(engine):
           # We already tried a word and it failed.
           wordsToRemove.add(word)
           word = engine(bank,specialLetter,petalCounts,prevPlayed)
-          print(f"Okay, then instead I play: {word.upper()}")
+          word_display = word[0:-1]  # Remove trailing punctuation
+          print(f"Okay, then instead I play: {word_display.upper()}")
 
         else:
           specialLetter = petals[i % 6]
           word = engine(bank,specialLetter,petalCounts,prevPlayed)
+          word_display = word[0:-1]  # Remove trailing punctuation
           print(f"Round {i+1}. Special letter: {specialLetter.upper()}")
-          print(f"I play: {word.upper()}")
+          print(f"I play: {word_display.upper()}")
           pendingWord = True
 
-        response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
-        if response in ["quit"]:
-          return
-        
-        if response in ["no"]:
-          continue
-
+        if word[-1] == '!': # Validated word
+          print("---")
         else:
-          # Score previous word.
-          wordScore = scoreWord(bank,specialLetter,word)
-          score += wordScore
-          petalCounts[specialLetter] += 1
-          print(f"Great! We scored {wordScore} additional points, for a total of {score} points.")
-          pendingWord = False
-          break
+          response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
+          if response in ["quit"]:
+            return
+          
+          if response in ["no"]:
+            continue
+          else: # response == "yes"
+            wordstoValidate.add(word_display)
+
+        # Score previous word.
+        wordScore = scoreWord(bank,specialLetter,word)
+        score += wordScore
+        petalCounts[specialLetter] += 1
+        print(f"Great! We scored {wordScore} additional points, for a total of {score} points.")
+        pendingWord = False
+        break
 
     print(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
     playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"])
+  validateAndCommit(wordstoValidate)
   removeAndCommit(wordsToRemove)
   print("Thanks for playing!")
   return
