@@ -7963,13 +7963,13 @@ antenave.
 antenna.
 antennae.
 antennal.
-antennary.
+antennary!
 antennaria.
 antennariid.
 antennariidae.
 antennas.
-antennata.
-antennate.
+antennata!
+antennate!
 antennifer.
 antennula.
 antennular.
@@ -12369,7 +12369,7 @@ attends.
 attensity.
 attent.
 attentat.
-attentate.
+attentate!
 attention.
 attentional.
 attentions.
@@ -52388,7 +52388,7 @@ eyetooth.
 eyewaiter.
 eyewash.
 eyewashes.
-eyewater.
+eyewater!
 eyewaters.
 eyewear.
 eyewink.
@@ -55224,7 +55224,7 @@ entries.
 entrike.
 entryman.
 entrymen.
-entryway.
+entryway!
 entropy.
 entropion.
 entrust.
@@ -139179,9 +139179,9 @@ retreaded.
 retreads.
 retreat.
 retreatal.
-retreatant.
+retreatant!
 retreated.
-retreater.
+retreater!
 retreatful.
 retreating.
 retreatism.
@@ -165129,7 +165129,7 @@ tartans.
 tartar.
 tartarated.
 tartare.
-tartarean.
+tartarean!
 tartareous.
 tartary.
 tartarian.
@@ -171921,7 +171921,7 @@ treemaker.
 treeman.
 treen.
 treenail.
-treenware.
+treenware!
 trees.
 treescape.
 treeship.
@@ -185911,7 +185911,7 @@ warranted.
 warrantee.
 warranteed.
 warrantees.
-warranter.
+warranter!
 warranty.
 warranting.
 warranto.
@@ -186181,7 +186181,7 @@ waterrug.
 waters.
 watersmeet.
 waterstead.
-waterway.
+waterway!
 waterways.
 waterwall.
 waterward.
