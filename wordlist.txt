@@ -43462,7 +43462,7 @@ deerstand.
 deerstealer.
 deervetch.
 deerweed.
-deerweeds.
+deerweeds!
 deerwood.
 dees.
 deescalate.
@@ -46179,7 +46179,7 @@ didascaliae.
 didascalic.
 didascalos.
 didder.
-diddered.
+diddered!
 diddering.
 diddest.
 diddy.
@@ -48116,10 +48116,10 @@ distraint.
 distrait.
 distraite.
 distress.
-distressed.
+distressed!
 distressedness.
 distressednesses.
-distresses.
+distresses!
 distrest.
 district.
 districted.
@@ -51920,7 +51920,7 @@ editions.
 editor.
 editors.
 editress.
-editresses.
+editresses!
 edits.
 edituate.
 edmond.
@@ -135490,7 +135490,7 @@ redispersed.
 redispose.
 redisposed.
 redissect.
-redisseise.
+redisseise!
 redisseisin.
 redisseisor.
 redisseize.
@@ -146980,7 +146980,7 @@ seer.
 seerband.
 seercraft.
 seeress.
-seeresses.
+seeresses!
 seerfish.
 seerhand.
 seerhood.
@@ -150699,7 +150699,7 @@ siderism.
 siderite.
 siderites.
 sideritic.
-sideritis.
+sideritis!
 siderose.
 siderosis.
 siderous.
@@ -160356,7 +160356,7 @@ streetscape.
 streetside.
 streetway.
 streetward.
-streetwise.
+streetwise!
 strey.
 streyne.
 streit.
@@ -174570,8 +174570,8 @@ twits.
 twitted.
 twitten.
 twitter.
-twittered.
-twitterer.
+twittered!
+twitterer!
 twittery.
 twittering.
 twitterly.
@@ -186681,7 +186681,7 @@ weinmannia.
 weir.
 weird.
 weirder.
-weirdest.
+weirdest!
 weirdy.
 weirdie.
 weirdies.
