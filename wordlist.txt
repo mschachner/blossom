@@ -6233,7 +6233,7 @@ ammonite.
 ammonitic.
 ammonitoid.
 ammonium.
-ammoniums.
+ammoniums!
 ammoniuria.
 ammonization.
 ammono.
@@ -25600,7 +25600,7 @@ cacozeal.
 cacozyme.
 cacqueteuse.
 cacqueteuses.
-cactaceae.
+cactaceae!
 cactaceous.
 cactal.
 cactales.
@@ -48180,7 +48180,7 @@ ditching.
 ditchside.
 dite.
 diter.
-diterpene.
+diterpene!
 ditertiary.
 dites.
 ditheism.
@@ -68395,7 +68395,7 @@ gingerol.
 gingerroot.
 gingers.
 gingham.
-ginghams.
+ginghams!
 gingili.
 gingilis.
 gingiva.
@@ -80399,7 +80399,7 @@ imaginer.
 imagines.
 imaging.
 imagining.
-imaginings.
+imaginings!
 imaginist.
 imagism.
 imagisms.
@@ -80640,7 +80640,7 @@ immis.
 immiscible.
 immiscibly.
 immiss.
-immission.
+immission!
 immit.
 immittance.
 immitted.
@@ -82872,7 +82872,7 @@ insheath.
 insheathe.
 insheaths.
 inshell.
-inshining.
+inshining!
 inship.
 inshoe.
 inshoot.
@@ -83301,8 +83301,8 @@ intercurrent.
 intercut.
 interdata.
 interdentil.
-interdepend.
-interdependent.
+interdepend!
+interdependent!
 interdetermine.
 interdetermined.
 interdict.
@@ -83450,7 +83450,7 @@ interns.
 internunce.
 interossei.
 interpel.
-interpendent.
+interpendent!
 interpenetrant.
 interpenetrate.
 interpiece.
@@ -83459,8 +83459,8 @@ interpone.
 interprater.
 interpret.
 interpretate.
-interpreted.
-interpreter.
+interpreted!
+interpreter!
 interpreters.
 interpreting.
 interpretive.
@@ -98506,8 +98506,8 @@ manul.
 manuma.
 manumea.
 manumise.
-manumission.
-manumissions.
+manumission!
+manumissions!
 manumit.
 manumits.
 manumitting.
@@ -99122,7 +99122,7 @@ mashes.
 mashgiach.
 mashgiah.
 mashgichim.
-mashgihim.
+mashgihim!
 mashy.
 mashie.
 mashier.
@@ -102492,7 +102492,7 @@ minimise.
 minimised.
 minimiser.
 minimises.
-minimising.
+minimising!
 minimism.
 minimistic.
 minimite.
@@ -103259,7 +103259,7 @@ mismake.
 mismaking.
 mismanage.
 mismanages.
-mismanaging.
+mismanaging!
 mismanners.
 mismark.
 mismarks.
@@ -104696,7 +104696,7 @@ monomania.
 monomaniac.
 monomaniacal.
 monomaniacs.
-monomanias.
+monomanias!
 monomark.
 monomer.
 monomeric.
@@ -104720,8 +104720,8 @@ mononymize.
 mononitration.
 mononomial.
 monont.
-monoousian.
-monoousious.
+monoousian!
+monoousious!
 monophoic.
 monophone.
 monophony.
@@ -106799,7 +106799,7 @@ mutus.
 mutuum.
 mutwalli.
 muumuu.
-muumuus.
+muumuus!
 muvule.
 muzarab.
 muzhik.
@@ -110950,13 +110950,13 @@ nontruths.
 nontumorous.
 nontumultuous.
 nontuned.
-nonunanimous.
+nonunanimous!
 nonuncial.
 nonundulant.
 nonunified.
 nonuniform.
 nonunion.
-nonunionism.
+nonunionism!
 nonunionist.
 nonunions.
 nonunique.
@@ -113424,7 +113424,7 @@ ominousness.
 ominousnesses.
 omissible.
 omission.
-omissions.
+omissions!
 omissive.
 omissus.
 omit.
@@ -121349,7 +121349,7 @@ pepperproof.
 pepperroot.
 peppers.
 peppershrike.
-peppertree.
+peppertree!
 pepperweed.
 pepperwood.
 pepperwort.
@@ -121403,7 +121403,7 @@ peracetate.
 peracetic.
 peracid.
 peract.
-peracute.
+peracute!
 peragrate.
 perai.
 perakim.
@@ -121901,7 +121901,7 @@ perpetratrix.
 perpetual.
 perpetuana.
 perpetuant.
-perpetuate.
+perpetuate!
 perpetuated.
 perpetuates.
 perpetuator.
@@ -124222,9 +124222,9 @@ piperic.
 piperide.
 piperidge.
 piperidid.
-piperidide.
+piperidide!
 piperidin.
-piperidine.
+piperidine!
 piperylene.
 piperine.
 piperines.
@@ -128508,7 +128508,7 @@ prepays.
 prepalatal.
 prepanic.
 preparable.
-preparateur.
+preparateur!
 preparative.
 preparator.
 preparatory.
@@ -128603,7 +128603,7 @@ preprimary.
 preprimer.
 preprimitive.
 preprint.
-preprinted.
+preprinted!
 preprinting.
 preprints.
 preprocess.
@@ -131348,7 +131348,7 @@ pupoid.
 pupped.
 puppet.
 puppetdom.
-puppeteer.
+puppeteer!
 puppeteers.
 puppethead.
 puppethood.
@@ -131496,7 +131496,7 @@ purprise.
 purprision.
 purpura.
 purpuras.
-purpurate.
+purpurate!
 purpure.
 purpureal.
 purpurean.
@@ -133521,7 +133521,7 @@ rapacity.
 rapakivi.
 rapallo.
 rapanea.
-rapateaceae.
+rapateaceae!
 rape.
 raped.
 rapeful.
@@ -134733,7 +134733,7 @@ recapped.
 recapper.
 recaps.
 recaptor.
-recapture.
+recapture!
 recarbon.
 recarpet.
 recarry.
@@ -135196,7 +135196,7 @@ recule.
 recumb.
 recumbence.
 recuperance.
-recuperate.
+recuperate!
 recuperet.
 recur.
 recure.
@@ -136720,7 +136720,7 @@ reinterfere.
 reinterference.
 reinterment.
 reinterpret.
-reinterpreted.
+reinterpreted!
 reinterpreting.
 reinterprets.
 reinterred.
@@ -148794,7 +148794,7 @@ shaggiest.
 shaggily.
 shagginess.
 shagginesses.
-shagging.
+shagging!
 shagia.
 shaglet.
 shagpate.
@@ -148936,7 +148936,7 @@ shamelessnesses.
 shamer.
 shames.
 shamiana.
-shamianah.
+shamianah!
 shamim.
 shaming.
 shamir.
@@ -148944,8 +148944,8 @@ shammar.
 shammas.
 shammash.
 shammashi.
-shammashim.
-shammasim.
+shammashim!
+shammasim!
 shammed.
 shammer.
 shammers.
@@ -148985,7 +148985,7 @@ shang.
 shangalla.
 shangan.
 shanghai.
-shanghaiing.
+shanghaiing!
 shanghais.
 shangy.
 shank.
@@ -151778,7 +151778,7 @@ sinnership.
 sinnet.
 synneusis.
 sinning.
-sinningia.
+sinningia!
 sinningly.
 sinningness.
 sinningnesses.
@@ -163754,7 +163754,7 @@ tacan.
 tacana.
 tacanan.
 tacca.
-taccaceae.
+taccaceae!
 taccaceous.
 taccada.
 tace.
@@ -175129,7 +175129,7 @@ unanime.
 unanimism.
 unanimist.
 unanimity.
-unanimous.
+unanimous!
 unannealed.
 unannex.
 unannexable.
@@ -181222,7 +181222,7 @@ uppercutted.
 upperer.
 upperest.
 uppermore.
-upperpart.
+upperpart!
 uppers.
 uppile.
 uppiled.
