@@ -1,6 +1,34 @@
 import os
 import subprocess
+import sys,time
 from datetime import datetime
+
+def tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
+    """Typewriter-style print. Same signature as print()."""
+    text = sep.join(map(str, objects)) + end
+
+    # If not an interactive terminal, print fast.
+    if not getattr(file, "isatty", lambda: False)():
+        file.write(text)
+        if flush:
+            file.flush()
+        return
+
+    # Tuned speeds
+    cps = 120                     # characters per second
+    punct_pause = 0.20           # pause after . ! ?
+    mid_pause = 0.12             # pause after , ; : – —
+    base = 1.0 / cps
+
+    for ch in text:
+        file.write(ch)
+        file.flush()             # ensure immediate display
+        if ch in ".!?":
+            time.sleep(punct_pause)
+        elif ch in ",;:–—":
+            time.sleep(mid_pause)
+        else:
+            time.sleep(base)
 
 # Helpers: determine if a word's valid, get all valid words, score words.
 
@@ -63,7 +91,7 @@ def getPlayerResponseBy(msg,cond,invalidMsg):
     attempt = input(msg + "\n > ")
     if cond(attempt):
       return attempt
-    print(invalidMsg)
+    tprint(invalidMsg)
 
 def getPlayerResponse(msg,valids):
   return getPlayerResponseBy(msg,lambda r: r in valids,f"Invalid response. Valid responses: {', '.join(valids)}.")
@@ -71,8 +99,9 @@ def getPlayerResponse(msg,valids):
 # Wordlist management: remove words and commit to git.
 
 def removeAndCommit(wordsToRemove):
-  # Assumption: input is set of words to remove, without trailing punctuation.
-  if not wordsToRemove or getPlayerResponse(f"Ok to remove: {', '.join(wordsToRemove)}? (yes/no)",["yes","no"]) == "no":
+  # Assumption: input is set of words to remove, WITH trailing punctuation.
+  wordsToRemove_display = [w[0:-1] for w in wordsToRemove]  # Remove trailing punctuation
+  if not wordsToRemove or getPlayerResponse(f"Ok to remove: {', '.join(wordsToRemove_display)}? (yes/no)",["yes","no"]) == "no":
     return
   
   # Read current lines
@@ -97,7 +126,7 @@ def removeAndCommit(wordsToRemove):
   # Commit message and body
   timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
   summary = f"Removed {len(wordsToRemove)} words at {timestamp}"
-  body = "\n".join(sorted(wordsToRemove))
+  body = "\n".join(sorted(wordsToRemove_display))
 
   subprocess.run(
       ["git", "commit", "-m", summary, "-m", body],
@@ -177,7 +206,7 @@ def validateAndCommit(wordstoValidate):
       stdout=subprocess.DEVNULL,
       stderr=subprocess.DEVNULL,
   )
-  print(f"Validated.")
+  tprint(f"Validated.")
   return
 
 def sevenUniques(s):
@@ -210,51 +239,49 @@ def playBlossom(engine):
       bank = [response[0]] + petals
       specialLetter = petals[0]
       petalCounts = {c: 0 for c in petals}
-    print("Okay, let's play!")
-    print(f"Engine: {engine}")
+    tprint("Okay, let's play!")
+    tprint(f"Engine: {engine}")
+
+    # Some string vars
+    preMessage = "Okay, then instead "
+    postMessage = ", a validated word!"
+
     for i in range(12):
+      specialLetter = petals[i % 6] # Rotate through petals
       # Get valid word.
       while True:
         if pendingWord:
-          # We already tried a word and it failed.
-          wordsToRemove.add(word)
-          word = engine(bank,specialLetter,petalCounts,prevPlayed)
-          word_display = word[0:-1]  # Remove trailing punctuation
-          print(f"Okay, then instead I play: {word_display.upper()}")
-
+          wordsToRemove.add(word) # Added with punctuation.
         else:
-          specialLetter = petals[i % 6]
-          word = engine(bank,specialLetter,petalCounts,prevPlayed)
-          word_display = word[0:-1]  # Remove trailing punctuation
-          print(f"Round {i+1}. Special letter: {specialLetter.upper()}")
-          print(f"I play: {word_display.upper()}")
-          pendingWord = True
+          tprint(f"---\nRound {i+1}. Special letter: {specialLetter.upper()}.\n")
+        
+        word = engine(bank,specialLetter,petalCounts,prevPlayed)
+        word_display = word[0:-1]  # Remove trailing punctuation
+        message = f"{preMessage if pendingWord else ''}I play: {word_display.upper()}{postMessage if word[-1] == '!' else ''}"
+        tprint(message)
 
-        if word[-1] == '!': # Validated word
-          print("---")
-        else:
+        if word[-1] != '!':  # Word not validated.
           response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
           if response in ["quit"]:
             return
-          
-          if response in ["no"]:
+          elif response in ["no"]:
+            pendingWord = True
             continue
-          else: # response == "yes"
+          else:  # response == "yes"
             wordstoValidate.add(word_display)
-
-        # Score previous word.
+        
         wordScore = scoreWord(bank,specialLetter,word)
         score += wordScore
         petalCounts[specialLetter] += 1
-        print(f"Great! We scored {wordScore} additional points, for a total of {score} points.")
+        tprint(f"{"Great! " if word[-1] != '!' else ''}We scored {wordScore} {"additional " if i != 0 else ''}points, for a total of {score} points.")
         pendingWord = False
         break
 
-    print(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
+    tprint(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
     playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"])
   validateAndCommit(wordstoValidate)
   removeAndCommit(wordsToRemove)
-  print("Thanks for playing!")
+  tprint("Thanks for playing!")
   return
 
 playBlossom(blossomBetter)
