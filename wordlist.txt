@@ -4930,7 +4930,7 @@ allaying.
 allayment.
 allays.
 allalinite.
-allamanda.
+allamanda!
 allamonti.
 allamoth.
 allamotti.
@@ -6642,7 +6642,7 @@ analcitite.
 analecta.
 analectic.
 analects.
-analemma.
+analemma!
 analemmas.
 analemmata.
 analepses.
@@ -41635,7 +41635,7 @@ dadu.
 daduchus.
 daedal.
 daedalea.
-daedalean.
+daedalean!
 daedaleous.
 daedalian.
 daedalic.
@@ -53740,12 +53740,12 @@ enameler.
 enamelers.
 enameling.
 enamellar.
-enamelled.
+enamelled!
 enameller.
 enamellers.
 enamelless.
 enamelling.
-enameloma.
+enameloma!
 enamels.
 enamelware.
 enami.
@@ -92855,8 +92855,8 @@ lemnisnisci.
 lemogra.
 lemology.
 lemon.
-lemonade.
-lemonado.
+lemonade!
+lemonado!
 lemony.
 lemoniinae.
 lemonlike.
@@ -100188,7 +100188,7 @@ melamin.
 melamine.
 melamines.
 melammdim.
-melammed.
+melammed!
 melampod.
 melampode.
 melampus.
@@ -107870,8 +107870,8 @@ needled.
 needleful.
 needlefuls.
 needlelike.
-needleman.
-needlemen.
+needleman!
+needlemen!
 needler.
 needlers.
 needles.
@@ -110336,7 +110336,7 @@ nonlacteal.
 nonlactic.
 nonlaying.
 nonlanguage.
-nonleaded.
+nonleaded!
 nonlegal.
 nonlegato.
 nonlegume.
@@ -111076,7 +111076,7 @@ nonzonated.
 nonzoologic.
 noodle.
 noodled.
-noodledom.
+noodledom!
 noodlehead.
 noodles.
 noodling.
