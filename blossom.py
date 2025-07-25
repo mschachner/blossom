@@ -133,16 +133,15 @@ def validateAndCommit(wordstoValidate):
   with open("wordlist.txt", "r") as f:
     lines = f.readlines()
 
-  # Replace each matching word with the validated version (ending with '!')
+  # Replace each word in wordstoValidate with its version ending in "!"
+  wordstoValidate_set = set(wordstoValidate)
   new_lines = []
   for line in lines:
-    word = line.rstrip('\n')
-    if word in wordstoValidate:
-      new_lines.append(word + '!\n')
+    word = line.rstrip(".!\n")
+    if word in wordstoValidate_set:
+      new_lines.append(f"{word}!\n")
     else:
       new_lines.append(line)
-
-  # Write updated lines
   with open("wordlist.txt", "w") as f:
     f.writelines(new_lines)
 
