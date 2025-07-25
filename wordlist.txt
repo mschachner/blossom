@@ -2838,7 +2838,7 @@ affirmant.
 affirmed.
 affirmer.
 affirmers.
-affirming.
+affirming!
 affirmly.
 affirms.
 affix.
@@ -3483,7 +3483,7 @@ agraphia.
 agraphias.
 agraphic.
 agraria.
-agrarian.
+agrarian!
 agrarianism.
 agrarianize.
 agrarianly.
@@ -6617,7 +6617,7 @@ anagogics.
 anagogies.
 anagram.
 anagrammed.
-anagramming.
+anagramming!
 anagrams.
 anagraph.
 anagua.
@@ -10571,7 +10571,7 @@ arrayers.
 arraign.
 arraigned.
 arraigner.
-arraigning.
+arraigning!
 arraigns.
 arraying.
 arrayment.
@@ -10585,7 +10585,7 @@ arrangement.
 arranger.
 arrangers.
 arranges.
-arranging.
+arranging!
 arrant.
 arrantly.
 arrantness.
@@ -59316,7 +59316,7 @@ farmy.
 farmyard.
 farmyardy.
 farmyards.
-farming.
+farming!
 farmland.
 farmost.
 farmout.
@@ -68120,7 +68120,7 @@ gies.
 gieseckite.
 giesel.
 gifblaar.
-giffgaff.
+giffgaff!
 gifola.
 gift.
 giftbook.
@@ -70597,7 +70597,7 @@ gramineae.
 graminin.
 gramma.
 grammar.
-grammarian.
+grammarian!
 grammarianism.
 grammarians.
 grammarless.
@@ -71325,7 +71325,7 @@ grinner.
 grinners.
 grinny.
 grinnie.
-grinning.
+grinning!
 grinningly.
 grins.
 grint.
@@ -82168,7 +82168,7 @@ infringed.
 infringer.
 infringers.
 infringes.
-infringing.
+infringing!
 infrunite.
 infula.
 infulae.
@@ -82262,7 +82262,7 @@ ingraft.
 ingrafting.
 ingrain.
 ingrained.
-ingraining.
+ingraining!
 ingrains.
 ingram.
 ingrate.
@@ -98766,7 +98766,7 @@ marid.
 marie.
 maries.
 mariet.
-marigram.
+marigram!
 marigraph.
 marihuana.
 marijuana.
