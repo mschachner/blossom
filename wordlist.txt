@@ -3253,7 +3253,7 @@ aggravative.
 aggravator.
 aggregable.
 aggregant.
-aggregate.
+aggregate!
 aggregated.
 aggregately.
 aggregateness.
@@ -10598,7 +10598,7 @@ arrastre.
 arratel.
 arrau.
 arrear.
-arrearage.
+arrearage!
 arrearages.
 arrears.
 arrect.
@@ -66709,7 +66709,7 @@ garrat.
 garred.
 garret.
 garreted.
-garreteer.
+garreteer!
 garretmaster.
 garrets.
 garrya.
@@ -70841,7 +70841,7 @@ gratuitant.
 gratuity.
 gratuito.
 gratulant.
-gratulate.
+gratulate!
 graunt.
 graupel.
 graustark.
@@ -72534,7 +72534,7 @@ guttling.
 guttula.
 guttulae.
 guttular.
-guttulate.
+guttulate!
 guttule.
 guttulous.
 guttur.
@@ -133872,7 +133872,7 @@ rattler.
 rattleran.
 rattleroot.
 rattlers.
-rattlertree.
+rattlertree!
 rattles.
 rattletrap.
 rattletraps.
@@ -134144,7 +134144,7 @@ reagency.
 reagent.
 reagents.
 reaggravate.
-reaggregate.
+reaggregate!
 reaggregated.
 reaggregating.
 reaggressive.
@@ -135726,7 +135726,7 @@ reeligible.
 reeligibly.
 reeling.
 reelingly.
-reelrall.
+reelrall!
 reels.
 reem.
 reemanate.
@@ -136452,7 +136452,7 @@ regulares.
 regularia.
 regularly.
 regulars.
-regulate.
+regulate!
 reguli.
 reguline.
 regulize.
@@ -138098,7 +138098,7 @@ rereel.
 rereeve.
 rerefief.
 reregister.
-reregulate.
+reregulate!
 rereign.
 rerelease.
 reremice.
@@ -165355,7 +165355,7 @@ tattler.
 tattlery.
 tattlers.
 tattles.
-tattletale.
+tattletale!
 tattletales.
 tattling.
 tattlingly.
@@ -166202,7 +166202,7 @@ tellinoid.
 tells.
 tellsome.
 tellt.
-telltale.
+telltale!
 telltalely.
 telltales.
 telltruth.
