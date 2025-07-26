@@ -36500,7 +36500,7 @@ concoct.
 concocted.
 concocter.
 concocting.
-concoction.
+concoction!
 concoctions.
 concoctive.
 concoctor.
@@ -37158,7 +37158,7 @@ contented.
 contentedness.
 contentednesses.
 contenting.
-contention.
+contention!
 contentions.
 contentless.
 contently.
@@ -37188,7 +37188,7 @@ contg.
 conticent.
 contignation.
 contin.
-continence.
+continence!
 continency.
 continent.
 continents.
@@ -57818,7 +57818,7 @@ excites.
 exciting.
 excitive.
 exciton.
-excitonic.
+excitonic!
 excitor.
 excl.
 exclaim.
@@ -57830,7 +57830,7 @@ excluded.
 excluder.
 excludes.
 excoct.
-excoction.
+excoction!
 excoecaria.
 excommenge.
 excommune.
@@ -58424,7 +58424,7 @@ extime.
 extinct.
 extincted.
 extincting.
-extinction.
+extinction!
 extinctive.
 extincts.
 extine.
@@ -81367,7 +81367,7 @@ inconcinnous.
 inconclusion.
 inconcoct.
 inconcocted.
-inconcoction.
+inconcoction!
 inconcrete.
 inconcurring.
 incondite.
@@ -81379,7 +81379,7 @@ inconfusion.
 incony.
 inconjunct.
 inconnected.
-inconnection.
+inconnection!
 inconnexion.
 inconnu.
 inconnus.
@@ -81396,10 +81396,10 @@ inconsonance.
 inconsonant.
 inconspicuous.
 inconstant.
-incontinence.
+incontinence!
 incontinency.
 incontinencies.
-incontinent.
+incontinent!
 incontinuity.
 incontinuous.
 incontraction.
@@ -83634,7 +83634,7 @@ intimiste.
 intimity.
 intimous.
 intinct.
-intinction.
+intinction!
 intinctivity.
 intine.
 intines.
@@ -109834,7 +109834,7 @@ nonconformer.
 noncongruence.
 noncongruous.
 nonconjunction.
-nonconnection.
+nonconnection!
 nonconnective.
 nonconnivance.
 nonconnivence.
