@@ -656,7 +656,7 @@ abstruser.
 abstrusest.
 absume.
 absurd.
-absurder.
+absurder!
 absurds.
 absurdum.
 absvolt.
@@ -1947,11 +1947,11 @@ addossed.
 addr.
 address.
 addressable.
-addressed.
+addressed!
 addressee.
-addressees.
+addressees!
 addresser.
-addressers.
+addressers!
 addresses.
 addressor.
 addrest.
@@ -16796,7 +16796,7 @@ beeball.
 beebee.
 beebees.
 beebread.
-beebreads.
+beebreads!
 beech.
 beechen.
 beecher.
@@ -134081,8 +134081,8 @@ readdict.
 readdicted.
 readding.
 readdress.
-readdressed.
-readdresses.
+readdressed!
+readdresses!
 readds.
 readept.
 reader.
@@ -134365,8 +134365,8 @@ reasserted.
 reassertor.
 reasserts.
 reassess.
-reassessed.
-reassesses.
+reassessed!
+reassesses!
 reassessing.
 reassessment.
 reassessments.
@@ -144584,10 +144584,10 @@ saururaceous.
 saururae.
 saururan.
 saururous.
-saururus.
+saururus!
 sausage.
 sausages.
-saussurea.
+saussurea!
 saussurite.
 saussuritic.
 saut.
@@ -161302,7 +161302,7 @@ subradius.
 subradular.
 subrail.
 subramous.
-subreader.
+subreader!
 subregulus.
 subrent.
 subrents.
