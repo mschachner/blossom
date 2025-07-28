@@ -7197,7 +7197,7 @@ angiorrhagia.
 angiosis.
 angiotasis.
 angiotonic.
-angiotonin.
+angiotonin!
 angka.
 angkhak.
 anglaise.
@@ -7614,8 +7614,8 @@ annotate.
 annotated.
 annotater.
 annotates.
-annotating.
-annotation.
+annotating!
+annotation!
 annotations.
 annotative.
 annotator.
@@ -8515,7 +8515,7 @@ antonym.
 antonymy.
 antonyms.
 antonina.
-antoniniani.
+antoniniani!
 antoninianus.
 antonio.
 antonomasy.
@@ -9288,7 +9288,7 @@ appmt.
 appoint.
 appointe.
 appointee.
-appointing.
+appointing!
 appointor.
 appoints.
 appomatox.
@@ -12317,7 +12317,7 @@ attainor.
 attains.
 attaint.
 attainted.
-attainting.
+attainting!
 attaintment.
 attaints.
 attainture.
@@ -65822,7 +65822,7 @@ gagged.
 gagger.
 gaggery.
 gaggers.
-gagging.
+gagging!
 gaggle.
 gaggled.
 gaggler.
@@ -68152,7 +68152,7 @@ gigge.
 gigged.
 gigger.
 gigget.
-gigging.
+gigging!
 giggish.
 giggit.
 giggle.
@@ -117768,7 +117768,7 @@ paginal.
 paginary.
 paginate.
 paginating.
-pagination.
+pagination!
 pagine.
 paging.
 pagiopod.
@@ -118818,7 +118818,7 @@ papillule.
 papingo.
 papio.
 papion.
-papiopio.
+papiopio!
 papyr.
 papyral.
 papyrean.
@@ -124076,7 +124076,7 @@ pynot.
 pinpillow.
 pinpoint.
 pinpointed.
-pinpointing.
+pinpointing!
 pinpoints.
 pinprick.
 pinpricking.
@@ -165345,7 +165345,7 @@ tattooage.
 tattooed.
 tattooer.
 tattooers.
-tattooing.
+tattooing!
 tattooist.
 tattooists.
 tattooment.
