@@ -8208,7 +8208,6 @@ antifoggant.
 antifungin.
 antigay.
 antigalactic.
-antiganting.
 antigen.
 antigene.
 antigenes.
@@ -8293,7 +8292,6 @@ antinationalization.
 antinationally.
 antinatural.
 anting.
-antinganting.
 antings.
 antinial.
 antinicotine.
@@ -8640,7 +8638,6 @@ apama.
 apanage.
 apanaged.
 apanages.
-apanaging.
 apandry.
 apanteles.
 apantesis.
@@ -9116,7 +9113,6 @@ appalto.
 appanage.
 appanaged.
 appanages.
-appanaging.
 appanagist.
 appar.
 apparail.
@@ -82176,7 +82172,6 @@ inga.
 ingan.
 ingang.
 ingangs.
-ingannation.
 ingate.
 ingates.
 ingem.
@@ -110886,7 +110881,6 @@ nontactical.
 nontalented.
 nontan.
 nontangental.
-nontanning.
 nontarget.
 nontariff.
 nontarred.
@@ -113716,7 +113710,6 @@ oogloea.
 oogone.
 oogonia.
 oogonial.
-oogoninia.
 oogonium.
 oogoniums.
 oograph.
@@ -119895,8 +119888,6 @@ patagial.
 patagiate.
 patagium.
 patagon.
-patagonia.
-patagonian.
 pataka.
 patamar.
 patamars.
@@ -124570,10 +124561,8 @@ pitayita.
 pitanga.
 pitangua.
 pitapat.
-pitapatation.
 pitapats.
 pitapatted.
-pitapatting.
 pitarah.
 pitas.
 pitastile.
@@ -126561,7 +126550,6 @@ pontons.
 pontoon.
 pontooneer.
 pontooner.
-pontooning.
 pontoons.
 pontus.
 pontvolant.
@@ -169310,7 +169298,6 @@ tinwoman.
 tinwork.
 tinzenite.
 tionontates.
-tionontati.
 tiou.
 typable.
 typal.
