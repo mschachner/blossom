@@ -15065,7 +15065,6 @@ baptize.
 baptizee.
 bara.
 barabara.
-barabbas.
 barabora.
 barabra.
 baraca.
@@ -15164,7 +15163,6 @@ barbequed.
 barber.
 barbera.
 barbered.
-barberess.
 barbery.
 barbering.
 barberish.
@@ -134385,7 +134383,6 @@ reassurance.
 reassurances.
 reassure.
 reassured.
-reassurer.
 reassures.
 reast.
 reasty.
@@ -160963,7 +160960,6 @@ subbase.
 subbases.
 subbass.
 subbassa.
-subbasses.
 subbeadle.
 subbeau.
 subbed.
@@ -160975,8 +160971,6 @@ subbourdon.
 subbreed.
 subbreeds.
 subbroker.
-subbureau.
-subbureaus.
 subbureaux.
 subcaecal.
 subcallosal.
