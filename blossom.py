@@ -225,7 +225,12 @@ def playBlossom(bank=None):
         validated = word.endswith('!')
         word = word.rstrip('!')
         prevPlayed.append(word)
-        tprint(f"{"Okay, then instead " if pendingWord else ''}I play: {word.upper()}{", a validated word!" if validated else ''}")
+        # Display version of word. Always bolded. If validated, in green; otherwise in yellow.
+        if validated:
+          display_word = f"\033[1;32m{word.upper()}\033[0m"  # Green bold
+        else:
+          display_word = f"\033[1;33m{word.upper()}\033[0m"  # Yellow bold
+        tprint(f"{"Okay, then instead " if pendingWord else ''}I play: {display_word}{", a validated word!" if validated else ''}")
 
         if not validated:
           response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
@@ -245,6 +250,8 @@ def playBlossom(bank=None):
 
     tprint(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
     playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"])
+    if playAgain == "yes":
+      bank = None
   updateWordlist(wordstoValidate, wordsToRemove)
   tprint("Thanks for playing!")
   return
