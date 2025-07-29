@@ -3,7 +3,7 @@ import subprocess
 import sys,time
 from datetime import datetime
 
-def tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
+def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
     """Typewriter-style print. Same signature as print()."""
     text = sep.join(map(str, objects)) + end
 
@@ -30,10 +30,13 @@ def tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
         else:
             time.sleep(base)
 
+tprint = _tprint  # Alias for convenience; toggle to ordinary print if needed.
+
 # Helpers: determine if a word's valid, get all valid words, score words.
 
 def isValid(bank, prevPlayed, word):
   word = word[0:-1] # Remove trailing punctuation
+  # prevPlayed is unpunctuated.
   return any(c == bank[0] for c in word) and all(c in bank for c in word) and len(word) >= 4 and word not in prevPlayed
 
 def allValidWords(bank,prevPlayed):
@@ -51,38 +54,37 @@ def scoreWord(bank,specialLetter,word):
   pangramScore = 7 if all(c in word for c in bank) else 0
   return baseScore + specialLetterScore + pangramScore
 
-# The blossomGreedy agent just always plays the highest-scoring word available.
-
-def greedyScores(bank, specialLetter, prevPlayed):
-  words = allValidWords(bank,prevPlayed)
-  return sorted(words,key = lambda word: scoreWord(bank,specialLetter,word))[-20:-1]
-
-def blossomGreedy(bank,specialLetter, _, prevPlayed):
-  words = allValidWords(bank,prevPlayed)
-  word = max(words,key = lambda word: scoreWord(bank,specialLetter,word))
-  prevPlayed.append(word)
-  return word
-
 # The blossomBetter agent plans ahead. I don't think it's optimal though.
 
 def allScores(bank,prevPlayed):
   words = allValidWords(bank,prevPlayed)
-  tuples = [(c, word) for word in words for c in bank[1:]]
-  return sorted(tuples,key=lambda t: scoreWord(bank,t[0],t[1]),reverse=True)
+  tuples = [(i, word) for word in words for i in range(6)]
+  return sorted(tuples,key=lambda t: scoreWord(bank,bank[t[0]+1],t[1]),reverse=True)
 
-def blossomBetter(bank,specialLetter,petalCounts,prevPlayed):
-  plays = {c:[] for c in bank[1:]}
+# Helper: given a round number i, return how many words are still needed per letter.
+def stillNeeded(round):
+  nums = [0] * 6
+  for i in range(6):
+    nums[i] += int(round <= i) + int(round <= i + 6)
+  return nums
+
+def blossomBetter(bank,prevPlayed,round,score):
+  plays = {i:[] for i in range(6)}
+  wordsStillNeeded = stillNeeded(round)
   placedWords = []
   tuples = allScores(bank,prevPlayed)
-  for (ch,wd) in tuples:
-    count = petalCounts[ch]
-    if len(plays[ch]) < (2-count) and wd not in placedWords:
-      plays[ch].append(wd)
+  for (i,wd) in tuples:
+    if len(plays[i]) < wordsStillNeeded[i] and wd not in placedWords:
+      plays[i].append(wd)
       placedWords.append(wd)
-      continue
-  word = plays[specialLetter][0]
-  prevPlayed.append(word[0:-1])  # Remove trailing punctuation
-  return word
+      if len(plays.items()) == 12:
+        break
+  # plays is now a dict with keys 0-5, each containing a list of words.
+  # tprint(f"Plays: {plays}")
+  # Optional: print expected score.
+  expectedScore = score + sum(scoreWord(bank,bank[i+1],wd) for i in plays for wd in plays[i])
+  tprint(f"Expected score: {expectedScore} points.")
+  return plays[round % 6][0]
 
 # Helpers for getting player responses.
 
@@ -151,29 +153,43 @@ def removeAndCommit(wordsToRemove):
   print(f"Removed.")
   return
 
-# Wordlist management: validate words and commit to git.
-
-def validateAndCommit(wordstoValidate):
-  # Assumption: input is set of words to validate, without trailing punctuation.
-  if not wordstoValidate or getPlayerResponse(f"Ok to validate: {', '.join(wordstoValidate)}? (yes/no)",["yes","no"]) == "no":
+def updateWordlist(wordsToValidate, wordsToRemove):
+  # Assumption: input is a set of words to validate with "!" and a set of words to remove.
+  # The first set will come witout trailing punctuation, the second with it.
+  if not wordsToValidate and not wordsToRemove:
     return
   
+  if wordsToValidate and getPlayerResponse(f"Ok to validate: {', '.join(wordsToValidate)}? (yes/no)",["yes","no"]) == "no":
+    wordsToValidate = set()
+  if wordsToRemove and getPlayerResponse(f"Ok to remove: {', '.join(wordsToRemove)}? (yes/no)",["yes","no"]) == "no":
+    wordsToRemove = set()
+
   # Read current lines
   with open("wordlist.txt", "r") as f:
     lines = f.readlines()
 
-  # Replace each word in wordstoValidate with its version ending in "!"
-  wordstoValidate_set = set(wordstoValidate)
+  # Replace each word in wordsToValidate with its version ending in "!"
   new_lines = []
   for line in lines:
     word = line.rstrip(".!\n")
-    if word in wordstoValidate_set:
+    if word in wordsToValidate:
       new_lines.append(f"{word}!\n")
-    else:
+    elif word not in wordsToRemove:
       new_lines.append(line)
+
+  # Remove wordsToRemove
+  new_lines = [line for line in new_lines if line not in wordsToRemove]
+  
+  # If no changes, return early
+  if not new_lines:
+    tprint("No changes to wordlist.")
+    return
+
+  # Write updated lines
   with open("wordlist.txt", "w") as f:
     f.writelines(new_lines)
 
+  # Git add
   subprocess.run(
     ["git", "add", "wordlist.txt"],
     check=True,
@@ -183,8 +199,8 @@ def validateAndCommit(wordstoValidate):
 
   # Commit message and body
   timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-  summary = f"Validated {len(wordstoValidate)} words at {timestamp}"
-  body = "\n".join(sorted(wordstoValidate))
+  summary = f"Validated {len(wordsToValidate)} words and removed {len(wordsToRemove)} words at {timestamp}"
+  body = "\n".join(sorted(wordsToValidate.union(wordsToRemove)))
 
   subprocess.run(
       ["git", "commit", "-m", summary, "-m", body],
@@ -206,15 +222,16 @@ def validateAndCommit(wordstoValidate):
       stdout=subprocess.DEVNULL,
       stderr=subprocess.DEVNULL,
   )
-  tprint(f"Validated.")
+  tprint(f"Done.")
   return
+  
 
 def sevenUniques(s):
   return len(s) == 7 and len(set(s)) == 7 and s.isalpha()
 
 # Time to play!
 
-def playBlossom(engine):
+def playBlossom():
   wordsToRemove = set()
   wordstoValidate = set()
   playAgain = "yes"
@@ -240,24 +257,20 @@ def playBlossom(engine):
       specialLetter = petals[0]
       petalCounts = {c: 0 for c in petals}
     tprint("Okay, let's play!")
-    tprint(f"Engine: {engine}")
-
-    # Some string vars
-    preMessage = "Okay, then instead "
-    postMessage = ", a validated word!"
 
     for i in range(12):
       specialLetter = petals[i % 6] # Rotate through petals
       # Get valid word.
       while True:
         if pendingWord:
-          wordsToRemove.add(word) # Added with punctuation.
+          wordsToRemove.add(word[0:-1])
         else:
           tprint(f"---\nRound {i+1}. Special letter: {specialLetter.upper()}.\n")
         
-        word = engine(bank,specialLetter,petalCounts,prevPlayed)
+        word = blossomBetter(bank,prevPlayed,i,score)
         word_display = word[0:-1]  # Remove trailing punctuation
-        message = f"{preMessage if pendingWord else ''}I play: {word_display.upper()}{postMessage if word[-1] == '!' else ''}"
+        prevPlayed.append(word_display)  # Add unpunctuated word to prevPlayed.
+        message = f"{"Okay, then instead " if pendingWord else ''}I play: {word_display.upper()}{", a validated word!" if word[-1] == '!' else ''}"
         tprint(message)
 
         if word[-1] != '!':  # Word not validated.
@@ -279,12 +292,11 @@ def playBlossom(engine):
 
     tprint(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
     playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"])
-  validateAndCommit(wordstoValidate)
-  removeAndCommit(wordsToRemove)
+  updateWordlist(wordstoValidate, wordsToRemove)
   tprint("Thanks for playing!")
   return
 
-playBlossom(blossomBetter)
+playBlossom()
 
 # Some high scores:
 # 
