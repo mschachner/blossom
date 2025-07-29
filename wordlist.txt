@@ -94932,7 +94932,7 @@ lived.
 livedo.
 liveyer.
 lively.
-livelier.
+livelier!
 liveliest.
 livelihead.
 livelihood.
@@ -140336,7 +140336,6 @@ rile.
 riled.
 riley.
 riles.
-rilievi.
 rilievo.
 riling.
 rill.
