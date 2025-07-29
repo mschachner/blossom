@@ -44055,9 +44055,9 @@ delivered.
 deliverer.
 deliverers.
 deliveress.
-delivery.
+delivery!
 deliveries.
-deliverly.
+deliverly!
 deliveror.
 delivers.
 dell.
@@ -45438,7 +45438,7 @@ devilkin.
 devilled.
 devillike.
 devilling.
-devilry.
+devilry!
 devilries.
 devils.
 devilwise.
@@ -93278,7 +93278,7 @@ leveling.
 levelish.
 levelism.
 levelled.
-leveller.
+leveller!
 levellers.
 levellest.
 levelly.
@@ -135345,9 +135345,9 @@ redelete.
 redeleted.
 redely.
 redeliver.
-redelivered.
+redelivered!
 redeliverer.
-redelivery.
+redelivery!
 redeliveries.
 redelivers.
 redemand.
@@ -135470,7 +135470,7 @@ redition.
 redive.
 redivert.
 redivide.
-redivided.
+redivided!
 redivides.
 redividing.
 redivive.
@@ -136983,7 +136983,7 @@ relies.
 relievable.
 relieve.
 relieved.
-relievedly.
+relievedly!
 reliever.
 relievers.
 relieves.
@@ -183501,7 +183501,7 @@ vervecean.
 vervecine.
 vervel.
 verveled.
-vervelle.
+vervelle!
 vervelled.
 vervenia.
 verver.
@@ -184244,7 +184244,7 @@ viridities.
 virify.
 virific.
 virile.
-virilely.
+virilely!
 virileness.
 virilenesses.
 virilia.
@@ -184538,7 +184538,7 @@ vivency.
 vivendi.
 viver.
 viverra.
-viverrid.
+viverrid!
 viverridae.
 viverrids.
 viverriform.
