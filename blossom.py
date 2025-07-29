@@ -223,7 +223,7 @@ def playBlossom(bank=None):
         
         word = blossomBetter(bank, prevPlayed, i, score)
         validated = word.endswith('!')
-        word = word.rstrip('!')
+        word = word.rstrip('.!')
         prevPlayed.append(word)
         # Display version of word. Always bolded. If validated, in green; otherwise in yellow.
         if validated:
