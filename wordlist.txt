@@ -44803,7 +44803,6 @@ derivate.
 derivative.
 derive.
 derived.
-derivedly.
 derivedness.
 derivednesses.
 deriver.
@@ -46248,7 +46247,6 @@ diegueno.
 diehard.
 diehards.
 dyehouse.
-dieyerie.
 dieing.
 dyeing.
 dyeings.
@@ -79791,7 +79789,6 @@ yechy.
 yechs.
 yedding.
 yede.
-yederly.
 yeech.
 ieee.
 yeel.
@@ -135346,7 +135343,6 @@ redeleted.
 redely.
 redeliver.
 redelivered!
-redeliverer.
 redelivery!
 redeliveries.
 redelivers.
@@ -135473,7 +135469,6 @@ redivide.
 redivided!
 redivides.
 redividing.
-redivive.
 redivivus.
 redivorce.
 redivorced.
@@ -136947,7 +136942,6 @@ relevate.
 relevator.
 releve.
 relevel.
-releveled.
 releveling.
 relevent.
 relever.
@@ -183500,9 +183494,7 @@ verve.
 vervecean.
 vervecine.
 vervel.
-verveled.
 vervelle!
-vervelled.
 vervenia.
 verver.
 verves.
