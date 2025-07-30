@@ -309,8 +309,6 @@ def playBlossom(bank=None):
     if playAgain == "yes":
       bank = None
   updateWordlist(wordstoValidate, wordsToRemove)
-  tprint("Thanks for playing! Press Enter to exit.")
-  input()  # Wait for user to press Enter before exiting.
   return
 
 # CLI functionality:
