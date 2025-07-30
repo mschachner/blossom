@@ -47689,7 +47689,6 @@ disobeyed.
 disobeys.
 disodic.
 dysodile.
-dysodyle.
 disodium.
 disomic.
 disomus.
@@ -48804,7 +48803,6 @@ dolerin.
 dolerite.
 doles.
 dolesome.
-dolesomely.
 dolesomeness.
 dolesomenesses.
 doless.
@@ -92590,7 +92588,6 @@ leeser.
 leeshyy.
 leesing.
 leesome.
-leesomely.
 leet.
 leetle.
 leetman.
@@ -105462,7 +105459,6 @@ mossiest.
 mossiness.
 mossinesses.
 mossing.
-mossless.
 mosslike.
 mosso.
 mosstrooper.
