@@ -22828,7 +22828,7 @@ brass.
 brassage.
 brassages.
 brassard.
-brassards.
+brassards!
 brassart.
 brassarts.
 brassate.
@@ -42802,6 +42802,8 @@ debarked.
 debarks.
 debarrance.
 debarrass.
+debarrassed!
+debarrasses!
 debarred.
 debars.
 debase.
@@ -143645,7 +143647,7 @@ sauropodous.
 sauropods.
 saururaceae.
 saururaceous.
-saururae.
+saururae!
 saururan.
 saururous.
 saururus!
