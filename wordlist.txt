@@ -42430,7 +42430,7 @@ daub.
 daube.
 daubed.
 dauber.
-daubers.
+daubers!
 daubery.
 daubes.
 daubier.
@@ -51223,6 +51223,7 @@ earache.
 earaches.
 earbash.
 earbob.
+earbuds!
 earcap.
 earclip.
 earcockle.
@@ -159893,6 +159894,7 @@ subradular.
 subrail.
 subramous.
 subreader!
+subreaders!
 subregulus.
 subrent.
 subrents.
