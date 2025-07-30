@@ -1947,9 +1947,9 @@ addr.
 address.
 addressable.
 addressed!
-addressee.
+addressee!
 addressees!
-addresser.
+addresser!
 addressers!
 addresses.
 addressor.
@@ -11481,7 +11481,8 @@ assess.
 assessable.
 assessably.
 assessed.
-assessee.
+assessee!
+assessees!
 assesses.
 assessing.
 assession.
@@ -13653,7 +13654,7 @@ babakoto.
 babas.
 babasco.
 babassu.
-babassus.
+babassus!
 babasu.
 babaylan.
 babaylanes.
@@ -15020,6 +15021,7 @@ baptize.
 baptizee.
 bara.
 barabara.
+barabaras!
 barabora.
 barabra.
 baraca.
@@ -15060,7 +15062,7 @@ barbaloin.
 barbar.
 barbara.
 barbaralalia.
-barbarea.
+barbarea!
 barbaresque.
 barbarian.
 barbarianism.
