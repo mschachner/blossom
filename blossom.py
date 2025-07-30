@@ -68,16 +68,12 @@ def allScores(bank,prevPlayed):
   tuples = [(i, word) for word in words for i in range(6)]
   return sorted(tuples,key=lambda t: scoreWord(bank,bank[t[0]+1],t[1].rstrip('.!')),reverse=True)
 
-# Helper: given a round number i, return how many words are still needed per letter.
-def stillNeeded(round):
-  nums = [0] * 6
-  for i in range(6):
-    nums[i] += int(round <= i) + int(round <= i + 6)
-  return nums
-
 def blossomBetter(bank,prevPlayed,round,score):
   plays = {i:[] for i in range(6)}
-  wordsStillNeeded = stillNeeded(round)
+  # Determine how many words are still needed for each letter.
+  wordsStillNeeded = [0] * 6
+  for i in range(6):
+    wordsStillNeeded[i] += int(round <= i) + int(round <= i + 6)
   placedWords = []
   tuples = allScores(bank,prevPlayed)
   for (i,wd) in tuples:
@@ -184,7 +180,6 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   )
   tprint(f"Done.")
   return
-
 
 def searchWords(wordsToSearch):
   displayWords = {w: None for w in wordsToSearch} 
@@ -315,9 +310,8 @@ def playBlossom(bank=None):
 # blossom.py                        | no arguments, prompt for bank.
 # blossom.py --help                 | print usage message. 
 # blossom.py bank                   | use the given bank.
-# blossom.py add word1 word2 ...    | add words to the dictionary, or validate them if they already exist.
+# blossom.py add    word1 word2 ... | add words to the dictionary, or validate them if they already exist.
 # blossom.py search word1 word2 ... | search for words and validation statuses in the dictionary.
-
 
 def main():
   if len(sys.argv) == 1:
