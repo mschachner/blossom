@@ -43428,7 +43428,7 @@ deepwater.
 deer.
 deerberry.
 deerdog.
-deerdrive.
+deerdrive!
 deerfly.
 deerflies.
 deerflys.
@@ -44052,7 +44052,7 @@ delists.
 delit.
 deliver.
 delivered.
-deliverer.
+deliverer!
 deliverers.
 deliveress.
 delivery!
@@ -50147,7 +50147,7 @@ driveled.
 driveler.
 drivelers.
 driveline.
-drivelled.
+drivelled!
 driveller.
 drivellers.
 drivels.
@@ -183249,7 +183249,7 @@ verdant.
 verde.
 verdea.
 verdelho.
-verderer.
+verderer!
 verderers.
 verderor.
 verderors.
