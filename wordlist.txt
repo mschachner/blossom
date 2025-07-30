@@ -45065,7 +45065,7 @@ desmoneme.
 desmose.
 desmosis.
 desmosite.
-desmosome.
+desmosome!
 desmotomy.
 desoeuvre.
 desolate.
@@ -48753,7 +48753,7 @@ doigte.
 doyle.
 doiled.
 doyley.
-doyleys.
+doyleys!
 doily.
 doyly.
 doilies.
@@ -48865,7 +48865,7 @@ dolmans.
 dolmas.
 dolmen.
 dolmens.
-dolomedes.
+dolomedes!
 dolomite.
 dolomitic.
 dolomize.
@@ -94666,7 +94666,7 @@ lysol.
 lysosomal.
 lysosomally.
 lysosome.
-lysosomes.
+lysosomes!
 lysozyme.
 lysozymes.
 lisp.
@@ -95918,7 +95918,7 @@ lossful.
 lossy.
 lossier.
 lossiest.
-lossless.
+lossless!
 lossproof.
 lost.
 lostling.
@@ -99876,8 +99876,8 @@ meddlement.
 meddler.
 meddlers.
 meddles.
-meddlesome.
-meddlesomely.
+meddlesome!
+meddlesomely!
 meddlesomeness.
 meddlesomenesses.
 meddling.
@@ -100319,7 +100319,7 @@ melodial.
 melodic.
 melodied.
 melodies.
-melodyless.
+melodyless!
 melodion.
 melodise.
 melodised.
@@ -100960,12 +100960,12 @@ mesosaurus.
 mesoscale.
 mesoscutum.
 mesoseismal.
-mesoseme.
+mesoseme!
 mesosigmoid.
 mesosoma.
 mesosomata.
 mesosome.
-mesosomes.
+mesosomes!
 mesosperm.
 mesosphere.
 mesospore.
@@ -112660,7 +112660,7 @@ odiousness.
 odiousnesses.
 odyssean.
 odyssey.
-odysseys.
+odysseys!
 odysseus.
 odist.
 odium.
@@ -147114,7 +147114,7 @@ seld.
 selden.
 seldom.
 seldomer.
-seldomly.
+seldomly!
 seldomness.
 seldomnesses.
 seldor.
