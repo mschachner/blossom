@@ -155,7 +155,7 @@ def updateWordlist(wordsToValidate, wordsToRemove):
 
   # Commit message and body
   timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-  summary = f"Validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ""} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ""} at {timestamp}"
+  summary = f"Validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ""} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) != 1 else ""} at {timestamp}"
   body = "\n".join(sorted(wordsToValidate.union(wordsToRemove)))
 
   subprocess.run(
