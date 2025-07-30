@@ -84084,7 +84084,7 @@ yodel.
 yodeled.
 yodeler.
 yodelers.
-yodelled.
+yodelled!
 yodeller.
 yodellers.
 yodels.
@@ -153875,7 +153875,6 @@ smelliness.
 smellinesses.
 smelling.
 smells.
-smellsome.
 smelt.
 smelted.
 smelter.
