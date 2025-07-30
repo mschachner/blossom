@@ -100961,7 +100961,7 @@ mesoseme!
 mesosigmoid.
 mesosoma.
 mesosomata.
-mesosome.
+mesosome!
 mesosomes!
 mesosperm.
 mesosphere.
