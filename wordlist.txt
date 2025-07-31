@@ -147494,6 +147494,7 @@ sesspool.
 sesspools.
 sesterce.
 sesterces.
+sesterii!
 sestertia.
 sestertium.
 sestertius.
@@ -149555,6 +149556,7 @@ siberian.
 siberians.
 siberic.
 siberite.
+siberskis!
 sibilant.
 sibilants.
 sibilate.
@@ -150764,6 +150766,7 @@ sisel.
 siserara.
 siserary.
 siserskite!
+siserskites!
 sises.
 sish.
 sisham.
@@ -157865,6 +157868,8 @@ steroids.
 sterol.
 sterols.
 sterope.
+sterrettite!
+sterrettites!
 stert.
 stertor.
 stertorious.
@@ -167933,7 +167938,7 @@ tike.
 tikes.
 tiki.
 tikis.
-tikitiki.
+tikitiki!
 tikka.
 tikker.
 tikkun.
