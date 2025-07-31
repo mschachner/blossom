@@ -18050,7 +18050,7 @@ beribboned.
 beriber.
 beriberi.
 beriberic.
-beriberis.
+beriberis!
 beribers.
 beride.
 berigora.
@@ -18872,7 +18872,7 @@ bibation.
 bibb.
 bibbed.
 bibber.
-bibberies.
+bibberies!
 bibbers.
 bibbery.
 bibbing.
@@ -19045,7 +19045,7 @@ bidry.
 bids.
 bidstand.
 biduous.
-bieberite.
+bieberite!
 biedermeier.
 bieennia.
 bielbrief.
@@ -19952,7 +19952,7 @@ bitterbur.
 bittered.
 bitterender.
 bitterer.
-bitterest.
+bitterest!
 bittering.
 bitterish.
 bitterless.
@@ -23391,9 +23391,9 @@ brisk.
 brisked.
 brisken.
 brisker.
-briskest.
+briskest!
 brisket.
-briskets.
+briskets!
 brisking.
 briskish.
 briskly.
@@ -87988,7 +87988,7 @@ kielbasi.
 kier.
 kieran.
 kiers.
-kieserite.
+kieserite!
 kiesserite.
 kiester.
 kiesters.
@@ -138159,7 +138159,7 @@ retirees.
 retirement.
 retirements.
 retirer.
-retirers.
+retirers!
 retires.
 retiring.
 retiringness.
@@ -150755,7 +150755,7 @@ sise.
 sisel.
 siserara.
 siserary.
-siserskite.
+siserskite!
 sises.
 sish.
 sisham.
@@ -150768,7 +150768,7 @@ siss.
 sisseton.
 sissier.
 sissies.
-sissiest.
+sissiest!
 sissified.
 sissify.
 sissiness.
@@ -151367,8 +151367,8 @@ skitswish.
 skittaget.
 skitter.
 skittered.
-skitterier.
-skitteriest.
+skitterier!
+skitteriest!
 skitters.
 skittery.
 skittish.
