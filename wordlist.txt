@@ -7634,7 +7634,7 @@ anoas.
 anobiidae.
 anobing.
 anociassociation.
-anociation.
+anociation!
 anodal.
 anodally.
 anode.
@@ -12231,7 +12231,7 @@ attabal.
 attaboy.
 attacapan.
 attacca.
-attacco.
+attacco!
 attach.
 attachable.
 attache.
@@ -36446,7 +36446,7 @@ connatal.
 connate.
 connateness.
 connatenesses.
-connation.
+connation!
 connect.
 connectant.
 connected.
@@ -36669,7 +36669,7 @@ consute.
 consy.
 cont.
 contact.
-contactant.
+contactant!
 contacted.
 contacting.
 contaction.
@@ -36755,7 +36755,7 @@ continents.
 contineu.
 contingence.
 contingent.
-continua.
+continua!
 continuant!
 continuation!
 continue.
@@ -38301,7 +38301,7 @@ countertree.
 counterturn.
 countess.
 countesses.
-countian.
+countian!
 counting.
 countor.
 countour.
@@ -80451,7 +80451,7 @@ inanimateness.
 inanimatenesses.
 inanimation.
 inanities.
-inanition.
+inanition!
 inanity.
 inantherate.
 inapathy.
