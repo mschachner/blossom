@@ -175,15 +175,21 @@ def updateWordlist(wordsToValidate, wordsToRemove):
 
   filtered_validated = [w for w in sorted(wordsToValidate) if w.strip()]
   filtered_removed = [w for w in sorted(wordsToRemove) if w.strip()]
-  body = f"Validated words:\n" + "\n".join(filtered_validated) + "\n\n" if filtered_validated else ""
-  body += f"Removed words:\n" + "\n".join(filtered_removed) + "\n\n" if filtered_removed else ""
+  body = "Validated words:\n" + "\n".join(filtered_validated) + "\n\n" if filtered_validated else ""
+  body += "Removed words:\n" + "\n".join(filtered_removed) + "\n\n" if filtered_removed else ""
 
-  subprocess.run(
-      ["git", "commit", "-m", summary, "-m", body],
-      check=True,
-      stdout=subprocess.DEVNULL,
-      stderr=subprocess.DEVNULL,
-  )
+  try:
+    subprocess.run(
+        ["git", "commit", "-m", summary, "-m", body],
+        check=True,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.PIPE,
+    )
+  except subprocess.CalledProcessError as e:
+          print("Git commit failed.")
+          print("Return code:", e.returncode)
+          print("Command:", e.cmd)
+          print("Error output:", e.stderr.decode().strip())
 
   # Get current branch
   result = subprocess.run(
@@ -192,14 +198,6 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   )
   branch = result.stdout.strip()
 
-  subprocess.run(
-      ["git", "push", "origin", branch],
-      check=True,
-      stdout=subprocess.DEVNULL,
-      stderr=subprocess.DEVNULL,
-  )
-  tprint(f"Done.")
-  return
   subprocess.run(
       ["git", "push", "origin", branch],
       check=True,
