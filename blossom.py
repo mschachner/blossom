@@ -39,7 +39,7 @@ def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
         else:
             time.sleep(base)
 
-tprint = print  # Alias for convenience; toggle to ordinary print if needed.
+tprint = _tprint  # Alias for convenience; toggle to ordinary print if needed.
 
 # Helpers: determine if a word's valid, get all valid words, score words.
 
@@ -177,19 +177,12 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   body = "Validated words:\n" + "\n".join(filtered_validated) + "\n\n" if filtered_validated else ""
   body += "Removed words:\n" + "\n".join(filtered_removed) + "\n\n" if filtered_removed else ""
 
-  try:
-    subprocess.run(
-        ["git", "commit", "-m", summary, "-m", body],
-        check=True,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.PIPE,
-    )
-  except subprocess.CalledProcessError as e:
-          print("Git commit failed.")
-          print("Return code:", e.returncode)
-          print("Command:", e.cmd)
-          print("Error output:", e.stderr.decode().strip())
-
+  subprocess.run(
+      ["git", "commit", "-m", summary, "-m", body],
+      check=True,
+      stdout=subprocess.DEVNULL,
+      stderr=subprocess.PIPE,
+  )
   # Get current branch
   result = subprocess.run(
       ["git", "rev-parse", "--abbrev-ref", "HEAD"],
