@@ -114223,7 +114223,7 @@ otkon.
 otoantritis.
 otocariasis.
 otocleisis.
-otoconia.
+otoconia!
 otoconial.
 otoconite.
 otoconium.
@@ -163731,7 +163731,7 @@ tannage.
 tannages.
 tannaic.
 tannaim.
-tannaitic.
+tannaitic!
 tannalbin.
 tannase.
 tannate.
@@ -168767,7 +168767,7 @@ tocalote.
 toccata.
 toccatas.
 toccate.
-toccatina.
+toccatina!
 toch.
 tocharic.
 tocher.
@@ -172721,7 +172721,7 @@ tunic.
 tunica.
 tunicae.
 tunican.
-tunicata.
+tunicata!
 tunicate.
 tunicin.
 tunicle.
@@ -174821,7 +174821,7 @@ uncinal.
 uncinaria.
 uncinariasis.
 uncinariatic.
-uncinata.
+uncinata!
 uncinate.
 uncinatum.
 uncinch.
