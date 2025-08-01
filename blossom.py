@@ -112,7 +112,6 @@ def getPlayerResponse(msg,valids):
 
 def updateWordlist(wordsToValidate, wordsToRemove):
   # Assumption: input is a set of words to validate with "!" and a set of words to remove.
-  # The first set will come witout trailing punctuation, the second with it.
   if not wordsToValidate and not wordsToRemove:
     return
   
@@ -144,7 +143,7 @@ def updateWordlist(wordsToValidate, wordsToRemove):
     new_lines.append(word + '!\n')
 
   # Remove wordsToRemove
-  new_lines = [line for line in new_lines if line not in wordsToRemove]
+  new_lines = [line for line in new_lines if line.rstrip('.!') not in wordsToRemove]
 
   # Sort the new lines alphabetically
   new_lines.sort()
@@ -164,11 +163,11 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   # Commit message and body
   timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
   if wordsToValidate and wordsToRemove:
-    summary = f"auto: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ''} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
+    summary = f"auto: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) != 1 else ''} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
   elif wordsToValidate:
-    summary = f"auto: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ''} at {timestamp}"
+    summary = f"auto: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) != 1 else ''} at {timestamp}"
   else:
-    summary = f"auto: removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
+    summary = f"auto: removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) != 1 else ''} at {timestamp}"
 
   body = f"Validated words:\n" + "\n".join(sorted(wordsToValidate)) + "\n\n" if wordsToValidate else ""
   body += f"Removed words:\n" + "\n".join(sorted(wordsToRemove)) + "\n\n" if wordsToRemove else ""
