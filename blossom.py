@@ -129,17 +129,25 @@ def updateWordlist(wordsToValidate, wordsToRemove):
     lines = f.readlines()
 
   # Replace each word in wordsToValidate with its version ending in "!"
+  # or add it with a "!" if it doesn't exist.
   new_lines = []
   for line in lines:
-    word = line.rstrip(".!\n")
+    word = line.rstrip('.!\n')
     if word in wordsToValidate:
-      new_lines.append(f"{word}!\n")
-    elif word not in wordsToRemove:
-      new_lines.append(line)
+      new_lines.append(word + '!\n')  # Add validated word with "!"
+      wordsToValidate.remove(word)     # Remove from set to avoid duplicates
+    else:
+      new_lines.append(line)            # Keep the original line
+
+  # Add any remaining words to validate that were not in the file (maintaining alphabetical order)
+  for word in sorted(wordsToValidate):
+    new_lines.append(word + '!\n')
 
   # Remove wordsToRemove
   new_lines = [line for line in new_lines if line not in wordsToRemove]
-  
+
+  # Sort the new lines alphabetically
+  new_lines.sort()
 
   # Write updated lines
   with open("wordlist.txt", "w") as f:
@@ -155,8 +163,15 @@ def updateWordlist(wordsToValidate, wordsToRemove):
 
   # Commit message and body
   timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-  summary = f"Validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ""} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) != 1 else ""} at {timestamp}"
-  body = "\n".join(sorted(wordsToValidate.union(wordsToRemove)))
+  if wordsToValidate and wordsToRemove:
+    summary = f"Validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ''} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
+  elif wordsToValidate:
+    summary = f"Validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ''} at {timestamp}"
+  else:
+    summary = f"Removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
+
+  body = f"Validated words:\n" + "\n".join(sorted(wordsToValidate)) + "\n\n" if wordsToValidate else ""
+  body += f"Removed words:\n" + "\n".join(sorted(wordsToRemove)) + "\n\n" if wordsToRemove else ""
 
   subprocess.run(
       ["git", "commit", "-m", summary, "-m", body],
