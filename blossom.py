@@ -152,6 +152,11 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   with open("wordlist.txt", "w") as f:
     f.writelines(new_lines)
 
+  # If no words were validated or removed, skip git commit and push.
+  if not wordsToValidate and not wordsToRemove:
+    tprint("No changes to commit.")
+    return
+
   # Git add
   subprocess.run(
     ["git", "add", "wordlist.txt"],
@@ -160,17 +165,18 @@ def updateWordlist(wordsToValidate, wordsToRemove):
     stderr=subprocess.DEVNULL,
   )
 
-  # Commit message and body
   timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
   if wordsToValidate and wordsToRemove:
-    summary = f"auto: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) != 1 else ''} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
+    summary = f"auto: updated wordlist.txt: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) != 1 else ''} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) != 1 else ''} at {timestamp}"
   elif wordsToValidate:
-    summary = f"auto: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) != 1 else ''} at {timestamp}"
+    summary = f"auto: updated wordlist.txt: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) != 1 else ''} at {timestamp}"
   else:
-    summary = f"auto: removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) != 1 else ''} at {timestamp}"
+    summary = f"auto: updated wordlist.txt: removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) != 1 else ''} at {timestamp}"
 
-  body = f"Validated words:\n" + "\n".join(sorted(wordsToValidate)) + "\n\n" if wordsToValidate else ""
-  body += f"Removed words:\n" + "\n".join(sorted(wordsToRemove)) + "\n\n" if wordsToRemove else ""
+  filtered_validated = [w for w in sorted(wordsToValidate) if w.strip()]
+  filtered_removed = [w for w in sorted(wordsToRemove) if w.strip()]
+  body = f"Validated words:\n" + "\n".join(filtered_validated) + "\n\n" if filtered_validated else ""
+  body += f"Removed words:\n" + "\n".join(filtered_removed) + "\n\n" if filtered_removed else ""
 
   subprocess.run(
       ["git", "commit", "-m", summary, "-m", body],
@@ -186,6 +192,14 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   )
   branch = result.stdout.strip()
 
+  subprocess.run(
+      ["git", "push", "origin", branch],
+      check=True,
+      stdout=subprocess.DEVNULL,
+      stderr=subprocess.DEVNULL,
+  )
+  tprint(f"Done.")
+  return
   subprocess.run(
       ["git", "push", "origin", branch],
       check=True,
