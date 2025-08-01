@@ -83218,7 +83218,7 @@ inulin.
 inulins.
 inuloid.
 inunct.
-inunction.
+inunction!
 inunctum.
 inunctuous.
 inundant.
@@ -107808,7 +107808,7 @@ nicotine.
 nicotinean.
 nicotined.
 nicotines.
-nicotinian.
+nicotinian!
 nicotinic.
 nicotinise.
 nicotinising.
@@ -110873,7 +110873,7 @@ nunlet.
 nunlike.
 nunnari.
 nunnated.
-nunnation.
+nunnation!
 nunned.
 nunneries.
 nunnery.
@@ -111590,6 +111590,7 @@ octary.
 octastich.
 octastylos.
 octateuch.
+octatonic!
 octaval.
 octavaria.
 octavd.
@@ -111675,6 +111676,7 @@ octosporous.
 octostichous.
 octothorp.
 octothorpe.
+octotonic!
 octoyl.
 octroi.
 octrois.
