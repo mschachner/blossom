@@ -164,11 +164,11 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   # Commit message and body
   timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
   if wordsToValidate and wordsToRemove:
-    summary = f"Validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ''} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
+    summary = f"auto: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ''} and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
   elif wordsToValidate:
-    summary = f"Validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ''} at {timestamp}"
+    summary = f"auto: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) > 1 else ''} at {timestamp}"
   else:
-    summary = f"Removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
+    summary = f"auto: removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) > 1 else ''} at {timestamp}"
 
   body = f"Validated words:\n" + "\n".join(sorted(wordsToValidate)) + "\n\n" if wordsToValidate else ""
   body += f"Removed words:\n" + "\n".join(sorted(wordsToRemove)) + "\n\n" if wordsToRemove else ""
@@ -365,9 +365,9 @@ if __name__ == "__main__":
 
 # Some high scores:
 # 
-# R ENOSTU : 617 points
-# R EINOST : 599 points
-# N EIORST : 580 points
-# T EINORS : 585 points
-# T EILNRS : 571 points
+# R ENOSTU : 716 points
+# R ENLSTU : 659 points
+# T EILNRS : 657 points
+# R EINOST : 624 points
+# T EINORS : 616 points
 #
