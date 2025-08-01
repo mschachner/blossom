@@ -39,7 +39,7 @@ def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
         else:
             time.sleep(base)
 
-tprint = _tprint  # Alias for convenience; toggle to ordinary print if needed.
+tprint = print  # Alias for convenience; toggle to ordinary print if needed.
 
 # Helpers: determine if a word's valid, get all valid words, score words.
 
@@ -132,6 +132,8 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   new_lines = []
   for line in lines:
     word = line.rstrip('.!\n')
+    if word in wordsToRemove:
+      continue  # Skip words to remove
     if word in wordsToValidate:
       new_lines.append(word + '!\n')  # Add validated word with "!"
       wordsToValidate.remove(word)     # Remove from set to avoid duplicates
@@ -141,9 +143,6 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   # Add any remaining words to validate that were not in the file (maintaining alphabetical order)
   for word in sorted(wordsToValidate):
     new_lines.append(word + '!\n')
-
-  # Remove wordsToRemove
-  new_lines = [line for line in new_lines if line.rstrip('.!') not in wordsToRemove]
 
   # Sort the new lines alphabetically
   new_lines.sort()
