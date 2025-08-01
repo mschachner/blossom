@@ -26635,7 +26635,6 @@ canaan.
 canaanite.
 canaanites.
 canaanitess.
-canaanitic.
 canaanitish.
 canaba.
 canabae.
@@ -28651,7 +28650,6 @@ catastate.
 catastatic.
 catathymic.
 catatonia.
-catatoniac.
 catatonias.
 catatonic.
 catatonics.
@@ -32496,7 +32494,6 @@ cinchotine.
 cincinatti.
 cincinnal.
 cincinnati.
-cincinnatia.
 cincinni.
 cincinnus.
 cinclidae.
@@ -36765,7 +36762,6 @@ continuity.
 continuo.
 continuos.
 continuous.
-continuua.
 continuum.
 contise.
 contline.
@@ -36822,7 +36818,6 @@ controller.
 controls.
 controvert.
 controverter.
-conttinua.
 contund.
 contune.
 conturb.
@@ -80416,7 +80411,6 @@ inactivation.
 inactive.
 inactivity.
 inactuate.
-inactuation.
 inadaptation.
 inadept.
 inaffable.
@@ -108647,7 +108641,6 @@ nonanimate.
 nonanimating.
 nonannexable.
 nonannexation.
-nonannuitant.
 nonanoic.
 nonanonymity.
 nonanswer.
@@ -108892,7 +108885,6 @@ noncontagion.
 noncontent.
 noncontinency.
 noncontingent.
-noncontinuation.
 noncontinuity.
 noncontinuous.
 noncontraction.
@@ -176915,7 +176907,6 @@ uninimical.
 uniniquitous.
 uninitiate.
 uninitiated.
-uninitiation.
 uninitiative.
 uninjured.
 uninjuring.
