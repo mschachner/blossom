@@ -1720,7 +1720,7 @@ actuate.
 actuated.
 actuates.
 actuating.
-actuation.
+actuation!
 actuator.
 actuators.
 actuose.
@@ -7627,7 +7627,7 @@ annumerate.
 annunciade.
 annunciate.
 annunciating.
-annunciation.
+annunciation!
 annus.
 anoa.
 anoas.
@@ -36490,7 +36490,7 @@ conniving.
 connixation.
 connoissance.
 connotate.
-connotation.
+connotation!
 connotational.
 connotations.
 connote.
@@ -36756,8 +36756,8 @@ contineu.
 contingence.
 contingent.
 continua.
-continuant.
-continuation.
+continuant!
+continuation!
 continue.
 continuing.
 continuist.
@@ -40505,7 +40505,7 @@ cunabular.
 cunan.
 cunarder.
 cunas.
-cunctation.
+cunctation!
 cunctator.
 cunctatury.
 cund.
@@ -80547,7 +80547,7 @@ incandescence.
 incanescent.
 incanous.
 incant.
-incantation.
+incantation!
 incantational.
 incantations.
 incantator.
@@ -80577,7 +80577,7 @@ incask.
 incast.
 incatenate.
 incatenation.
-incaution.
+incaution!
 incavate.
 incavation.
 incave.
@@ -81791,7 +81791,7 @@ initiate.
 initiated.
 initiates.
 initiating.
-initiation.
+initiation!
 initiations.
 initiative.
 initiatives.
