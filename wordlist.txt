@@ -145155,6 +145155,7 @@ scrims.
 scrimy.
 scrin.
 scrinch.
+scrinches!
 scrine.
 scringe.
 scrinia.
@@ -146758,7 +146759,8 @@ senegalese.
 senegas.
 senegin.
 senesce.
-senescence.
+senescence!
+senescences!
 senescency.
 senescent.
 seneschal.
@@ -147164,8 +147166,8 @@ serendite.
 serene.
 serened.
 serenely.
-sereneness.
-serenenesses.
+sereneness!
+serenenesses!
 serener.
 serenes.
 serenest.
