@@ -51979,7 +51979,7 @@ eerier.
 eeriest!
 eerily.
 eeriness.
-eerinesses.
+eerinesses!
 eerisome.
 eerock.
 eery.
@@ -54705,6 +54705,7 @@ enshield.
 enshielded.
 enshrine.
 enshrined.
+enshrinees!
 enshrines.
 enshrining.
 ensient.
@@ -75499,7 +75500,7 @@ herem.
 heremeit.
 herenach.
 hereness.
-herenesses.
+herenesses!
 hereniging.
 hereof.
 hereon.
@@ -81694,6 +81695,7 @@ inhell.
 inhere.
 inhered.
 inherence.
+inherences!
 inherencies!
 inherency.
 inherent.
@@ -144512,6 +144514,7 @@ schradan.
 schrank.
 schrebera.
 schreiner!
+schreiners!
 schrik.
 schriks.
 schrother.
@@ -145066,7 +145069,7 @@ screech.
 screeched.
 screecher.
 screeches.
-screechier.
+screechier!
 screechiest.
 screechy.
 screed.
