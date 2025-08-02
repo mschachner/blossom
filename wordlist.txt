@@ -30798,8 +30798,8 @@ cheerfuller.
 cheerier.
 cheeriest.
 cheerily.
-cheeriness.
-cheerinesses.
+cheeriness!
+cheerinesses!
 cheering.
 cheerio.
 cheerios.
@@ -30835,7 +30835,7 @@ cheesier.
 cheesiest.
 cheesily.
 cheesiness.
-cheesinesses.
+cheesinesses!
 cheesing.
 cheesy.
 cheet.
@@ -31385,16 +31385,14 @@ chinch.
 chincha.
 chinche.
 chincher.
-chincherinchee.
-chincherinchees.
+chincherinchee!
+chincherinchees!
 chinches.
 chinchier.
 chinchiest.
 chinchilla.
 chinchillas.
 chinchillette.
-chinchiness.
-chinchinesses.
 chinching.
 chinchona.
 chinchy.
@@ -54613,7 +54611,7 @@ enrich.
 enriched.
 enrichener.
 enricher.
-enrichers.
+enrichers!
 enriches.
 enriching.
 enridged.
@@ -81696,7 +81694,7 @@ inhell.
 inhere.
 inhered.
 inherence.
-inherencies.
+inherencies!
 inherency.
 inherent.
 inheres.
@@ -81944,7 +81942,7 @@ inner.
 innerly.
 innermore.
 innerness.
-innernesses.
+innernesses!
 inners.
 innersole.
 innerspring.
@@ -83695,7 +83693,6 @@ irishly.
 irishman.
 irishmen.
 irishness.
-irishnesses.
 irishry.
 irishy.
 irisin.
@@ -144514,7 +144511,7 @@ schouw.
 schradan.
 schrank.
 schrebera.
-schreiner.
+schreiner!
 schrik.
 schriks.
 schrother.
@@ -145071,8 +145068,6 @@ screecher.
 screeches.
 screechier.
 screechiest.
-screechiness.
-screechinesses.
 screechy.
 screed.
 screeded.
@@ -148787,7 +148782,7 @@ shinier.
 shiniest.
 shinily.
 shininess.
-shininesses.
+shininesses!
 shining.
 shiningly.
 shiningness.
@@ -150430,7 +150425,7 @@ sincamas.
 since.
 sincere.
 sincereness.
-sincerenesses.
+sincerenesses!
 sincerer.
 sincerest.
 sincerities.
@@ -150777,7 +150772,7 @@ sissiest!
 sissified.
 sissify.
 sissiness.
-sissinesses.
+sissinesses!
 sissing.
 sissone.
 sissonne.
