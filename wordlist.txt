@@ -3424,7 +3424,7 @@ agonal.
 agone.
 agones.
 agonia.
-agoniada.
+agoniada!
 agoniadin.
 agoniatite.
 agonic.
@@ -7153,7 +7153,6 @@ angiomas.
 angiomata.
 angiomyoma.
 angionoma.
-angionosis.
 angiorrhagia.
 angiosis.
 angiotasis.
@@ -7743,7 +7742,7 @@ anosia.
 anosmia.
 anosmias.
 anosmic.
-anosognosia.
+anosognosia!
 anospinal.
 anostosis.
 anostraca.
@@ -11365,7 +11364,7 @@ assacu.
 assafetida.
 assagai.
 assagaied.
-assagais.
+assagais!
 assahy.
 assai.
 assail.
@@ -45735,8 +45734,8 @@ diaeretic.
 diaetetae.
 diag.
 diagenesis.
-diagnosing.
-diagnosis.
+diagnosing!
+diagnosis!
 diagonal.
 diagonial.
 diagonic.
@@ -46721,8 +46720,6 @@ dingar.
 dingbat.
 dingdong.
 dingdonged.
-dingdonging.
-dingdongs.
 dinge.
 dinged.
 dingee.
@@ -47317,7 +47314,7 @@ discute.
 disdain.
 disdained.
 disdainer.
-disdaining.
+disdaining!
 disdainly.
 disdainous.
 disdains.
@@ -69762,7 +69759,7 @@ gonid.
 gonidia.
 gonidial.
 gonidic.
-gonidioid.
+gonidioid!
 gonidiose.
 gonidium.
 gonif.
@@ -70120,7 +70117,7 @@ gossipry.
 gossips.
 gossipy.
 gossoon.
-gossoons.
+gossoons!
 gossy.
 gossypin.
 gossypol.
@@ -81066,7 +81063,7 @@ indigo.
 indigoes.
 indigogen.
 indigoid.
-indigoids.
+indigoids!
 indigos.
 indigotic.
 indigotin.
@@ -108604,7 +108601,7 @@ nonagency.
 nonagent.
 nonages.
 nonagon.
-nonagons.
+nonagons!
 nonagrarian.
 nonaid.
 nonair.
@@ -108963,7 +108960,6 @@ nondeterrent.
 nondetest.
 nondetinet.
 nondevout.
-nondiagnosis.
 nondiagonal.
 nondictation.
 nondidactic.
@@ -109822,7 +109818,6 @@ nonshedder.
 nonshipping.
 nonsilicious.
 nonsine.
-nonsinging.
 nonsingle.
 nonsingleness.
 nonsinglenesses.
@@ -112699,7 +112694,6 @@ onomatopy.
 onomatous.
 onomomancy.
 onondaga.
-onondagan.
 onondagas.
 ononis.
 onopordon.
@@ -150501,7 +150495,7 @@ singpho.
 sings.
 singsing.
 singsong.
-singsongs.
+singsongs!
 singsongy.
 singspiel.
 singstress.
@@ -153669,7 +153663,6 @@ softwoods.
 softy.
 soga.
 sogdian.
-sogdianian.
 sogdoite.
 soger.
 soget.
