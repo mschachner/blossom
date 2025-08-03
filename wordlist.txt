@@ -3425,6 +3425,7 @@ agone.
 agones.
 agonia.
 agoniada!
+agoniadas!
 agoniadin.
 agoniatite.
 agonic.
@@ -41685,6 +41686,7 @@ daggered.
 daggering.
 daggers.
 dagging.
+daggings!
 daggle.
 daggled.
 daggles.
@@ -46370,7 +46372,7 @@ digged.
 digger.
 diggers.
 digging.
-diggings.
+diggings!
 dight.
 dighted.
 dighter.
@@ -48565,7 +48567,7 @@ doggonedest.
 doggoner.
 doggones.
 doggonest.
-doggoning.
+doggoning!
 doggrel.
 doggrels.
 doggy.
@@ -66391,7 +66393,8 @@ gangerel.
 gangers.
 ganges.
 gangetic.
-ganggang.
+ganggang!
+ganggangs!
 ganging.
 gangion.
 gangism.
@@ -66456,7 +66459,7 @@ ganoidal.
 ganoidean.
 ganoidei.
 ganoidian.
-ganoids.
+ganoids!
 ganoin.
 ganoine.
 ganoses.
@@ -69756,6 +69759,7 @@ goniatitic.
 goniatitid.
 goniatitoid.
 gonid.
+gonidangia!
 gonidia.
 gonidial.
 gonidic.
