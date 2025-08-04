@@ -55682,7 +55682,7 @@ epispadia.
 epispadiac.
 epispadias.
 epispastic.
-episperm.
+episperm!
 epispermic.
 epispinal.
 episplenitis.
@@ -80341,7 +80341,6 @@ impress.
 impressa.
 impressari.
 impressed.
-impresser.
 impresses.
 impressive.
 impressor.
@@ -99916,7 +99915,6 @@ merpeople.
 merrier.
 merriest.
 merril.
-merriless.
 merrily.
 merrimack.
 merriment.
@@ -102209,7 +102207,6 @@ misprints.
 misprisal.
 misprise.
 misprised.
-mispriser.
 misprising.
 misprision.
 misprisions.
