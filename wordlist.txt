@@ -102332,7 +102332,7 @@ misspeech.
 misspeed.
 misspell.
 misspelled.
-misspells.
+misspells!
 misspelt.
 misspend.
 misspends.
@@ -122850,7 +122850,7 @@ pimpla.
 pimple.
 pimpled.
 pimples.
-pimplier.
+pimplier!
 pimpliest.
 pimplinae.
 pimpliness.
@@ -135675,7 +135675,7 @@ reimburser.
 reimburses.
 reimkennar.
 reimmerge.
-reimmerse.
+reimmerse!
 reimmersion.
 reimpark.
 reimpart.
