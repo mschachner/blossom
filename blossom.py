@@ -3,6 +3,8 @@ import subprocess
 import sys,time
 from datetime import datetime
 
+# Aesthetics: color text, typewriter-style print.
+
 def boldColorText(text, color):
   styles = {
       "reset": "\033[0m",
@@ -41,120 +43,136 @@ def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
 
 tprint = _tprint  # Alias for convenience; toggle to ordinary print if needed.
 
-# Helpers: determine if a word's valid, get all valid words, score words.
+# Every word comes with a validation status, a boolean indicating whether the word has been validated by a human player.
 
-def isValid(bank, prevPlayed, word):
-  return any(c == bank[0] for c in word) and all(c in bank for c in word) and len(word) >= 4 and word not in prevPlayed
+class Word(str):
+    def __new__(cls, word, validated=False):
+        # Create a new instance of Word, inheriting from str.
+        instance = super().__new__(cls, word)
+        instance.validated = validated
+        return instance
 
-def allValidWords(bank,prevPlayed):
-  valids = []
+    def __str__(self):
+        # Validated words are rendered in bold green, others in bold yellow.
+        if self.validated:
+            return boldColorText(self.upper(), "green")
+        else:
+            return boldColorText(self.upper(), "yellow")
+    
+    def __repr__(self):
+        # Return the plain string for debugging and logic
+        return super().__str__()
+    
+    def validate(self):
+        # Mark the word as validated.
+        self.validated = True
+        
+def loadWordlist(bank=None):
+  wordList = set()
   with open("wordlist.txt") as infile:
     for line in infile:
-      wd = line[0:-2] # Remove trailing punctuation
-      if isValid(bank, prevPlayed, wd):
-        valids.append(wd + line[-2])
-    return valids
+      word = line[0:-2]
+      if not bank or (any(c == bank[0] for c in word) and all(c in bank for c in word)): # word is legal
+        if line.endswith('!\n'):
+          # Validated word.
+          wordList.add(Word(word, True))
+        else:
+          # Not validated word.
+          wordList.add(Word(word, False))
+  return wordList
 
-def scoreWord(bank,specialLetter,word):
+def scoreWord(bank, specialLetter, word):
   baseScore = 2*len(word)-6 if len(word) < 7 else 3*len(word)-9
   specialLetterScore = 5 * word.count(specialLetter)
   pangramScore = 7 if all(c in word for c in bank) else 0
   return baseScore + specialLetterScore + pangramScore
 
 # The blossomBetter agent plans ahead. I don't think it's optimal though.
+def allPlays(legalWords, bank, prevPlayed):
+  plays = []
+  for word in (w for w in legalWords if w not in prevPlayed):
+    for i in range(6):
+      plays.append((i,word,scoreWord(bank,bank[i+1],word)))
+  # Sort by score descending.
+  plays.sort(key=lambda x: x[2], reverse=True)
+  return plays
 
-def allScores(bank,prevPlayed):
-  words = allValidWords(bank,prevPlayed)
-  tuples = [(i, word) for word in words for i in range(6)]
-  return sorted(tuples,key=lambda t: scoreWord(bank,bank[t[0]+1],t[1].rstrip('.!')),reverse=True)
-
-def blossomBetter(bank,prevPlayed,round,score):
-  plays = {i:[] for i in range(6)}
+def blossomBetter(bank, legalWords, prevPlayed, round, score):
+  chosenPlays = {i:[] for i in range(6)}
   # Determine how many words are still needed for each letter.
-  wordsStillNeeded = [0] * 6
-  for i in range(6):
-    wordsStillNeeded[i] += int(round <= i) + int(round <= i + 6)
+  stillNeeded = [int(round <= i) + int(round <= i+6) for i in range(6)]
   placedWords = []
-  tuples = allScores(bank,prevPlayed)
-  for (i,wd) in tuples:
-    if len(plays[i]) < wordsStillNeeded[i] and wd not in placedWords:
-      plays[i].append(wd)
-      placedWords.append(wd)
-      if len(plays.items()) == 12:
+  expectedScore = score
+  plays = allPlays(legalWords, bank,prevPlayed)
+  for (i,word,marginalScore) in plays:
+    if len(chosenPlays[i]) <  stillNeeded[i] and word not in placedWords:
+      chosenPlays[i].append(word)
+      placedWords.append(word)
+      expectedScore += marginalScore
+      if len(chosenPlays.items()) == 12:
         break
   # Optional: print expected score.
-  expectedScore = score + sum(scoreWord(bank,bank[1:][i % 6],wd.rstrip('.!')) for i in plays for wd in plays[i])
   tprint(f"Expected score: {expectedScore} points.")
 
-  # Debug: print game forecast.
-  # tprint(f"Plays: {plays}")
+  # # Debug: print game forecast.
+  # tprint(f"Plays: {chosenPlays}")
   # expectedScore = score
   # tprint(f"Forecast:")
   # for i in range(round, 12):
-  #   toBePlayed = plays[i % 6][0] if i < 6 else plays[i % 6][-1].rstrip('.!')
+  #   toBePlayed = chosenPlays[i % 6][0] if i < 6 else chosenPlays[i % 6][-1].rstrip('.!')
   #   delta = scoreWord(bank,bank[i % 6 + 1],toBePlayed)
   #   expectedScore += delta
   #   tprint(f"Round {i+1}: {toBePlayed.upper()}, {delta} points. Total: {expectedScore} points.")
 
-  return plays[round % 6][0]
+  return chosenPlays[round % 6][0]
 
 # Helpers for getting player responses.
 
 def getPlayerResponseBy(msg,cond,invalidMsg):
   while True:
     attempt = input(msg + "\n > ")
-    if cond(attempt):
-      return attempt
-    tprint(invalidMsg)
-
+    return attempt if cond(attempt) else print(invalidMsg)
+  
 def getPlayerResponse(msg,valids):
   return getPlayerResponseBy(msg,lambda r: r in valids,f"Invalid response. Valid responses: {', '.join(valids)}.")
 
 def updateWordlist(wordsToValidate, wordsToRemove):
-  # Assumption: input is a set of words to validate with "!" and a set of words to remove.
-  if not wordsToValidate and not wordsToRemove:
-    return
-  
   if wordsToValidate and getPlayerResponse(f"Ok to validate: {', '.join(wordsToValidate)}? (yes/no)",["yes","no"]) == "no":
     wordsToValidate = set()
   if wordsToRemove and getPlayerResponse(f"Ok to remove: {', '.join(wordsToRemove)}? (yes/no)",["yes","no"]) == "no":
     wordsToRemove = set()
 
   if not wordsToValidate and not wordsToRemove:
+    print("No changes to wordlist.")
     return
   
-  # Read current lines
-  with open("wordlist.txt", "r") as f:
-    lines = f.readlines()
+  # Update wordlist.txt: mark validated words with "!", maintain alphabetical order.
+  with open("wordlist.txt", "r") as infile:
+    lines = infile.readlines()
 
-  # Replace each word in wordsToValidate with its version ending in "!"
-  # or add it with a "!" if it doesn't exist.
-  new_lines = []
+  newLines = []
+  existingWords = set()
   for line in lines:
-    word = line.rstrip('.!\n')
+    word = line.rstrip('!.\n')
     if word in wordsToRemove:
-      continue  # Skip words to remove
+      continue
     if word in wordsToValidate:
-      new_lines.append(word + '!\n')  # Add validated word with "!"
-      wordsToValidate.remove(word)     # Remove from set to avoid duplicates
+      newLines.append(f"{word}!\n")
     else:
-      new_lines.append(line)            # Keep the original line
+      # Preserve original status if not validated.
+      newLines.append(line)
+    existingWords.add(word)
 
-  # Add any remaining words to validate that were not in the file (maintaining alphabetical order)
-  for word in sorted(wordsToValidate):
-    new_lines.append(word + '!\n')
+  # Add any new validated words not already present.
+  for word in wordsToValidate:
+    if word not in existingWords:
+      newLines.append(f"{word}!\n")
 
-  # Sort the new lines alphabetically
-  new_lines.sort()
+  # Sort all lines alphabetically by word.
+  newLines.sort(key=lambda l: l.rstrip('!.\n'))
 
-  # Write updated lines
-  with open("wordlist.txt", "w") as f:
-    f.writelines(new_lines)
-
-  # If no words were validated or removed, skip git commit and push.
-  if not wordsToValidate and not wordsToRemove:
-    tprint("No changes to commit.")
-    return
+  with open("wordlist.txt", "w") as outfile:
+    outfile.writelines(newLines)
 
   # Git add
   subprocess.run(
@@ -183,15 +201,9 @@ def updateWordlist(wordsToValidate, wordsToRemove):
       stdout=subprocess.DEVNULL,
       stderr=subprocess.PIPE,
   )
-  # Get current branch
-  result = subprocess.run(
-      ["git", "rev-parse", "--abbrev-ref", "HEAD"],
-      capture_output=True, text=True, check=True
-  )
-  branch = result.stdout.strip()
 
   subprocess.run(
-      ["git", "push", "origin", branch],
+      ["git", "push", "origin", "main"],
       check=True,
       stdout=subprocess.DEVNULL,
       stderr=subprocess.DEVNULL,
@@ -199,52 +211,39 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   tprint(f"Done.")
   return
 
-def searchWords(wordsToSearch):
-  displayWords = {w: None for w in wordsToSearch} 
-  statuses = {w: None for w in wordsToSearch}
-  with open("wordlist.txt") as infile:
-    lines = infile.readlines()
-    for word in wordsToSearch:
-      # Only return exact matches, ignoring trailing punctuation.
-      found = [line for line in lines if line.startswith(word + '.') or line.startswith(word + '!')]
-      if found:
-        # If it ends with '!', it's validated and will be displayed in bold green;
-        # otherwise, it's not validated and is displayed in bold yellow.
-        # In either case we remove the trailing punctuation and store the display version of the word, as well as its validation status.
-        for line in found:
-          validated = line.endswith('!\n')
-          word = line.rstrip('.!\n')
-          displayWords[word] = boldColorText(word.upper(), 'green' if validated else 'yellow')
-          statuses[word] = "Validated" if validated else "Present, not validated"
-          break  # Only display the first match.
-      else:
-        # Word not found. Display in bold red.
-        displayWords[word] = boldColorText(word.upper(), 'red')
-        statuses[word] = "Not found"
-        
-  # Print results.
-  # 1) map to plain uppercase
-  plain = {w: w.upper() for w in wordsToSearch}
+def searchWords(wordsToSearch=None):
+  if wordsToSearch is None or not wordsToSearch:
+    response = input("Enter words to search (comma or space separated):\n > ")
+    wordsToSearch = [w.strip() for w in response.replace(',', ' ').split() if w.strip()]
+  if not wordsToSearch:
+    print("No words provided for search.")
+    return
+  wordsToSearch = set(wordsToSearch)
 
-  # 2) compute max width on the plain strings
-  maxWordLength = max(len(p) for p in plain.values())
-  maxStatusLength = max(len(s) for s in statuses.values())
+  # Calculate padding
+  maxLength = max(len(word) for word in wordsToSearch)
+  padding = maxLength + 2  # Add some space for formatting
+
+  # Prepare set of words to validate if user so chooses
+  wordsToValidate = set()
 
   print("Search results:")
-  for w in wordsToSearch:
-      padded = plain[w].ljust(maxWordLength)        # pad the visible text
-      # now color that padded text
-      color = 'green' if statuses[w]=='Validated' else \
-              'yellow' if statuses[w].startswith('Present') else 'red'
-      disp  = boldColorText(padded, color)
-      stat  = statuses[w].ljust(maxStatusLength)   # pad status
-      print(f"{disp} : {stat}")
-  
+  wordList = loadWordlist()
+  for word in wordList:
+    if word in wordsToSearch:
+      if word.validated:
+        print(f"{word}{(padding - len(word)) * ' '}: Validated")
+      else:
+        print(f"{word}{(padding - len(word)) * ' '}: Present, not validated")
+        wordsToValidate.add(word)
+      wordsToSearch.remove(word)  # Remove found word to avoid duplicates
+  for word in wordsToSearch:
+    print(f"{boldColorText(word.upper().ljust(padding), 'red')}: Not found")
+    wordsToValidate.add(word) 
+
   # Prompt if user wants to add/validate all words.
-  if getPlayerResponse("Add/validate all words? (yes/no)", ["yes", "no"]) == "yes":
-    wordsToValidate = {w for w in wordsToSearch if statuses[w] == "Present, not validated" or statuses[w] == "Not found"}
-    wordsToRemove = set()
-    updateWordlist(wordsToValidate, wordsToRemove)
+  if wordsToValidate and getPlayerResponse("Add/validate all words? (yes/no)", ["yes", "no"]) == "yes":
+    updateWordlist(wordsToValidate, set())
   return
 
 def sevenUniques(s):
@@ -281,6 +280,7 @@ def playBlossom(bank=None):
       tprint(f"Bank: {bank.upper()}.")
       petals = sorted(list(bank[1:]))
       bank = bank[0] + ''.join(petals)
+    legalWords = loadWordlist(bank)
     for i in range(12):
       specialLetter = petals[i % 6] # Rotate through petals
       # Get valid word.
@@ -290,22 +290,15 @@ def playBlossom(bank=None):
         else:
           tprint(f"---\nRound {i+1}. Special letter: {specialLetter.upper()}.\n")
         
-        word = blossomBetter(bank, prevPlayed, i, score)
-        validated = word.endswith('!')
-        word = word.rstrip('.!')
+        word = blossomBetter(bank, legalWords, prevPlayed, i, score)
         prevPlayed.append(word)
-        # Display version of word. Always bolded. If validated, in green; otherwise in yellow.
-        if validated:
-          display_word = f"\033[1;32m{word.upper()}\033[0m"  # Green bold
-        else:
-          display_word = f"\033[1;33m{word.upper()}\033[0m"  # Yellow bold
-        tprint(f"{"Okay, then instead " if pendingWord else ''}I play: {display_word}{", a validated word!" if validated else ''}")
+        tprint(f"{"Okay, then instead " if pendingWord else ''}I play: {word}{", a validated word!" if word.validated else ''}")
 
-        if not validated:
+        if not word.validated:
           response = getPlayerResponse("Is that valid? (yes/no)",["yes","no","quit"])
-          if response in ["quit"]:
+          if response == "quit":
             return
-          elif response in ["no"]:
+          elif response  == "no":
             pendingWord = True
             continue
           else:  # response == "yes"
@@ -313,7 +306,7 @@ def playBlossom(bank=None):
         
         wordScore = scoreWord(bank,specialLetter,word)
         score += wordScore
-        tprint(f"{"Great! " if not validated else ''}We scored {wordScore} {"additional " if i != 0 else ''}points, for a total of {score} points.")
+        tprint(f"{"Great! " if not word.validated else ''}We scored {wordScore} {"additional " if i != 0 else ''}points, for a total of {score} points.")
         pendingWord = False
         break
 
@@ -325,39 +318,28 @@ def playBlossom(bank=None):
   return
 
 # CLI functionality:
-# blossom.py                        | no arguments, prompt for bank.
-# blossom.py --help                 | print usage message. 
-# blossom.py bank                   | use the given bank.
-# blossom.py add    word1 word2 ... | add words to the dictionary, or validate them if they already exist.
-# blossom.py search word1 word2 ... | search for words and validation statuses in the dictionary.
+# blossom.py                            | no arguments, prompt for bank.
+# blossom.py --help                     | print usage message. 
+# blossom.py <bank>                     | use the given bank.
+# blossom.py search                     | Open word search / add dialog
+# blossom.py search <word1> <word2> ... | 
 
 def main():
   if len(sys.argv) == 1:
     playBlossom()
   elif len(sys.argv) == 2 and sys.argv[1] in ["--help", "-h"]:
-    print("Usage: blossom.py [bank] [add word1 word2 ...] [search word1 word2 ...]")
+    print("Usage: blossom.py [bank] [search word1 word2 ...]")
     print("  bank: a string of seven unique letters, with the center letter first.")
-    print("  add: add words to the dictionary, or validate them if they already exist.")
     print("  search: search for words and validation statuses in the dictionary.")
     return
-  elif len(sys.argv) >= 2 and sys.argv[1] == "add":
-    if len(sys.argv) < 3:
-      print("Usage: blossom.py add word1 word2 ...")
-      return
-    # Add words to the dictionary.
-    wordsToValidate = set(sys.argv[2:])
-    updateWordlist(wordsToValidate, set())
   elif len(sys.argv) >= 2 and sys.argv[1] == "search":
-    if len(sys.argv) < 3:
-      print("Usage: blossom.py search word1 word2 ...")
-      return
     # Search for words in the dictionary.
     wordsToSearch = sys.argv[2:]
     searchWords(wordsToSearch)
   else:
     # Assume the first argument is a bank.
     bank = sys.argv[1]
-    if len(bank) != 7 or not sevenUniques(bank):
+    if not sevenUniques(bank):
       print("Invalid bank. Please provide seven unique letters.")
       return
     playBlossom(bank)
