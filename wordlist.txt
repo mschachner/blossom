@@ -55555,7 +55555,6 @@ epimere.
 epimeres.
 epimeric.
 epimeride.
-epimerise.
 epimerised.
 epimerism.
 epimerite.
@@ -55658,7 +55657,6 @@ episcopised.
 episcopize.
 episcopy.
 episedia.
-episememe.
 episiocele.
 episiostenosis.
 episiotomies.
@@ -80331,7 +80329,6 @@ impressa.
 impressari.
 impressed.
 impresser.
-impressers.
 impresses.
 impressive.
 impressor.
@@ -102289,7 +102286,6 @@ missileman.
 missilemen.
 missilery.
 missiles.
-missilries.
 missilry.
 missiness.
 missinesses.
@@ -102309,7 +102305,6 @@ missises!
 missish.
 missishness.
 missishnesses.
-mississippi.
 mississippian.
 mississippians.
 missit.
@@ -119977,8 +119972,6 @@ pellicles.
 pellicula.
 pellicule.
 pellile.
-pellmell.
-pellmells.
 pellock.
 pellotin.
 pellotine.
@@ -122840,7 +122833,6 @@ pimlico.
 pimola.
 pimp.
 pimped.
-pimperlimpimp.
 pimpernel.
 pimpery.
 pimpinella.
@@ -123401,7 +123393,6 @@ piskun.
 pisky.
 pismire.
 pismires.
-pismirism.
 piso.
 pisolite.
 pisolites.
@@ -127139,7 +127130,6 @@ preimpart.
 preimperial.
 preimport.
 preimpose.
-preimpress.
 preimpressive.
 preimprove.
 preincline.
@@ -127249,7 +127239,6 @@ premieral.
 premiere.
 premiered.
 premieres.
-premieress.
 premiering.
 premiers.
 premiership.
@@ -127440,7 +127429,6 @@ preprice.
 prepriced.
 prepricing.
 preprimary.
-preprimer.
 preprimitive.
 preprint.
 preprinted!
@@ -135686,7 +135674,6 @@ reimply.
 reimport.
 reimpose.
 reimposes.
-reimpress.
 reimprint.
 reimprove.
 rein.
@@ -137001,7 +136988,6 @@ reprieves.
 reprieving.
 reprime.
 reprimed.
-reprimer.
 repriming.
 reprint.
 reprinted.
@@ -146470,7 +146456,6 @@ semiegg.
 semiegret.
 semielision.
 semiellipse!
-semiellipsis.
 semiepic.
 semierect.
 semiessay.
@@ -146628,7 +146613,6 @@ semisheer.
 semishirker.
 semisilica.
 semisimious.
-semisimple.
 semisingle.
 semisirque.
 semisixth.
@@ -151954,7 +151938,6 @@ slimming.
 slimmish.
 slimness.
 slimnesses.
-slimpsier.
 slimpsiest.
 slimpsy.
 slims.
@@ -152548,7 +152531,7 @@ smileable.
 smileage.
 smiled.
 smileful.
-smileless.
+smileless!
 smilelessly.
 smilelessness.
 smilelessnesses.
