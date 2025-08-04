@@ -1,17 +1,4 @@
-[1;32mEMPIRISMS[0m!
-[1;32mEPISPERMS[0m!
-[1;32mEPISPERMS[0m!
-[1;32mIMPRIMERIES[0m!
-[1;32mMESMERISES[0m!
-[1;32mMESMERISMS[0m!
-[1;32mMISSILEERS[0m!
-[1;32mMISSILERIES[0m!
-[1;32mPERISPERMS[0m!
-[1;32mPESSIMISMS[0m!
-[1;32mPIMPERIES[0m!
-[1;32mREIMMERSES[0m!
-[1;32mSEMIELLIPSES[0m!
-[1;32mSPERMISMS[0m!
+[1;32mAAATESTWORD[0m!
 aahed.
 aahing.
 aahs.
@@ -53445,6 +53432,7 @@ empiric.
 empiricism.
 empirics.
 empirism.
+empirisms!
 empiry.
 emplace.
 emplaced.
@@ -55685,6 +55673,7 @@ epispadias.
 epispastic.
 episperm!
 epispermic.
+episperms!
 epispinal.
 episplenitis.
 epispore.
@@ -80353,6 +80342,7 @@ imprimatur.
 imprimatura.
 imprime.
 impriment.
+imprimeries!
 imprimery.
 imprimis!
 imprimitive.
@@ -100017,7 +100007,9 @@ mesmerian.
 mesmeric.
 mesmerise.
 mesmeriser!
+mesmerises!
 mesmerism!
+mesmerisms!
 mesmerist.
 mesmerists.
 mesmerite.
@@ -102293,8 +102285,10 @@ missible.
 missies.
 missile.
 missileer!
+missileers!
 missileman.
 missilemen.
+missileries!
 missilery.
 missiles.
 missilry.
@@ -120823,6 +120817,7 @@ perishless.
 perisome.
 perisperm!
 perispermic.
+perisperms!
 perisphere.
 perispheric.
 perispome.
@@ -121182,6 +121177,7 @@ pessaries.
 pessary.
 pessimal.
 pessimism!
+pessimisms!
 pessimist.
 pessimistic.
 pessimists.
@@ -122844,6 +122840,7 @@ pimlico.
 pimola.
 pimp.
 pimped.
+pimperies!
 pimpernel.
 pimpery.
 pimpinella.
@@ -135675,6 +135672,7 @@ reimburses.
 reimkennar.
 reimmerge.
 reimmerse!
+reimmerses!
 reimmersion.
 reimpark.
 reimpart.
@@ -146467,6 +146465,7 @@ semiegg.
 semiegret.
 semielision.
 semiellipse!
+semiellipses!
 semiepic.
 semierect.
 semiessay.
@@ -155364,6 +155363,7 @@ spermin.
 spermine.
 spermines.
 spermism!
+spermisms!
 spermist.
 spermoderm.
 spermophore.
