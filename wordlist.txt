@@ -1,3 +1,16 @@
+[1;32mEMPIRISMS[0m!
+[1;32mEPISPERMS[0m!
+[1;32mIMPRIMERIES[0m!
+[1;32mMESMERISES[0m!
+[1;32mMESMERISMS[0m!
+[1;32mMISSILEERS[0m!
+[1;32mMISSILERIES[0m!
+[1;32mPERISPERMS[0m!
+[1;32mPESSIMISMS[0m!
+[1;32mPIMPERIES[0m!
+[1;32mREIMMERSES[0m!
+[1;32mSEMIELLIPSES[0m!
+[1;32mSPERMISMS[0m!
 aahed.
 aahing.
 aahs.
@@ -93150,7 +93163,7 @@ limousin.
 limp.
 limped.
 limper.
-limpers.
+limpers!
 limpest.
 limpet.
 limpets.
@@ -100005,7 +100018,7 @@ mesmerian.
 mesmeric.
 mesmerise.
 mesmeriser!
-mesmerism.
+mesmerism!
 mesmerist.
 mesmerists.
 mesmerite.
@@ -101202,8 +101215,8 @@ millipeds.
 milliphot.
 millipoise.
 milliradian.
-millirem.
-millirems.
+millirem!
+millirems!
 millisec.
 millisiemens.
 millistere.
@@ -101285,7 +101298,7 @@ mimer.
 mimers.
 mimes.
 mimesis.
-mimesises.
+mimesises!
 mimester.
 mimetene.
 mimetesite.
@@ -102281,7 +102294,7 @@ misshood.
 missible.
 missies.
 missile.
-missileer.
+missileer!
 missileman.
 missilemen.
 missilery.
@@ -121170,7 +121183,7 @@ pess.
 pessaries.
 pessary.
 pessimal.
-pessimism.
+pessimism!
 pessimist.
 pessimistic.
 pessimists.
@@ -150337,7 +150350,7 @@ simpai.
 simper.
 simpered.
 simperer.
-simperers.
+simperers!
 simpers.
 simple.
 simpled.
@@ -150357,7 +150370,7 @@ simplifies.
 simplify.
 simpling.
 simplism.
-simplisms.
+simplisms!
 simplist.
 simplistic.
 simplum.
@@ -155352,7 +155365,7 @@ spermic.
 spermin.
 spermine.
 spermines.
-spermism.
+spermism!
 spermist.
 spermoderm.
 spermophore.
