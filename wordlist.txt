@@ -1,4 +1,5 @@
 [1;32mAAATESTWORD[0m!
+aaatestword!
 aahed.
 aahing.
 aahs.
