@@ -37234,7 +37234,6 @@ coproduce.
 coproducer.
 coproduct.
 coproite.
-coprojector.
 coprolalia.
 coprolaliac.
 coprolitic.
@@ -37735,7 +37734,7 @@ correal.
 correct.
 correctant.
 corrected.
-correcter.
+correcter!
 correctest.
 correction.
 correctioner.
@@ -37743,7 +37742,7 @@ corrective.
 correctly.
 correctness.
 correctnesses.
-corrector.
+corrector!
 correctory.
 correctress.
 correctrice.
@@ -113001,7 +113000,6 @@ opercled.
 opercule.
 operetta.
 operettas.
-operette.
 operettist.
 operla.
 operon.
@@ -114280,7 +114278,6 @@ ottawas.
 otter.
 otterer.
 otters.
-ottetto.
 ottinger.
 otto.
 ottoman.
@@ -120418,7 +120415,7 @@ pepperish.
 peppermint.
 pepperoni.
 pepperproof.
-pepperroot.
+pepperroot!
 peppers.
 peppershrike.
 peppertree!
@@ -121248,7 +121245,6 @@ peteman.
 petemen.
 peter.
 petered.
-peterero.
 petering.
 peterkin.
 peterloo.
@@ -126678,7 +126674,7 @@ precents.
 precept.
 preceptist.
 preceptive.
-preceptor.
+preceptor!
 preceptorate.
 preceptors.
 preceptory.
@@ -126767,7 +126763,6 @@ precools.
 precopied.
 precopy.
 precornu.
-precorrect.
 precorridor.
 precorrupt.
 precourse.
@@ -127518,7 +127513,6 @@ preremoved.
 prerenal.
 prerent.
 prerental.
-prereport.
 prerepresent.
 prereption.
 prerequest.
@@ -128540,8 +128534,8 @@ progypsy.
 proheim.
 prohibit.
 prohibitor.
-project.
-projector.
+project!
+projector!
 projet.
 projets.
 proke.
@@ -128879,7 +128873,7 @@ proprietrix.
 propriety.
 proprioceptor.
 proprium.
-proproctor.
+proproctor!
 proprofit.
 proprovost.
 props.
@@ -129069,8 +129063,7 @@ protease.
 proteases.
 protect.
 protected.
-protectee.
-protector.
+protector!
 protectorate.
 protectors.
 protectory.
@@ -129132,7 +129125,6 @@ protocolar.
 protocols.
 protoconch.
 protocone.
-protocopper.
 protocorm.
 protoderm.
 protodonata.
@@ -129188,7 +129180,7 @@ protopodite.
 protopoditic.
 protopods.
 protopoetic.
-protopope.
+protopope!
 protoprism.
 protoproteose.
 protopteran.
@@ -134148,7 +134140,7 @@ recorders.
 recordless.
 records.
 recork.
-recorrect.
+recorrect!
 recorrection.
 recorrupt.
 recost.
@@ -137030,7 +137022,6 @@ reprofane.
 reprofess.
 reproffer.
 reprogram.
-reproject.
 repromise.
 repronounce.
 reproof.
@@ -137044,7 +137035,6 @@ repropose.
 reproposed.
 repros.
 reprosper.
-reprotect.
 reprotest.
 reproval.
 reprove.
@@ -138040,7 +138030,6 @@ retentivity.
 retentor.
 retenue.
 retepora.
-retepore.
 retest.
 retested.
 retestified.
@@ -138312,7 +138301,7 @@ retrograded.
 retrogress.
 retrogressed.
 retrogresses.
-retroject.
+retroject!
 retrolental.
 retromammary.
 retroposed.
@@ -169898,7 +169887,7 @@ totted.
 totten.
 totter.
 tottered.
-totterer.
+totterer!
 totterers.
 tottergrass.
 totteriness.
