@@ -2,7 +2,7 @@ import os
 import subprocess
 import sys,time
 from datetime import datetime
-import questionary
+# import questionary
 
 # Aesthetics: color text, typewriter-style print.
 
@@ -12,6 +12,7 @@ def boldColorText(text, color):
       "boldred": "\033[1;31m",
       "boldgreen": "\033[1;32m",
       "boldyellow": "\033[1;33m",
+      "boldwhite": "\033[1;0m",
   }
   return f"{styles['bold' + color]}{text}{styles['reset']}"
 
@@ -115,25 +116,15 @@ def blossomBetter(bank, legalWords, prevPlayed, round, score):
         break
   # Optional: print expected score.
   tprint(f"Expected score: {expectedScore} points.")
-
-  # # Debug: print game forecast.
-  # tprint(f"Plays: {chosenPlays}")
-  # expectedScore = score
-  # tprint(f"Forecast:")
-  # for i in range(round, 12):
-  #   toBePlayed = chosenPlays[i % 6][0] if i < 6 else chosenPlays[i % 6][-1].rstrip('.!')
-  #   delta = scoreWord(bank,bank[i % 6 + 1],toBePlayed)
-  #   expectedScore += delta
-  #   tprint(f"Round {i+1}: {toBePlayed.upper()}, {delta} points. Total: {expectedScore} points.")
-
   return chosenPlays[round % 6][0]
 
 # Helpers for getting player responses.
-
 def getPlayerResponseBy(msg,cond,invalidMsg):
   while True:
     attempt = input(msg + "\n > ")
-    return attempt if cond(attempt) else print(invalidMsg)
+    if cond(attempt):
+      return attempt
+    print(invalidMsg)
   
 def getPlayerResponse(msg,valids):
   return getPlayerResponseBy(msg,lambda r: r in valids,f"Invalid response. Valid responses: {', '.join(valids)}.")
@@ -256,17 +247,17 @@ def sevenUniques(s):
 def playBlossom(bank=None):
   wordsToRemove = set()
   wordstoValidate = set()
-  playAgain = "yes"
-  while playAgain in ["yes"]:
+  playAgain = True
+  while playAgain:
     os.system("clear")
-    print(r"""
+    print(boldColorText(r"""
 ,-----.  ,--.                                       
 |  |) /_ |  | ,---.  ,---.  ,---.  ,---. ,--,--,--. 
 |  .-.  \|  || .-. |(  .-' (  .-' | .-. ||        | 
 |  '--' /|  |' '-' '.-'  `).-'  `)' '-' '|  |  |  | 
 `------' `--' `---' `----' `----'  `---' `--`--`--' 
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
-  """)
+  ""","white"))
     prevPlayed = []
     score = 0
     pendingWord = False
@@ -275,16 +266,14 @@ def playBlossom(bank=None):
       if response in ["quit","q"]:
         return
       else: # Bank is valid.
-        petals = sorted(list(response)[1:])
-        bank = [response[0]] + petals
+        bank = [response[0]] + sorted(list(response)[1:])
       tprint("Okay, let's play!")
     else:
       tprint(f"Bank: {bank.upper()}.")
-      petals = sorted(list(bank[1:]))
-      bank = bank[0] + ''.join(petals)
+      bank = bank[0] + ''.join(sorted(list(bank[1:])))
     legalWords = loadWordlist(bank)
     for i in range(12):
-      specialLetter = petals[i % 6] # Rotate through petals
+      specialLetter = bank[(i % 6) + 1] # Rotate through bank
       # Get valid word.
       while True:
         if pendingWord:
@@ -313,18 +302,18 @@ def playBlossom(bank=None):
         break
 
     tprint(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
-    playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"])
-    if playAgain == "yes":
+    playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"]) == "yes"
+    if playAgain:
       bank = None
   updateWordlist(wordstoValidate, wordsToRemove)
   return
 
 # CLI functionality:
-# blossom.py                            | no arguments, prompt for bank.
-# blossom.py --help                     | print usage message. 
-# blossom.py <bank>                     | use the given bank.
-# blossom.py search                     | Open word search / add dialog
-# blossom.py search <word1> <word2> ... | 
+# blossom.py                      | no arguments, prompt for bank.
+# blossom.py --help               | print usage message. 
+# blossom.py <bank>               | use the given bank.
+# blossom.py search               | Open word search / add dialog
+# blossom.py search <w1> <w2> ... | Search / add given words.
 
 def main():
   if len(sys.argv) == 1:
@@ -348,7 +337,6 @@ def main():
 
 if __name__ == "__main__":
   main()
-
 
 # Some high scores:
 # 
