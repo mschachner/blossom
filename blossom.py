@@ -2,6 +2,7 @@ import os
 import subprocess
 import sys,time
 from datetime import datetime
+import questionary
 
 # Aesthetics: color text, typewriter-style print.
 
@@ -43,7 +44,8 @@ def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
 
 tprint = _tprint  # Alias for convenience; toggle to ordinary print if needed.
 
-# Every word comes with a validation status, a boolean indicating whether the word has been validated by a human player.
+# Every word comes with a validation status, a boolean indicating whether the 
+# word has been validated by a human player.
 
 class Word(str):
     def __new__(cls, word, validated=False):
