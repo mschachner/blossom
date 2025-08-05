@@ -51750,7 +51750,7 @@ ectophyte.
 ectopia.
 ectopic.
 ectopistes.
-ectoproct.
+ectoproct!
 ectoprocta.
 ectopy.
 ectosarc.
@@ -125687,7 +125687,7 @@ poromas.
 poromata.
 poromeric.
 porometer.
-poroporo.
+poroporo!
 pororoca.
 poros.
 poroscope.
@@ -126170,7 +126170,7 @@ potong.
 potoo.
 potoos.
 potophobia.
-potoroo.
+potoroo!
 potoroos.
 potorous.
 potpie.
@@ -126178,7 +126178,7 @@ potpies.
 potpourri.
 potpourris.
 potrack.
-potrero.
+potrero!
 pots.
 potshaw.
 potshoot.
@@ -126202,7 +126202,7 @@ potteen.
 potteens.
 potter.
 pottered.
-potterer.
+potterer!
 potterers.
 potteress.
 potteries.
@@ -128741,7 +128741,7 @@ propension.
 propenyl.
 proper.
 properdin.
-properer.
+properer!
 properest.
 properispome.
 properly.
@@ -128858,7 +128858,7 @@ propping.
 propr.
 propraetor.
 propranolol.
-propretor.
+propretor!
 propria.
 propriation.
 propriatory.
@@ -128913,7 +128913,7 @@ prorean.
 prorebate.
 prorebel.
 prorecall.
-prorector.
+prorector!
 prorectorate.
 proreform.
 prorefugee.
@@ -134126,10 +134126,10 @@ recook.
 recooked.
 recooks.
 recool.
-recooper.
+recooper!
 recopied.
 recopies.
-recopper.
+recopper!
 recopy.
 record.
 recordance.
@@ -168756,7 +168756,7 @@ tocologist.
 tocology.
 tocome.
 tocometer.
-tocororo.
+tocororo!
 tocsin.
 tocsins.
 tocusso.
@@ -169623,7 +169623,7 @@ torose.
 torosities.
 torosity.
 toroth.
-torotoro.
+torotoro!
 torous.
 torpedo.
 torpedoed.
