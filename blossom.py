@@ -43,8 +43,6 @@ def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
         else:
             time.sleep(base)
 
-tprint = _tprint  # Alias for convenience; toggle to ordinary print if needed.
-
 # Every word comes with a validation status, a boolean indicating whether the 
 # word has been validated by a human player.
 
@@ -57,10 +55,8 @@ class Word(str):
 
     def __str__(self):
         # Validated words are rendered in bold green, others in bold yellow.
-        if self.validated:
-            return boldColorText(self.upper(), "green")
-        else:
-            return boldColorText(self.upper(), "yellow")
+        styledText = boldColorText(self.upper(), "green" if self.validated else "yellow")
+        return ("🌸 " if len(set(self)) == 7 else "✏️  ") + styledText
     
     def __repr__(self):
         # Return the plain string for debugging and logic
@@ -115,18 +111,18 @@ def blossomBetter(bank, legalWords, prevPlayed, round, score):
       if len(chosenPlays.items()) == 12:
         break
   # Optional: print expected score.
-  tprint(f"Expected score: {expectedScore} points.")
+  print(f"Expected score: {expectedScore} points.")
   return chosenPlays[round % 6][0]
 
 # Helpers for getting player responses.
-def getPlayerResponseBy(msg,cond,invalidMsg):
+def getPlayerResponseBy(msg, cond, invalidMsg):
   while True:
     attempt = input(msg + "\n > ")
     if cond(attempt):
       return attempt
     print(invalidMsg)
   
-def getPlayerResponse(msg,valids):
+def getPlayerResponse(msg, valids):
   return getPlayerResponseBy(msg,lambda r: r in valids,f"Invalid response. Valid responses: {', '.join(valids)}.")
 
 def updateWordlist(wordsToValidate, wordsToRemove):
@@ -201,7 +197,7 @@ def updateWordlist(wordsToValidate, wordsToRemove):
       stdout=subprocess.DEVNULL,
       stderr=subprocess.DEVNULL,
   )
-  tprint(f"Done.")
+  print(f"Done.")
   return
 
 def searchWords(wordsToSearch=None):
@@ -244,10 +240,11 @@ def sevenUniques(s):
 
 # Time to play!
 
-def playBlossom(bank=None):
+def playBlossom(bank=None, fast=False):
   wordsToRemove = set()
   wordstoValidate = set()
   playAgain = True
+  tprint = print if fast else _tprint
   while playAgain:
     os.system("clear")
     print(boldColorText(r"""
@@ -311,7 +308,7 @@ def playBlossom(bank=None):
 # CLI functionality:
 # blossom.py                      | no arguments, prompt for bank.
 # blossom.py --help               | print usage message. 
-# blossom.py <bank>               | use the given bank.
+# blossom.py [fast] <bank>        | use the given bank [and maybe go fast].
 # blossom.py search               | Open word search / add dialog
 # blossom.py search <w1> <w2> ... | Search / add given words.
 
@@ -323,12 +320,20 @@ def main():
     print("  bank: a string of seven unique letters, with the center letter first.")
     print("  search: search for words and validation statuses in the dictionary.")
     return
+  elif len(sys.argv) >= 2 and sys.argv[1] in ["fast"]:
+    if len(sys.argv) >= 3:
+      bank = sys.argv[2]
+      if not sevenUniques(bank):
+        print("Invalid bank. Please provide seven unique letters.")
+        return
+      playBlossom(bank,fast=True)
+    else:
+      playBlossom(fast=True)
   elif len(sys.argv) >= 2 and sys.argv[1] == "search":
     # Search for words in the dictionary.
     wordsToSearch = sys.argv[2:]
     searchWords(wordsToSearch)
   else:
-    # Assume the first argument is a bank.
     bank = sys.argv[1]
     if not sevenUniques(bank):
       print("Invalid bank. Please provide seven unique letters.")
