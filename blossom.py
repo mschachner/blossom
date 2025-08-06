@@ -2,6 +2,7 @@ import os
 import subprocess
 import sys,time
 from datetime import datetime
+import argparse
 # import questionary
 
 # Aesthetics: color text, typewriter-style print.
@@ -242,7 +243,7 @@ def sevenUniques(s):
 
 def playBlossom(bank=None, fast=False):
   wordsToRemove = set()
-  wordstoValidate = set()
+  wordsToValidate = set()
   playAgain = True
   tprint = print if fast else _tprint
   while playAgain:
@@ -290,7 +291,7 @@ def playBlossom(bank=None, fast=False):
             pendingWord = True
             continue
           else:  # response == "yes"
-            wordstoValidate.add(word)
+            wordsToValidate.add(word)
         
         wordScore = scoreWord(bank,specialLetter,word)
         score += wordScore
@@ -302,43 +303,34 @@ def playBlossom(bank=None, fast=False):
     playAgain = getPlayerResponse("Play again? (yes/no)",["yes","no"]) == "yes"
     if playAgain:
       bank = None
-  updateWordlist(wordstoValidate, wordsToRemove)
+  updateWordlist(wordsToValidate, wordsToRemove)
   return
 
-# CLI functionality:
-# blossom.py                      | no arguments, prompt for bank.
-# blossom.py --help               | print usage message. 
-# blossom.py [fast] <bank>        | use the given bank [and maybe go fast].
-# blossom.py search               | Open word search / add dialog
-# blossom.py search <w1> <w2> ... | Search / add given words.
+# CLI functionality
 
 def main():
-  if len(sys.argv) == 1:
-    playBlossom()
-  elif len(sys.argv) == 2 and sys.argv[1] in ["--help", "-h"]:
-    print("Usage: blossom.py [bank] [search word1 word2 ...]")
-    print("  bank: a string of seven unique letters, with the center letter first.")
-    print("  search: search for words and validation statuses in the dictionary.")
-    return
-  elif len(sys.argv) >= 2 and sys.argv[1] in ["fast"]:
-    if len(sys.argv) >= 3:
-      bank = sys.argv[2]
-      if not sevenUniques(bank):
-        print("Invalid bank. Please provide seven unique letters.")
-        return
-      playBlossom(bank,fast=True)
-    else:
-      playBlossom(fast=True)
-  elif len(sys.argv) >= 2 and sys.argv[1] == "search":
-    # Search for words in the dictionary.
-    wordsToSearch = sys.argv[2:]
-    searchWords(wordsToSearch)
-  else:
-    bank = sys.argv[1]
-    if not sevenUniques(bank):
+  parser = argparse.ArgumentParser()
+  subparsers = parser.add_subparsers(dest="mode", required=True)
+
+  playParser = subparsers.add_parser("play", help="Play Blossom with optionally specified bank")
+  playParser.add_argument("bank", nargs="?", default=0, help="Bank of letters (optional)")
+  playParser.add_argument("-f","--fast", action="store_true", help="Play fast")
+
+  searchParser = subparsers.add_parser("search", help="Search for words")
+  searchParser.add_argument("queries", nargs="*",help="Words to be searched")
+
+  args = parser.parse_args()
+
+  if args.mode == "play":
+    if not args.bank:
+      playBlossom(fast=args.fast)
+    elif not sevenUniques(args.bank):
       print("Invalid bank. Please provide seven unique letters.")
       return
-    playBlossom(bank)
+    else:
+      playBlossom(bank=args.bank,fast=args.fast)
+  else: # args.mode == "search"
+    searchWords(args.queries)
 
 if __name__ == "__main__":
   main()
