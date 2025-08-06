@@ -1,27 +1,43 @@
 Blossom AI
 ==========
 
-This program plays [Blossom](https://www.merriam-webster.com/games/blossom-word-game), a word game similar to
-*Spelling Bee*. Feed this program a seven-letter bank, and it picks high-scoring
-words from a dictionary in `wordlist.txt`, which approximates the Merriam-Webster wordlist. It displays each move in bright
-colors and tallies the score along the way.
+Blossom AI is a command-line assistant for Merriam-Webster's [Blossom word game](https://www.merriam-webster.com/games/blossom-word-game).
+Given a seven-letter bank (with the center letter first), it chooses high-scoring
+plays from `wordlist.txt`, prints them with colorful typewriter-style output, and
+keeps score.
 
-Running the game
-----------------
+Features
+--------
 
-    python blossom.py           # prompt for a bank
-    python blossom.py resanto   # provide the bank directly (center letter first)
+- Plays a full Blossom round using a look-ahead strategy.
+- Rotates the special letter each round and scores words using the Blossom rules
+  (length bonuses, +5 for each special letter, +7 for pangrams).
+- Prompts to validate or remove unknown words and commits changes to
+  `wordlist.txt` via Git.
+- **Fast mode** to skip the typewriter effect.
+- **Dictionary search** to check or add words.
 
-Since Blossom's wordlist is proprietary, the user is asked to validate words. Once a
-round is over, it optionally commits any approved validations or removals to
-`wordlist.txt` via Git.
-
-Files
+Usage
 -----
 
-- `blossom.py` – the main program.
-- `wordlist.txt` – candidate words with a final “.” (unverified) or “!”
-  (validated).
-- `wordlist_unedited.txt` – the original dictionary.
-- `wordlist_edit.py` – currently empty, intended for future wordlist tooling.
+```
+python blossom.py                  # prompt for a bank
+python blossom.py resanto          # play using a provided bank (center letter first)
+python blossom.py fast resanto     # play fast
+python blossom.py search           # interactive dictionary lookup/add
+python blossom.py search foo bar   # search specific words
+python blossom.py --help           # show all options
+```
+
+Wordlists and tools
+-------------------
+
+- `wordlist.txt` – candidate words. Lines end with `.` when unverified and `!`
+  once validated.
+- `wordlist_unedited.txt` – the original dictionary source.
+- `wordlist_edit.py` – lowercases words and strips ANSI color codes from
+  `wordlist.txt`.
+
+`blossom.py` is the main program that orchestrates the game, handles dictionary
+search, and updates the wordlist.
 
