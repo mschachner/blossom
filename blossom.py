@@ -322,13 +322,11 @@ def main():
   args = parser.parse_args()
 
   if args.mode == "play":
-    if not args.bank:
-      playBlossom(fast=args.fast)
-    elif not sevenUniques(args.bank):
+    if not args.bank or sevenUniques(args.bank):
+      playBlossom(fast=args.fast,bank=args.bank)
+    else:
       print("Invalid bank. Please provide seven unique letters.")
       return
-    else:
-      playBlossom(bank=args.bank,fast=args.fast)
   else: # args.mode == "search"
     searchWords(args.queries)
 
