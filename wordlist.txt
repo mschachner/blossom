@@ -5461,7 +5461,7 @@ alternaria.
 alternat.
 alternate.
 alternated.
-alternately.
+alternately!
 alternateness.
 alternatenesses.
 alternater.
@@ -54852,7 +54852,7 @@ entera.
 enterable.
 enteraden.
 enteral.
-enterally.
+enterally!
 enterate.
 enterauxe.
 entered.
@@ -56153,7 +56153,7 @@ errand.
 errands.
 errant.
 errantia.
-errantly.
+errantly!
 errantness.
 errantnesses.
 errantries.
@@ -56732,7 +56732,7 @@ eteocretes.
 eteocreton.
 eteostic.
 eternal.
-eternally.
+eternally!
 eternalness.
 eternalnesses.
 eternals.
@@ -163956,7 +163956,7 @@ tarantarize.
 tarantas.
 tarantases.
 tarantass.
-tarantella.
+tarantella!
 tarantelle.
 tarantism.
 tarantist.
@@ -165261,7 +165261,6 @@ tells.
 tellsome.
 tellt.
 telltale!
-telltalely.
 telltales.
 telltruth.
 tellural.
@@ -165920,7 +165919,7 @@ ternariant.
 ternaries.
 ternary.
 ternate.
-ternately.
+ternately!
 ternatipinnate.
 terne.
 terned.
