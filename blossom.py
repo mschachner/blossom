@@ -3,10 +3,8 @@ import subprocess
 import sys,time
 from datetime import datetime
 import argparse
-# import questionary
 
 # Aesthetics: color text, typewriter-style print.
-
 def dispWord(word,dict):
   styles = {
       "reset": "\033[0m",
