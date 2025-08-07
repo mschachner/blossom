@@ -59252,7 +59252,7 @@ farewell.
 farewelled.
 farewells.
 farfal.
-farfara.
+farfara!
 farfel.
 farfels.
 farfet.
@@ -60127,7 +60127,7 @@ feoffed.
 feoffee.
 feoffees.
 feoffeeship.
-feoffer.
+feoffer!
 feoffers.
 feoffing.
 feoffment.
