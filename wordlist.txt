@@ -2923,7 +2923,6 @@ afoam.
 afocal.
 afoot.
 afore.
-aforeward.
 afortiori.
 afoul.
 afounde.
@@ -10646,8 +10645,8 @@ arrowlet.
 arrowroot.
 arrowroots.
 arrows.
-arrowweed.
-arrowwood.
+arrowweed!
+arrowwood!
 arrowworm.
 arrowy.
 arroya.
@@ -43453,7 +43452,7 @@ deerskins.
 deerstand.
 deerstealer.
 deervetch.
-deerweed.
+deerweed!
 deerweeds!
 deerwood.
 deeryard.
@@ -48418,7 +48417,7 @@ doddard.
 doddart.
 dodded.
 dodder.
-doddered.
+doddered!
 dodderer.
 dodderers.
 doddering.
@@ -59326,7 +59325,7 @@ farriery.
 farris.
 farrisite.
 farrow.
-farrowed.
+farrowed!
 farrows.
 farruca.
 farsakh.
@@ -60131,7 +60130,7 @@ feoffer.
 feoffers.
 feoffing.
 feoffment.
-feoffor.
+feoffor!
 feoffors.
 feoffs.
 feower.
@@ -63385,7 +63384,7 @@ foredoom.
 foredoomed.
 foredoomer.
 foredooms.
-foredoor.
+foredoor!
 foredune.
 foreface.
 forefaces.
@@ -63607,7 +63606,6 @@ forevernesses.
 forevers.
 foreview.
 forevow.
-foreward.
 forewarm.
 forewarmer.
 forewarn.
@@ -63886,8 +63884,8 @@ forwake.
 forwalk.
 forward.
 forwardal.
-forwarded.
-forwarder.
+forwarded!
+forwarder!
 forwards.
 forwarn.
 forwean.
@@ -116317,7 +116315,6 @@ owercome.
 owergang.
 owerloup.
 owertaen.
-owerword.
 owes.
 owght.
 owhere.
@@ -134986,7 +134983,7 @@ referable.
 referda.
 refered.
 referee.
-refereed.
+refereed!
 refereeing.
 referees.
 refereeship.
@@ -135168,7 +135165,6 @@ reforsake.
 refortified.
 refortifies.
 refortify.
-reforward.
 refound.
 refounded.
 refounder.
@@ -136593,7 +136589,7 @@ reoccurs.
 reoffend.
 reoffense.
 reoffer.
-reoffered.
+reoffered!
 reoffering.
 reoffers.
 reoffset.
@@ -184793,7 +184789,6 @@ wardsmaid.
 wardsman.
 wardwite.
 wardwoman.
-wardword.
 ware.
 wared.
 wareful.
@@ -187973,7 +187968,6 @@ woodrick.
 woodrime.
 woodris.
 woodrock.
-woodroof.
 woodrow.
 woodrowel.
 woodruff.
@@ -188003,9 +187997,8 @@ woodstone.
 woodsy.
 woodwale.
 woodwall.
-woodward.
 woodwardia.
-woodware.
+woodware!
 woodwax.
 woodwaxen.
 woodwaxes.
