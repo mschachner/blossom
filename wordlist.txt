@@ -2783,9 +2783,10 @@ affectum.
 affectus.
 affeeble.
 affeer.
-affeerer.
+affeered!
+affeerer!
 affeerment.
-affeeror.
+affeeror!
 affeir.
 affere.
 afferent.
@@ -43436,7 +43437,7 @@ deerdrive!
 deerflies.
 deerfly.
 deerflys.
-deerfood.
+deerfood!
 deergrass.
 deerhair.
 deerherd.
@@ -43454,7 +43455,7 @@ deerstealer.
 deervetch.
 deerweed!
 deerweeds!
-deerwood.
+deerwood!
 deeryard.
 deeryards.
 dees.
@@ -48418,7 +48419,7 @@ doddart.
 dodded.
 dodder.
 doddered!
-dodderer.
+dodderer!
 dodderers.
 doddering.
 dodders.
@@ -49008,10 +49009,10 @@ doorsteps.
 doorstone.
 doorstop.
 doorstops.
-doorward.
+doorward!
 doorway.
 doorways.
-doorweed.
+doorweed!
 doorwise.
 dooryard.
 dooryards.
@@ -62781,7 +62782,7 @@ focussed.
 focusses.
 fodda.
 fodder.
-foddered.
+foddered!
 fodderer.
 fodderless.
 fodders.
@@ -62812,7 +62813,7 @@ foetors.
 foeture.
 foetus.
 foetuses.
-fofarraw.
+fofarraw!
 fogas.
 fogbank.
 fogbound.
@@ -63070,7 +63071,7 @@ foods.
 foodstuff.
 foodstuffs.
 foody.
-foofaraw.
+foofaraw!
 foofaraws.
 fool.
 foolable.
@@ -63794,7 +63795,7 @@ forra.
 forrad.
 forrader.
 forrard.
-forrarder.
+forrarder!
 forrel.
 forride.
 forril.
@@ -187962,7 +187963,7 @@ woodoo.
 woodpeck.
 woodpenny.
 woodpile.
-woodreed.
+woodreed!
 woodreeve.
 woodrick.
 woodrime.
