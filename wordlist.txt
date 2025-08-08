@@ -45254,8 +45254,8 @@ determa.
 determent.
 determents.
 determine.
-determined.
-determiner.
+determined!
+determiner!
 deterrable.
 deterred.
 deterrence.
@@ -46782,7 +46782,7 @@ dinner.
 dinnerless.
 dinnerly.
 dinners.
-dinnertime.
+dinnertime!
 dinnerware.
 dinnery.
 dinning.
@@ -80952,7 +80952,7 @@ independing.
 inderite.
 indesert.
 indesinent.
-indetermined.
+indetermined!
 indevote.
 indevoted.
 indevotion.
@@ -82577,10 +82577,10 @@ intendente.
 intender.
 intenders.
 intendible.
-intendiment.
+intendiment!
 intending.
 intendit.
-intendment.
+intendment!
 intends.
 intenerate.
 intenerated.
@@ -82677,7 +82677,7 @@ interdata.
 interdentil.
 interdepend!
 interdependent!
-interdetermined.
+interdetermined!
 interdict.
 interdicted.
 interdine.
@@ -82761,7 +82761,7 @@ intermarine.
 intermat.
 intermean.
 intermede.
-intermedin.
+intermedin!
 intermeet.
 intermeeting.
 intermell.
@@ -82781,9 +82781,9 @@ interminister.
 intermise.
 intermit.
 intermits.
-intermitted.
+intermitted!
 intermittence.
-intermittent.
+intermittent!
 intermitter.
 intermitting.
 intermittor.
@@ -134474,8 +134474,8 @@ redesman.
 redespise.
 redetect.
 redetention.
-redetermine.
-redetermined.
+redetermine!
+redetermined!
 redevable.
 redevelop.
 redeveloped.
