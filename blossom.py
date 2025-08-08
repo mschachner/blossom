@@ -82,6 +82,15 @@ def blossomBetter(bank, dict, prevPlayed, round, score):
       expectedScore += marginalScore
       if len(chosenPlays.items()) == 12:
         break
+  # Debug: print game forecast.
+  print(f"Plays: {chosenPlays}")
+  expectedScore = score
+  print(f"Forecast:")
+  for i in range(round, 12):
+    toBePlayed = chosenPlays[i % 6][0] if i < 6 else chosenPlays[i % 6][-1]
+    delta = scoreWord(bank,bank[i % 6 + 1],toBePlayed)
+    expectedScore += delta
+    print(f"Round {i+1}: {toBePlayed.upper()}, {delta} points. Total: {expectedScore} points.")
   # Optional: print expected score.
   print(f"Expected score: {expectedScore} points.")
   return chosenPlays[round % 6][0]
@@ -103,12 +112,12 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   if wordsToRemove and getResponse(f"Ok to remove: {', '.join(wordsToRemove)}? (yes/no)",["yes","no"]) == "no":
     wordsToRemove = set()
 
-  if not (wordsToValidate + wordsToRemove):
+  if not wordsToRemove and not wordsToValidate:
     print("No changes to wordlist.")
     return
   
   dict = loadDict()
-  newLines = (word + "!\n" if dict[word] else ".\n" for word in dict if word not in wordsToRemove)
+  newLines = list(word + ("!\n" if dict[word] or word in wordsToValidate else ".\n") for word in dict if word not in wordsToRemove)
   newLines.extend(word + "!\n" for word in wordsToValidate if word not in dict)
   newLines.sort(key = lambda l: l.rstrip("!.\n"))
 
@@ -215,14 +224,14 @@ def playBlossom(bank=None, fast=False):
         if dict[word]:
           break
         match getResponse("Is that valid? (yes/no)",["yes","no","quit"]):
-          case "quit" | "q":
-            return
           case "no":
             wordsToRemove.add(word)
             ouch = True
           case "yes":
             wordsToValidate.add(word)
             break
+          case _:
+            return
     
       wordScore = scoreWord(bank,specialLetter,word)
       score += wordScore
@@ -266,4 +275,3 @@ if __name__ == "__main__":
 # T EILNRS : 657 points
 # R EINOST : 624 points
 # T EINORS : 616 points
-#
