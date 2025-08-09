@@ -52161,7 +52161,7 @@ eggcrate.
 eggcup.
 eggcupful.
 eggcups.
-eggeater.
+eggeater!
 egged.
 egger.
 eggers.
@@ -65883,6 +65883,7 @@ gait.
 gaited.
 gaiter.
 gaiters.
+gaither!
 gaiting.
 gaits.
 gaitt.
@@ -70942,6 +70943,7 @@ gregau.
 grege.
 gregg.
 gregge.
+gregger!
 greggle.
 greggriffin.
 grego.
@@ -75697,7 +75699,7 @@ hests.
 hesychasm.
 hesychast.
 hetaera.
-hetaerae.
+hetaerae!
 hetaeras.
 hetaeria.
 hetaeric.
@@ -75705,7 +75707,7 @@ hetaerio.
 hetaerist.
 hetaery.
 hetaira.
-hetairai.
+hetairai!
 hetairas.
 hetairia.
 hetairic.
@@ -76000,7 +76002,7 @@ hierarchs.
 hierarchy.
 hieratic.
 hieratica.
-hieratite.
+hieratite!
 hierochloe.
 hieromnemon.
 hieron.
@@ -163030,7 +163032,7 @@ tahali.
 tahami.
 tahanun.
 tahar.
-taharah.
+taharah!
 taheen.
 tahgook.
 tahil.
@@ -163968,7 +163970,7 @@ tarascan.
 tarasco.
 tarassis.
 tarata.
-taratah.
+taratah!
 taratantara.
 taratantarize.
 tarau.
@@ -164024,8 +164026,8 @@ targer.
 targes.
 target.
 targeted.
-targeteer.
-targetier.
+targeteer!
+targetier!
 targeting.
 targetless.
 targetman.
@@ -171661,7 +171663,7 @@ tritest.
 tritheism.
 tritheist.
 tritheistic.
-tritheite.
+tritheite!
 trithing.
 trithings.
 trithionic.
