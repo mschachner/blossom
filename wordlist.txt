@@ -3263,7 +3263,7 @@ aggregating.
 aggregative.
 aggregator.
 aggregatory.
-aggrege.
+aggrege!
 aggress.
 aggressed.
 aggresses.
@@ -10736,7 +10736,6 @@ arter.
 arteria.
 arteriac.
 arteriae.
-arteriagra.
 arterial.
 arterialise.
 arterialize.
@@ -10767,7 +10766,6 @@ artha.
 arthel.
 arthogram.
 arthra.
-arthragra.
 arthral.
 arthralgia.
 arthredema.
@@ -70793,7 +70791,7 @@ greatens.
 greater.
 greatest.
 greathead.
-greatheart.
+greatheart!
 greathearted.
 greatly.
 greatness.
@@ -70830,7 +70828,7 @@ greeds.
 greedsome.
 greedy.
 greedygut.
-greegree.
+greegree!
 greegrees.
 greeing.
 greek.
@@ -72811,7 +72809,6 @@ hagadists.
 haganah.
 hagar.
 hagarene.
-hagarite.
 hagberry.
 hagboat.
 hagbolt.
@@ -75506,7 +75503,6 @@ hereniging.
 hereof.
 hereon.
 hereout.
-hereright.
 herero.
 heres.
 heresiarch.
@@ -75536,7 +75532,7 @@ heriot.
 heriots.
 herisson.
 heritage.
-heritiera.
+heritiera!
 heritor.
 heritors.
 heritress.
@@ -135819,7 +135815,6 @@ reinviting.
 reinvoice.
 reinvoke.
 reinvolve.
-reirrigate.
 reirrigated.
 reirrigating.
 reis.
@@ -138062,7 +138057,7 @@ retia.
 retial.
 retiariae.
 retiarian.
-retiarii.
+retiarii!
 retiarius.
 retiary.
 reticella.
@@ -166345,7 +166340,6 @@ tetrastyle.
 tetrasymmetry.
 tetrathecal.
 tetratheist.
-tetratheite.
 tetratone.
 tetravalent.
 tetraxial.
@@ -166672,9 +166666,8 @@ theftless.
 theftproof.
 thefts.
 theftuous.
-thegether.
 thegidder.
-thegither.
+thegither!
 thegn.
 thegnhood.
 thegnly.
@@ -166819,7 +166812,7 @@ thereon.
 thereonto.
 thereout.
 thereover.
-thereright.
+thereright!
 theres.
 theresa.
 therese.
@@ -167108,7 +167101,7 @@ thirteens.
 thirteenth.
 thirteenths.
 thirties.
-thirtieth.
+thirtieth!
 thirtieths.
 thirty.
 thirtyish.
@@ -168518,7 +168511,6 @@ tithebook.
 tithed.
 titheless.
 tither.
-titheright.
 tithers.
 tithes.
 tithing.
