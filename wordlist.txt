@@ -52314,8 +52314,8 @@ eirenic.
 eirenicon.
 eiresione.
 eiry.
-eisegeses.
-eisegesis.
+eisegeses!
+eisegesis!
 eisegetic.
 eisell.
 eisenberg.
@@ -54710,7 +54710,7 @@ enshrining.
 ensient.
 ensiferi.
 ensign.
-ensigncies.
+ensigncies!
 ensigncy.
 ensigned.
 ensigning.
@@ -68313,7 +68313,7 @@ gingeleys.
 gingeli.
 gingelies.
 gingelis.
-gingellies.
+gingellies!
 gingelly.
 gingely.
 ginger.
@@ -92211,7 +92211,7 @@ lessest.
 lessive.
 lessn.
 lessness.
-lessnesses.
+lessnesses!
 lesson.
 lessoned.
 lessoning.
@@ -107023,6 +107023,8 @@ neglige.
 negligee.
 negligees.
 negligence.
+negligences!
+negligencies!
 negligency.
 negligent.
 negligentia.
@@ -149587,6 +149589,7 @@ sicilians.
 sicilica.
 sicilicum.
 sicilienne.
+siciliennes!
 sicily.
 sicinnian.
 sick.
@@ -150461,7 +150464,7 @@ singkamas.
 single.
 singled.
 singleness.
-singlenesses.
+singlenesses!
 singler.
 singles.
 singlet.
