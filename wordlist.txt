@@ -33508,12 +33508,12 @@ cling.
 clinged.
 clinger.
 clingier.
-clinginess.
-clinginesses.
+clinginess!
+clinginesses!
 clinging.
 clingingly.
-clingingness.
-clingingnesses.
+clingingness!
+clingingnesses!
 clings.
 clingy.
 clinia.
@@ -79440,7 +79440,6 @@ ignatius.
 ignavia.
 ignaw.
 igneous.
-ignescence.
 ignescent.
 ignified.
 ignifies.
@@ -82270,7 +82269,6 @@ insigne.
 insignes.
 insignia.
 insignias.
-insignisigne.
 insignment.
 insincere.
 insincerities.
@@ -91792,7 +91790,7 @@ leggiero.
 leggiest.
 leggin.
 legginess.
-legginesses.
+legginesses!
 legging.
 legginged.
 leggings.
@@ -91830,8 +91828,6 @@ legitimum.
 legits.
 leglen.
 legless.
-leglessness.
-leglessnesses.
 leglet.
 leglike.
 legman.
@@ -92636,7 +92632,7 @@ license.
 licensed.
 licensee.
 licensees.
-licenseless.
+licenseless!
 licenser.
 licensers.
 licenses.
@@ -150553,7 +150549,7 @@ sinning.
 sinningia!
 sinningly.
 sinningness.
-sinningnesses.
+sinningnesses!
 sinnowed.
 sinoidal.
 sinolog.
