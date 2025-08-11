@@ -42674,7 +42674,7 @@ deadman.
 deadmelt.
 deadmen.
 deadness.
-deadnesses.
+deadnesses!
 deadpan.
 deadpanned.
 deadpanner.
@@ -74434,8 +74434,9 @@ headsails.
 headsaw.
 headset.
 headsets.
-headshake.
+headshake!
 headshaker.
+headshakes!
 headsheet.
 headsheets.
 headship.
@@ -86710,6 +86711,7 @@ kaki.
 kakidrosis.
 kakis.
 kakkak!
+kakkaks!
 kakke.
 kakortokite.
 kakotopia.
@@ -152773,6 +152775,7 @@ snake.
 snakebark.
 snaked.
 snakehead!
+snakeheads!
 snakeleaf.
 snakeless.
 snakelet.
