@@ -11502,8 +11502,6 @@ asseverates.
 asseverative.
 assewer.
 asshead.
-assheadedness.
-assheadednesses.
 asshole.
 assholes.
 assi.
@@ -42095,7 +42093,7 @@ dankest.
 dankish.
 dankly.
 dankness.
-danknesses.
+danknesses!
 danli.
 danner.
 dannie.
@@ -42650,10 +42648,10 @@ deadfalls.
 deadflat.
 deadhand.
 deadhead.
-deadheaded.
+deadheaded!
 deadheading.
 deadheadism.
-deadheads.
+deadheads!
 deadhearted.
 deadhouse.
 deading.
@@ -54001,7 +53999,6 @@ endrins.
 endrudge.
 ends.
 endseal.
-endshake.
 endsheet.
 endship.
 endsweep.
@@ -73383,8 +73380,8 @@ handclap.
 handcuff.
 handed.
 handedly.
-handedness.
-handednesses.
+handedness!
+handednesses!
 handel.
 handelian.
 hander.
@@ -73442,8 +73439,8 @@ handsets.
 handsew.
 handsewed.
 handsewn.
-handshake.
-handshakes.
+handshake!
+handshakes!
 handsled.
 handspade.
 handspan.
@@ -73933,13 +73930,9 @@ hash.
 hashab.
 hashabi.
 hashed.
-hasheesh.
-hasheeshes.
 hasher.
 hashery.
 hashes.
-hashhead.
-hashheads.
 hashimite.
 hashing.
 hashish.
@@ -73957,7 +73950,6 @@ hask.
 haskalah.
 haskard.
 haskness.
-hasknesses.
 hasky.
 haslet.
 haslets.
@@ -86717,7 +86709,7 @@ kakemonos.
 kaki.
 kakidrosis.
 kakis.
-kakkak.
+kakkak!
 kakke.
 kakortokite.
 kakotopia.
@@ -106121,7 +106113,7 @@ nakedest.
 nakedize.
 nakedly.
 nakedness.
-nakednesses.
+nakednesses!
 nakedweed.
 nakedwood.
 naker.
@@ -142872,7 +142864,7 @@ sanely.
 sanemindedness.
 sanemindednesses.
 saneness.
-sanenesses.
+sanenesses!
 saner.
 sanes.
 sanest.
@@ -152780,7 +152772,7 @@ snaith.
 snake.
 snakebark.
 snaked.
-snakehead.
+snakehead!
 snakeleaf.
 snakeless.
 snakelet.
