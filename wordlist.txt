@@ -3785,7 +3785,7 @@ airified.
 airify.
 airily.
 airiness.
-airinesses.
+airinesses!
 airing.
 airings.
 airish.
@@ -51363,7 +51363,7 @@ easies.
 easiest.
 easily.
 easiness.
-easinesses.
+easinesses!
 easing.
 eassel.
 east.
@@ -56370,6 +56370,7 @@ esere.
 eserin.
 eserine.
 eserines.
+eserinise!
 eses.
 esexual.
 esguard.
@@ -58792,7 +58793,7 @@ fainer.
 fainest.
 fainly.
 fainness.
-fainnesses.
+fainnesses!
 fains.
 faint.
 fainted.
@@ -59874,7 +59875,7 @@ feinting.
 feints.
 feirie.
 feis.
-feiseanna.
+feiseanna!
 feist.
 feistier.
 feistiest.
@@ -60754,6 +60755,7 @@ fierabras.
 fierasfer.
 fierasferid.
 fierasferidae.
+fierasfers!
 fierce.
 fiercely.
 fiercen.
@@ -60769,8 +60771,8 @@ fieri.
 fierier.
 fieriest.
 fierily.
-fieriness.
-fierinesses.
+fieriness!
+fierinesses!
 fierte.
 fiery.
 fiesta.
@@ -61116,7 +61118,7 @@ fineless.
 finely.
 finement.
 fineness.
-finenesses.
+finenesses!
 finer.
 fineries.
 finery.
@@ -64235,6 +64237,7 @@ frankness.
 franknesses.
 franks.
 franseria!
+franserias!
 frantic.
 franz.
 franzy.
@@ -79398,7 +79401,7 @@ ifecks.
 iffier.
 iffiest.
 iffiness.
-iffinesses.
+iffinesses!
 iffy.
 ifint.
 ifreal.
@@ -84031,6 +84034,7 @@ isms.
 ismy.
 isnad.
 isnardia.
+isnesses!
 isnt.
 isoallyl.
 isoamid.
@@ -107066,6 +107070,7 @@ neillia.
 nein.
 neiper.
 neisseria.
+neisserian!
 neist.
 neither.
 nejd.
@@ -132113,7 +132118,7 @@ rainier.
 rainiest.
 rainily.
 raininess.
-raininesses.
+raininesses!
 raining.
 rainless.
 rainlessness.
@@ -139262,7 +139267,7 @@ rifart.
 rife.
 rifely.
 rifeness.
-rifenesses.
+rifenesses!
 rifer.
 rifest.
 riff.
@@ -141982,7 +141987,8 @@ safi.
 safine.
 safini.
 safranin.
-safranine.
+safranine!
+safranines!
 safranins.
 safrol.
 safrole.
@@ -142978,7 +142984,7 @@ sansars.
 sansei.
 sanseis.
 sanserif.
-sanserifs.
+sanserifs!
 sansevieria.
 sanshach.
 sansi.
@@ -147331,7 +147337,7 @@ serratile.
 serrature.
 serratus.
 serrefile.
-serrefine.
+serrefine!
 serricorn.
 serridentines.
 serried.
@@ -147339,7 +147345,7 @@ serriedly.
 serriedness.
 serriednesses.
 serries.
-serrifera.
+serrifera!
 serriferous.
 serriform.
 serring.
@@ -150722,6 +150728,8 @@ siscowet.
 sise.
 sisel.
 siserara.
+siseraras!
+siseraries!
 siserary.
 siserskite!
 siserskites!
