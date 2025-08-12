@@ -58831,7 +58831,7 @@ fairling.
 fairly.
 fairm.
 fairness.
-fairnesses.
+fairnesses!
 fairs.
 fairship.
 fairtime.
@@ -59314,7 +59314,7 @@ farrantly.
 farreate.
 farrel.
 farrier.
-farrieries.
+farrieries!
 farrierlike.
 farriers.
 farriery.
@@ -60166,7 +60166,6 @@ ferijee.
 ferine.
 ferinely.
 ferineness.
-ferinenesses.
 feringhee.
 feringi.
 ferio.
@@ -61307,8 +61306,6 @@ firerooms.
 firers.
 fires.
 firesafe.
-firesafeness.
-firesafenesses.
 fireshine.
 fireside.
 firesider.
@@ -64237,7 +64234,7 @@ frankly.
 frankness.
 franknesses.
 franks.
-franseria.
+franseria!
 frantic.
 franz.
 franzy.
@@ -80421,7 +80418,7 @@ inamour.
 inane.
 inanely.
 inaneness.
-inanenesses.
+inanenesses!
 inaner.
 inaners.
 inanes.
@@ -82130,7 +82127,7 @@ insanable.
 insane.
 insanely.
 insaneness.
-insanenesses.
+insanenesses!
 insaner.
 insanest.
 insaniate.
@@ -107069,7 +107066,6 @@ neillia.
 nein.
 neiper.
 neisseria.
-neisserieae.
 neist.
 neither.
 nejd.
@@ -131951,7 +131947,7 @@ raffee.
 raffery.
 raffia.
 raffias.
-raffinase.
+raffinase!
 raffinate.
 raffing.
 raffish.
@@ -139280,8 +139276,8 @@ riffler.
 rifflers.
 riffles.
 riffling.
-riffraff.
-riffraffs.
+riffraff!
+riffraffs!
 riffs.
 rifi.
 rifian.
@@ -143372,7 +143368,6 @@ sassies.
 sassiest.
 sassily.
 sassiness.
-sassinesses.
 sassing.
 sassolin.
 sassoline.
@@ -152993,7 +152988,7 @@ sniffier.
 sniffiest.
 sniffily.
 sniffiness.
-sniffinesses.
+sniffinesses!
 sniffing.
 sniffingly.
 sniffish.
