@@ -8232,7 +8232,6 @@ antimonsoon.
 antimony.
 antinarcotic.
 antinarrative.
-antinational.
 antinationalist.
 antinationalists.
 antinationalization.
@@ -9193,7 +9192,7 @@ appinite.
 appius.
 appl.
 applanate.
-applanation.
+applanation!
 applaud.
 applaudable.
 applaudably.
@@ -79638,7 +79637,6 @@ illimitation.
 illimited.
 illimitedly.
 illing.
-illinition.
 illinium.
 illiniums.
 illinoian.
@@ -83030,7 +83028,7 @@ intonated.
 intonates.
 intonating.
 intonation.
-intonational.
+intonational!
 intonations.
 intonator.
 intone.
@@ -84396,7 +84394,6 @@ itali.
 italian.
 italianate.
 italianately.
-italianation.
 italianiron.
 italianish.
 italianism.
@@ -109435,7 +109432,7 @@ nonnarration.
 nonnasal.
 nonnasally.
 nonnat.
-nonnational.
+nonnational!
 nonnationalization.
 nonnationally.
 nonnative.
@@ -109473,9 +109470,7 @@ nonnormal.
 nonnormally.
 nonnotable.
 nonnotably.
-nonnotational.
 nonnotification.
-nonnotional.
 nonnoumenal.
 nonnutrient.
 nonnutritious.
@@ -109520,7 +109515,6 @@ nonopposing.
 nonopposition.
 nonoppression.
 nonoptic.
-nonoptional.
 nonoral.
 nonorally.
 nonordained.
@@ -109544,7 +109538,6 @@ nonpagan.
 nonpagans.
 nonpaid.
 nonpalatal.
-nonpalliation.
 nonpalpable.
 nonpalpably.
 nonpapal.
@@ -113113,7 +113106,7 @@ oppidans.
 oppidum.
 oppilant.
 oppilate.
-oppilation.
+oppilation!
 opplete.
 oppletion.
 oppone.
@@ -117214,7 +117207,7 @@ palliate.
 palliated.
 palliates.
 palliating.
-palliation.
+palliation!
 palliative.
 palliator.
 pallid.
@@ -117311,7 +117304,7 @@ palpate.
 palpated.
 palpates.
 palpating.
-palpation.
+palpation!
 palpator.
 palpators.
 palpatory.
@@ -117328,7 +117321,7 @@ palpitate.
 palpitated.
 palpitates.
 palpitating.
-palpitation.
+palpitation!
 palpless.
 palpocil.
 palpon.
@@ -123795,7 +123788,7 @@ plantains.
 plantal.
 plantano.
 plantar.
-plantation.
+plantation!
 plantator.
 planted.
 planter.
@@ -124965,7 +124958,7 @@ pollical.
 pollicar.
 pollices.
 pollinar.
-pollination.
+pollination!
 polling.
 pollinia.
 pollinic.
@@ -168537,7 +168530,7 @@ titillater.
 titillates.
 titillating.
 titillatingly.
-titillation.
+titillation!
 titillations.
 titillative.
 titillator.
@@ -169458,7 +169451,6 @@ toponyms.
 toponymy.
 topophobia.
 topophone.
-topopolitan.
 topos.
 topotactic.
 topotaxis.
