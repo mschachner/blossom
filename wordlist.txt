@@ -5492,7 +5492,8 @@ altimeter.
 altin.
 altincar.
 altininck.
-altiplano.
+altiplano!
+altiplantation!
 altisonant.
 altissimo.
 altitonant.
@@ -106287,6 +106288,7 @@ naplessnesses.
 napoleon.
 napoleonana.
 napoleons.
+napolitana!
 napoo.
 napooh.
 nappa.
@@ -117069,7 +117071,7 @@ palatinate.
 palatine.
 palatinian.
 palatinite.
-palation.
+palation!
 palatist.
 palatitis.
 palatium.
@@ -117659,6 +117661,7 @@ panpathy.
 panphobia.
 panpipe.
 panpipes.
+panplantation!
 panplegia.
 pans.
 panse.
@@ -119046,7 +119049,7 @@ patinaed.
 patinas.
 patinate.
 patinated.
-patination.
+patination!
 patine.
 patined.
 patines.
@@ -123133,6 +123136,7 @@ pioneering.
 pioneers.
 pionery.
 pionic.
+pionnotal!
 pionnotes.
 pions.
 pioscope.
@@ -123710,7 +123714,7 @@ planarida.
 planaridan.
 planaru.
 planate.
-planation.
+planation!
 planceer.
 plancer.
 planch.
