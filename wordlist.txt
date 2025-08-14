@@ -24658,7 +24658,6 @@ burdash.
 burden.
 burdened.
 burdener.
-burdeners.
 burdens.
 burdie.
 burdies.
@@ -137885,7 +137884,7 @@ resurrected.
 resurrector.
 resurrectors.
 resurrects.
-resurrender.
+resurrender!
 resurround.
 resurvey.
 resurveyed.
@@ -153303,7 +153302,7 @@ snubbishness.
 snubbishnesses.
 snubby.
 snubness.
-snubnesses.
+snubnesses!
 snubnose.
 snubs.
 snuck.
@@ -159629,7 +159628,7 @@ subdue.
 subdued.
 subduedly.
 subduedness.
-subduednesses.
+subduednesses!
 subduer.
 subduers.
 subdues.
@@ -160317,7 +160316,7 @@ sudd.
 sudden.
 suddenly.
 suddenness.
-suddennesses.
+suddennesses!
 suddens.
 suddenty.
 sudder.
@@ -160787,9 +160786,7 @@ sunbonnets.
 sunbow.
 sunbows.
 sunburn.
-sunburned.
-sunburnedness.
-sunburnednesses.
+sunburned!
 sunburning.
 sunburns.
 sunburnt.
@@ -161364,11 +161361,10 @@ surrebutter.
 surrein.
 surrenal.
 surrender.
-surrendered.
-surrenderee.
-surrenderer.
+surrendered!
+surrenderee!
 surrenderor.
-surrenders.
+surrenders!
 surrendry.
 surrept.
 surreverence.
@@ -174611,7 +174607,7 @@ unbuoyant.
 unbuoyed.
 unburden.
 unburdened.
-unburdens.
+unburdens!
 unburial.
 unburied.
 unburly.
@@ -175247,7 +175243,6 @@ underbrew.
 underbubble.
 underbud.
 underbudde.
-underbudded.
 underbuds.
 underburn.
 underburned.
@@ -175293,8 +175288,8 @@ underdrainer.
 underdraw.
 underdrawn.
 underdress.
-underdressed.
-underdresses.
+underdressed!
+underdresses!
 underdrew.
 underdried.
 underdrive.
@@ -175457,7 +175452,6 @@ underruns.
 undersea.
 underseas.
 undersee.
-underseeded.
 underseen.
 undersell.
 underseller.
@@ -178704,8 +178698,6 @@ unsere.
 unserenaded.
 unserene.
 unserenely.
-unsereneness.
-unserenenesses.
 unserious.
 unseriousness.
 unseriousnesses.
@@ -179190,8 +179182,6 @@ unsturdy.
 unstuttered.
 unsty.
 unsubdued.
-unsubduedness.
-unsubduednesses.
 unsubmission.
 unsubsided.
 unsubsiding.
@@ -179200,7 +179190,6 @@ unsubtleness.
 unsubtlenesses.
 unsubtly.
 unsuburban.
-unsuburbed.
 unsucceeded.
 unsuccess.
 unsuccessful.
@@ -179245,7 +179234,6 @@ unsummered.
 unsummoned.
 unsumptuous.
 unsun.
-unsunburned.
 unsunburnt.
 unsundered.
 unsung.
@@ -179267,7 +179255,7 @@ unsupreme.
 unsure.
 unsurely.
 unsureness.
-unsurenesses.
+unsurenesses!
 unsurety.
 unsurging.
 unsurlily.
@@ -179277,7 +179265,6 @@ unsurly.
 unsurmising.
 unsurprise.
 unsurprising.
-unsurrendered.
 unsurrounded.
 unsurviving.
 unsuspect.
@@ -179655,7 +179642,6 @@ unuseableness.
 unuseablenesses.
 unused.
 unusedness.
-unusednesses.
 unuseful.
 unusefully.
 unusefulness.
