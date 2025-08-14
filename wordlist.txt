@@ -50495,7 +50495,7 @@ duenas.
 duende.
 duendes.
 dueness.
-duenesses.
+duenesses!
 duenna.
 duennadom.
 duennas.
@@ -50759,7 +50759,7 @@ dunne.
 dunned.
 dunner.
 dunness.
-dunnesses.
+dunnesses!
 dunnest.
 dunning.
 dunnish.
@@ -110679,7 +110679,7 @@ nuddy.
 nude.
 nudely.
 nudeness.
-nudenesses.
+nudenesses!
 nudens.
 nuder.
 nudes.
@@ -137885,6 +137885,8 @@ resurrector.
 resurrectors.
 resurrects.
 resurrender!
+resurrendered!
+resurrenders!
 resurround.
 resurvey.
 resurveyed.
@@ -141110,7 +141112,7 @@ ruddyish.
 rude.
 rudely.
 rudeness.
-rudenesses.
+rudenesses!
 rudented.
 rudenture.
 ruder.
@@ -159627,7 +159629,7 @@ subducts.
 subdue.
 subdued.
 subduedly.
-subduedness.
+subduedness!
 subduednesses!
 subduer.
 subduers.
@@ -161485,7 +161487,7 @@ susurrate.
 susurrated.
 susurrous.
 susurrus.
-susurruses.
+susurruses!
 sutaio.
 suterberries.
 suterberry.
@@ -175232,6 +175234,7 @@ underbarber.
 underbear.
 underbearer.
 underbed.
+underbeds!
 underbid.
 underbidder.
 underbind.
@@ -178234,7 +178237,7 @@ unred.
 unredeemed.
 unredeemedness.
 unredeemednesses.
-unredressed.
+unredressed!
 unreduced.
 unreduct.
 unreefed.
