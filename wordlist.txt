@@ -3019,6 +3019,7 @@ aftertastes.
 aftertax.
 afterthrift.
 aftertime.
+aftertreat!
 aftertreatment.
 aftertrial.
 afterturn.
@@ -12343,6 +12344,7 @@ atterminement.
 attern.
 atterr.
 atterrate!
+atterrated!
 attery.
 attest.
 attestable.
@@ -41658,7 +41660,7 @@ daffy.
 dafla.
 daft.
 daftar.
-daftardar.
+daftardar!
 dafter.
 daftest.
 daftly.
@@ -42686,8 +42688,8 @@ deadwoods.
 deadwork.
 deadwort.
 deady.
-deaerate.
-deaerated.
+deaerate!
+deaerated!
 deaerates.
 deaerator.
 deaf.
@@ -42776,7 +42778,8 @@ deathward.
 deathwatch.
 deathweed.
 deathy.
-deaurate.
+deaurate!
+deaurated!
 deave.
 deaved.
 deavely.
@@ -43706,7 +43709,7 @@ defrosts.
 defs.
 deft.
 defter.
-defterdar.
+defterdar!
 deftest.
 deftly.
 deftness.
@@ -45336,7 +45339,8 @@ deuniting.
 deurwaarder.
 deus.
 deusan.
-deuterate.
+deuterate!
+deuterated!
 deuteric.
 deuteride.
 deuterium.
