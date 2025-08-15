@@ -2767,7 +2767,6 @@ affaires.
 affairs.
 affaite.
 affamish.
-affatuate.
 affect.
 affectable.
 affectate.
@@ -2981,9 +2980,8 @@ afterend.
 aftereye.
 afterfall.
 afterfame.
-afterfeed.
+afterfeed!
 afterform.
-afterfuture.
 aftergame.
 aftergas.
 aftergo.
@@ -43506,7 +43504,7 @@ defeatist.
 defeatists.
 defeatment.
 defeats.
-defeature.
+defeature!
 defecant.
 defecate.
 defecated.
@@ -43687,8 +43685,8 @@ deforse.
 defossion.
 defoul.
 defraud.
-defrauded.
-defrauder.
+defrauded!
+defrauder!
 defrauders.
 defrauds.
 defray.
@@ -50526,7 +50524,7 @@ duffs.
 duffy.
 dufoil.
 dufter.
-dufterdar.
+dufterdar!
 duftery.
 duftite.
 duftry.
@@ -59717,10 +59715,10 @@ featous.
 feats.
 featural.
 feature.
-featured.
+featured!
 featureful.
 features.
-featurette.
+featurette!
 featy.
 feaze.
 feazed.
@@ -64397,7 +64395,6 @@ freestones.
 freestyle.
 freestyler.
 freet.
-freetrader.
 freety.
 freeward.
 freeway.
@@ -134404,7 +134401,6 @@ redeeming.
 redeemless.
 redeems.
 redefeat.
-redefeated.
 redefeats.
 redefecate.
 redefer.
@@ -134950,8 +134946,6 @@ refectorer.
 refectory.
 refects.
 refed.
-refederate.
-refederated.
 refeed.
 refeeding.
 refeeds.
@@ -137123,7 +137117,6 @@ rerate.
 rerated.
 rerating.
 reread.
-rereader.
 rereading.
 rereads.
 rerebrace.
@@ -137965,12 +137958,11 @@ retarded.
 retardee.
 retardence.
 retardent.
-retarder.
+retarder!
 retarders.
 retardive.
 retardment.
 retards.
-retardure.
 retare.
 retariff.
 retarred.
@@ -164164,7 +164156,7 @@ tartanas.
 tartane.
 tartans.
 tartar.
-tartarated.
+tartarated!
 tartare.
 tartarean!
 tartareous.
@@ -172463,7 +172455,7 @@ tuffing.
 tuffoon.
 tuffs.
 tuft.
-tuftaffeta.
+tuftaffeta!
 tufted.
 tufter.
 tufters.
