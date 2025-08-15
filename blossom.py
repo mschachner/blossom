@@ -5,15 +5,15 @@ from datetime import datetime
 import argparse
 
 # Aesthetics: color text, typewriter-style print.
-def dispWord(word,dict):
+def dispWord(word,dictionary):
   styles = {
       "reset": "\033[0m",
       "boldred": "\033[1;31m",
       "boldgreen": "\033[1;32m",
       "boldyellow": "\033[1;33m",
   }
-  color = "red" if word not in dict else "green" if dict[word] else "yellow"
-  icon = "❌ " if word not in dict else "🌸 " if len(set(word)) == 7 else "🟡 "
+  color = "red" if word not in dictionary else "yellow" if not dictionary[word] else "green"
+  icon = "❌ " if word not in dictionary else "🟡 " if not dictionary[word] else "🌸 " if len(set(word)) == 7 else "✅ "
   return icon + f"{styles['bold' + color]}{word.upper()}{styles['reset']}"
 
 def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
@@ -44,13 +44,13 @@ def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
             time.sleep(base)
 
 def loadDict(bank=None):
-  dict = {}
+  dictionary = {}
   with open("wordlist.txt") as infile:
     for line in infile:
       word = line[0:-2]
       if not bank or (any(c == bank[0] for c in word) and all(c in bank for c in word)): # word is legal
-        dict[word] = line.endswith('!\n')
-  return dict
+        dictionary[word] = line.endswith('!\n')
+  return dictionary
 
 def scoreWord(bank, specialLetter, word):
   baseScore = 2*len(word)-6 if len(word) < 7 else 3*len(word)-9
@@ -68,13 +68,13 @@ def allPlays(legalWords, bank, prevPlayed):
   plays.sort(key=lambda x: x[2], reverse=True)
   return plays
 
-def blossomBetter(bank, dict, prevPlayed, round, score):
+def blossomBetter(bank, dictionary, prevPlayed, round, score):
   chosenPlays = {i:[] for i in range(6)}
   # Determine how many words are still needed for each letter.
   stillNeeded = [int(round <= i) + int(round <= i+6) for i in range(6)]
   placedWords = []
   expectedScore = score
-  plays = allPlays(dict, bank, prevPlayed)
+  plays = allPlays(dictionary, bank, prevPlayed)
   for (i,word,marginalScore) in plays:
     if len(chosenPlays[i]) <  stillNeeded[i] and word not in placedWords:
       chosenPlays[i].append(word)
@@ -83,14 +83,14 @@ def blossomBetter(bank, dict, prevPlayed, round, score):
       if len(chosenPlays.items()) == 12:
         break
   # Debug: print game forecast.
-  print(f"Plays: {chosenPlays}")
-  expectedScore = score
-  print(f"Forecast:")
-  for i in range(round, 12):
-    toBePlayed = chosenPlays[i % 6][0] if i < 6 else chosenPlays[i % 6][-1]
-    delta = scoreWord(bank,bank[i % 6 + 1],toBePlayed)
-    expectedScore += delta
-    print(f"Round {i+1}: {toBePlayed.upper()}, {delta} points. Total: {expectedScore} points.")
+  # print(f"Plays: {chosenPlays}")
+  # expectedScore = score
+  # print(f"Forecast:")
+  # for i in range(round, 12):
+  #   toBePlayed = chosenPlays[i % 6][0] if i < 6 else chosenPlays[i % 6][-1]
+  #   delta = scoreWord(bank,bank[i % 6 + 1],toBePlayed)
+  #   expectedScore += delta
+  #   print(f"Round {i+1}: {toBePlayed.upper()}, {delta} points. Total: {expectedScore} points.")
   # Optional: print expected score.
   print(f"Expected score: {expectedScore} points.")
   return chosenPlays[round % 6][0]
@@ -116,9 +116,9 @@ def updateWordlist(wordsToValidate, wordsToRemove):
     print("No changes to wordlist.")
     return
   
-  dict = loadDict()
-  newLines = list(word + ("!\n" if dict[word] or word in wordsToValidate else ".\n") for word in dict if word not in wordsToRemove)
-  newLines.extend(word + "!\n" for word in wordsToValidate if word not in dict)
+  dictionary = loadDict()
+  newLines = list(word + ("!\n" if dictionary[word] or word in wordsToValidate else ".\n") for word in dictionary if word not in wordsToRemove)
+  newLines.extend(word + "!\n" for word in wordsToValidate if word not in dictionary)
   newLines.sort(key = lambda l: l.rstrip("!.\n"))
 
   with open("wordlist.txt", "w") as outfile:
@@ -166,19 +166,72 @@ def searchWords(queries=None):
     response = input("Enter words to search (comma or space separated):\n > ")
     queries = [w.strip() for w in response.replace(',', ' ').split() if w.strip()]
   queries = set(queries)
-  dict = loadDict()
-  padding = 5 + max(len(dispWord(word,dict)) for word in queries)
+  dictionary = loadDict()
+  padding = 5 + max(len(dispWord(word,dictionary)) for word in queries)
 
   print("Search results:")
   for word in queries:
-    dword = dispWord(word,dict)
-    msg = ": Not found" if word not in dict else ": Validated" if dict[word] else ": Present, not validated"
+    dword = dispWord(word,dictionary)
+    msg = ": Not found" if word not in dictionary else ": Validated" if dictionary[word] else ": Present, not validated"
     print(dword + (padding - len(dword)) * " " + msg)
 
   # Prompt if user wants to add/validate all words.
-  if any(word not in dict or not dict[word] for word in queries) and getResponse("Add/validate all words? (yes/no)", ["yes", "no"]) == "yes":
+  if any(word not in dictionary or not dictionary[word] for word in queries) and getResponse("Add/validate all words? (yes/no)", ["yes", "no"]) == "yes":
     updateWordlist(queries, set())
   return
+
+def addWordScore(word, score, specialLetter):
+  with open("scores.txt", "r+") as f:
+    # First line of scores.txt holds the highest word score.
+    highestWordScore = f.readline().strip().split(" ")
+    if score > int(highestWordScore[2]):
+      print(f"That's a new word high score!")
+      f.seek(0)
+      f.truncate()
+      f.write(f"{word} {specialLetter} {score}\n")
+
+def addGameScore(bank, score):
+  scoreRecord = f"{str(bank).upper()} {score} {datetime.now().strftime('%Y-%m-%d')}"
+  with open("scores.txt", "r+") as f:
+    highestWordScore = f.readline().strip().split(" ")
+    scores = [line.strip() for line in f.readlines()]
+    # If bank is already in scores, update score instead of adding new record
+    if any(scoreRecord.split(" ")[0] == score.split(" ")[0] for score in scores):
+      for i, score in enumerate(scores):
+        if scoreRecord.split(" ")[0] == score.split(" ")[0]:
+          scores[i] = scoreRecord
+          break
+    else:
+      scores.append(scoreRecord)
+    scores.sort(key=lambda x: int(x.split(" ")[1]), reverse=True)
+    rank = 1
+    for i, score in enumerate(scores):
+      if score == scoreRecord:
+        rank = i + 1
+        break
+    print(f"{"New high score!" if rank == 1 else f"Rank: {rank}"}")
+    f.seek(0)
+    f.truncate()
+    f.write(f"{highestWordScore[0]} {highestWordScore[1]} {highestWordScore[2]}\n")
+    for score in scores:
+      f.write(score + "\n")
+  return
+
+def showStats():
+  dictionary = loadDict()
+  print(f"Total words: {len(dictionary)}")
+  print(f"Validated words: {sum(1 for word in dictionary if dictionary[word])}")
+  longestWord = max((word for word in dictionary if dictionary[word]), key=len)
+  print(f"Longest validated word: {dispWord(longestWord,dictionary)} ({len(longestWord)} letters)")
+  with open("scores.txt", "r") as f:
+    highestWordScore = f.readline().strip().split(" ")
+    scores = [line.strip() for line in f.readlines()]
+    scores.sort(key=lambda x: int(x.split(" ")[1]), reverse=True)
+  print(f"Highest word score: {dispWord(highestWordScore[0],dictionary)} ({highestWordScore[1].upper()}), {highestWordScore[2]} points")
+  print(f"Games played: {len(scores)}")
+  print("Top scores:")
+  for i in range(min(10, len(scores))):
+    print(f"{i+1}. {scores[i].split(' ')[0]}: {scores[i].split(' ')[1]} points, {scores[i].split(' ')[2]}")
 
 def sevenUniques(s):
   return len(s) == 7 and len(set(s)) == 7 and s.isalpha()
@@ -206,22 +259,22 @@ def playBlossom(bank=None, fast=False):
         case "quit" | "q":
           return
         case bk:
-          bank = [bk[0]] + sorted(list(bk)[1:])
+          bank = bk[0] + ''.join(sorted(list(bk)[1:]))
       tprint("Okay, let's play!")
     else:
       tprint(f"Bank: {bank.upper()}.")
       bank = bank[0] + ''.join(sorted(list(bank[1:])))
-    dict = loadDict(bank)
+    dictionary = loadDict(bank)
     for i in range(12):
       specialLetter = bank[(i % 6) + 1] # Rotate through bank
       tprint(f"---\nRound {i+1}. Special letter: {specialLetter.upper()}.\n")
       ouch = False
       while True:
-        word = blossomBetter(bank, dict, prevPlayed, i, score)
+        word = blossomBetter(bank, dictionary, prevPlayed, i, score)
         prevPlayed.append(word)
-        tprint(f"{"Okay, then instead " if ouch else ''}I play: {dispWord(word,dict)}{", a validated word!" if dict[word] else ''}")
+        tprint(f"{"Okay, then instead " if ouch else ''}I play: {dispWord(word,dictionary)}{", a validated word!" if dictionary[word] else ''}")
 
-        if dict[word]:
+        if dictionary[word]:
           break
         match getResponse("Is that valid? (yes/no)",["yes","no","quit"]):
           case "no":
@@ -234,10 +287,12 @@ def playBlossom(bank=None, fast=False):
             return
     
       wordScore = scoreWord(bank,specialLetter,word)
+      addWordScore(word, wordScore, specialLetter)
       score += wordScore
-      tprint(f"{"Great! " if not dict[word] else ''}We scored {wordScore} {"additional " if i != 0 else ''}points, for a total of {score} points.")
+      tprint(f"{"Great! " if not dictionary[word] else ''}We scored {wordScore} {"additional " if i != 0 else ''}points, for a total of {score} points.")
         
     tprint(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
+    addGameScore(bank, score)
     playAgain = getResponse("Play again? (yes/no)",["yes","no"]) == "yes"
     bank = None
   updateWordlist(wordsToValidate, wordsToRemove)
@@ -254,6 +309,8 @@ def main():
   searchParser = subparsers.add_parser("search", help="Search for words")
   searchParser.add_argument("queries", nargs="*",help="Words to be searched")
 
+  searchParser = subparsers.add_parser("stats", help="Show stats")
+
   args = parser.parse_args()
 
   if args.mode == "play":
@@ -262,6 +319,8 @@ def main():
     else:
       print("Invalid bank. Please provide seven unique letters.")
       return
+  elif args.mode == "stats":
+    showStats()
   else: # args.mode == "search"
     searchWords(args.queries)
 
