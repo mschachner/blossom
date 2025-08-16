@@ -5492,7 +5492,7 @@ altin.
 altincar.
 altininck.
 altiplano!
-altiplantation!
+altiplanation!
 altisonant.
 altissimo.
 altitonant.
@@ -117661,7 +117661,7 @@ panpathy.
 panphobia.
 panpipe.
 panpipes.
-panplantation!
+panplanation!
 panplegia.
 pans.
 panse.

@@ -17,7 +17,6 @@ def dispWord(word,dictionary):
   return icon + f"{styles['bold' + color]}{word.upper()}{styles['reset']}"
 
 def _tprint(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
-    """Typewriter-style print. Same signature as print()."""
     text = sep.join(map(str, objects)) + end
 
     # If not an interactive terminal, print fast.
@@ -58,42 +57,36 @@ def scoreWord(bank, specialLetter, word):
   pangramScore = 7 if all(c in word for c in bank) else 0
   return baseScore + specialLetterScore + pangramScore
 
-# The blossomBetter agent plans ahead. I don't think it's optimal though.
-def allPlays(legalWords, bank, prevPlayed):
-  plays = []
-  for word in (w for w in legalWords if w not in prevPlayed):
-    for i in range(6):
-      plays.append((i,word,scoreWord(bank,bank[i+1],word)))
-  # Sort by score descending.
-  plays.sort(key=lambda x: x[2], reverse=True)
-  return plays
+def advanceSL(bank, specialLetter, lastWord=None):
+  if not lastWord or specialLetter in lastWord:
+    return bank[(bank.index(specialLetter) % 6) + 1]
+  return specialLetter
 
-def blossomBetter(bank, dictionary, prevPlayed, round, score):
-  chosenPlays = {i:[] for i in range(6)}
-  # Determine how many words are still needed for each letter.
-  stillNeeded = [int(round <= i) + int(round <= i+6) for i in range(6)]
-  placedWords = []
-  expectedScore = score
-  plays = allPlays(dictionary, bank, prevPlayed)
-  for (i,word,marginalScore) in plays:
-    if len(chosenPlays[i]) <  stillNeeded[i] and word not in placedWords:
-      chosenPlays[i].append(word)
-      placedWords.append(word)
-      expectedScore += marginalScore
-      if len(chosenPlays.items()) == 12:
-        break
-  # Debug: print game forecast.
-  # print(f"Plays: {chosenPlays}")
-  # expectedScore = score
-  # print(f"Forecast:")
-  # for i in range(round, 12):
-  #   toBePlayed = chosenPlays[i % 6][0] if i < 6 else chosenPlays[i % 6][-1]
-  #   delta = scoreWord(bank,bank[i % 6 + 1],toBePlayed)
-  #   expectedScore += delta
-  #   print(f"Round {i+1}: {toBePlayed.upper()}, {delta} points. Total: {expectedScore} points.")
-  # Optional: print expected score.
+def blossomBetter(bank, dictionary, prevPlayed, round, specialLetter, score):
+  # Set the table
+  allPlays = []
+  chosenPlays = {petal:[] for petal in bank[1:]}
+  stillNeeded = {petal:0 for petal in bank[1:]}
+  petal = specialLetter
+  for i in range(round, 12):
+    stillNeeded[petal] += 1
+    petal = advanceSL(bank, petal)
+  # Get all possible plays.
+  for word in (w for w in dictionary if w not in prevPlayed):
+    for petal in bank[1:]:
+      allPlays.append((petal,word))
+
+  allPlays.sort(key=lambda x: scoreWord(bank,x[0],x[1]), reverse=True)
+  # Choose the best plays
+  for (petal,word) in allPlays:
+    if len(chosenPlays[petal]) <  stillNeeded[petal] and word not in [w for p in chosenPlays.values() for w in p]:
+      chosenPlays[petal].append(word)
+    if sum(len(p) for p in chosenPlays.values()) == 12-round:
+      break
+  # Calculate expected score
+  expectedScore = score + sum(scoreWord(bank,petal,word) for petal in bank[1:] for word in chosenPlays[petal])
   print(f"Expected score: {expectedScore} points.")
-  return chosenPlays[round % 6][0]
+  return chosenPlays[specialLetter][0]
 
 # Helpers for getting player responses.
 def getResponseBy(msg, cond, invalidMsg):
@@ -104,7 +97,7 @@ def getResponseBy(msg, cond, invalidMsg):
     print(invalidMsg)
   
 def getResponse(msg, valids):
-  return getResponseBy(msg,lambda r: r in valids,f"Invalid response. Valid responses: {', '.join(valids)}.")
+  return getResponseBy(msg,lambda r: r in valids,f"Valid responses: {', '.join(valids)}.")
 
 def updateWordlist(wordsToValidate, wordsToRemove):
   if wordsToValidate and getResponse(f"Ok to validate: {', '.join(wordsToValidate)}? (yes/no)",["yes","no"]) == "no":
@@ -218,20 +211,19 @@ def addGameScore(bank, score):
   return
 
 def showStats():
-  dictionary = loadDict()
-  print(f"Total words: {len(dictionary)}")
-  print(f"Validated words: {sum(1 for word in dictionary if dictionary[word])}")
-  longestWord = max((word for word in dictionary if dictionary[word]), key=len)
-  print(f"Longest validated word: {dispWord(longestWord,dictionary)} ({len(longestWord)} letters)")
   with open("scores.txt", "r") as f:
     highestWordScore = f.readline().strip().split(" ")
     scores = [line.strip() for line in f.readlines()]
-    scores.sort(key=lambda x: int(x.split(" ")[1]), reverse=True)
+  dictionary = loadDict()
+  longestWord = max((word for word in dictionary if dictionary[word]), key=len)
+  print(f"Total words: {len(dictionary)}")
+  print(f"Validated words: {sum(1 for word in dictionary if dictionary[word])}")
+  print(f"Longest validated word: {dispWord(longestWord,dictionary)} ({len(longestWord)} letters)")
   print(f"Highest word score: {dispWord(highestWordScore[0],dictionary)} ({highestWordScore[1].upper()}), {highestWordScore[2]} points")
-  print(f"Games played: {len(scores)}")
+  print(f"Banks played: {len(scores)}")
   print("Top scores:")
   for i in range(min(10, len(scores))):
-    print(f"{i+1}. {scores[i].split(' ')[0]}: {scores[i].split(' ')[1]} points, {scores[i].split(' ')[2]}")
+    print(f"{i+1}.{"  " if i < 9 else " "}{scores[i].split(' ')[0]}: {scores[i].split(' ')[1].rjust(max(len(score.split(' ')[1]) for score in scores))} points, {scores[i].split(' ')[2]}")
 
 def sevenUniques(s):
   return len(s) == 7 and len(set(s)) == 7 and s.isalpha()
@@ -254,42 +246,44 @@ def playBlossom(bank=None, fast=False):
   """)
     prevPlayed = []
     score = 0
-    if not bank:
+    if bank:
+      tprint(f"Bank: {bank.upper()}.")
+      bank = bank[0] + ''.join(sorted(list(bank[1:])))
+    else:
       match getResponseBy("What's the bank? (Center letter first)",lambda b : sevenUniques(b) or b == "quit","Please enter seven unique letters, or \"quit\".").lower():
-        case "quit" | "q":
+        case "quit":
           return
         case bk:
           bank = bk[0] + ''.join(sorted(list(bk)[1:]))
       tprint("Okay, let's play!")
-    else:
-      tprint(f"Bank: {bank.upper()}.")
-      bank = bank[0] + ''.join(sorted(list(bank[1:])))
     dictionary = loadDict(bank)
+    specialLetter = bank[1]
     for i in range(12):
-      specialLetter = bank[(i % 6) + 1] # Rotate through bank
+      if i > 0:
+        specialLetter = advanceSL(bank, specialLetter, prevPlayed[-1])
       tprint(f"---\nRound {i+1}. Special letter: {specialLetter.upper()}.\n")
       ouch = False
       while True:
-        word = blossomBetter(bank, dictionary, prevPlayed, i, score)
+        word = blossomBetter(bank, dictionary, prevPlayed, i, specialLetter, score)
         prevPlayed.append(word)
         tprint(f"{"Okay, then instead " if ouch else ''}I play: {dispWord(word,dictionary)}{", a validated word!" if dictionary[word] else ''}")
 
         if dictionary[word]:
           break
         match getResponse("Is that valid? (yes/no)",["yes","no","quit"]):
-          case "no":
-            wordsToRemove.add(word)
-            ouch = True
           case "yes":
             wordsToValidate.add(word)
             break
-          case _:
+          case "no":
+            wordsToRemove.add(word)
+            ouch = True
+          case "quit":
             return
     
       wordScore = scoreWord(bank,specialLetter,word)
       addWordScore(word, wordScore, specialLetter)
       score += wordScore
-      tprint(f"{"Great! " if not dictionary[word] else ''}We scored {wordScore} {"additional " if i != 0 else ''}points, for a total of {score} points.")
+      tprint(f"{"Great! " if not dictionary[word] else ''}We scored {wordScore} {"additional " if i != 0 else ''}points{f", for a total of {score} points" if i != 0 else ""}.")
         
     tprint(f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points.")
     addGameScore(bank, score)
@@ -306,31 +300,22 @@ def main():
   playParser.add_argument("bank", nargs="?", default=None, help="Bank of letters (optional)")
   playParser.add_argument("-f","--fast", action="store_true", help="Play fast")
 
+  _ = subparsers.add_parser("stats", help="Show stats")
   searchParser = subparsers.add_parser("search", help="Search for words")
   searchParser.add_argument("queries", nargs="*",help="Words to be searched")
 
-  searchParser = subparsers.add_parser("stats", help="Show stats")
-
   args = parser.parse_args()
-
-  if args.mode == "play":
-    if not args.bank or sevenUniques(args.bank):
-      playBlossom(fast=args.fast,bank=args.bank)
-    else:
-      print("Invalid bank. Please provide seven unique letters.")
-      return
-  elif args.mode == "stats":
-    showStats()
-  else: # args.mode == "search"
-    searchWords(args.queries)
+  match args.mode:
+    case "play":
+      if not args.bank or sevenUniques(args.bank):
+        playBlossom(fast=args.fast,bank=args.bank)
+      else:
+        print("Invalid bank. Please provide seven unique letters.")
+        return
+    case "stats":
+      showStats()
+    case "search":
+      searchWords(args.queries)
 
 if __name__ == "__main__":
   main()
-
-# Some high scores:
-# 
-# R ENOSTU : 716 points
-# R ENLSTU : 659 points
-# T EILNRS : 657 points
-# R EINOST : 624 points
-# T EINORS : 616 points
