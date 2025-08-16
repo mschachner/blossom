@@ -154,6 +154,36 @@ def updateWordlist(wordsToValidate, wordsToRemove):
   print(f"Done.")
   return
 
+def updateScores():
+  if getResponse("Update scores.txt? (yes/no)",["yes","no"]) == "no":
+    return
+  # Git add, commit, push
+  subprocess.run(
+    ["git", "add", "scores.txt"],
+    check=True,
+    stdout=subprocess.DEVNULL,
+    stderr=subprocess.DEVNULL,
+  )
+
+  timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+  summary = f"auto: updated scores.txt at {timestamp}"
+
+  subprocess.run(
+      ["git", "commit", "-m", summary],
+      check=True,
+      stdout=subprocess.DEVNULL,
+      stderr=subprocess.PIPE,
+  )
+
+  subprocess.run(
+      ["git", "push", "origin", "main"],
+      check=True,
+      stdout=subprocess.DEVNULL,
+      stderr=subprocess.DEVNULL,
+  )
+  print(f"Done.")
+  return
+
 def searchWords(queries=None):
   if not queries:
     response = input("Enter words to search (comma or space separated):\n > ")
@@ -290,6 +320,7 @@ def playBlossom(bank=None, fast=False):
     playAgain = getResponse("Play again? (yes/no)",["yes","no"]) == "yes"
     bank = None
   updateWordlist(wordsToValidate, wordsToRemove)
+  updateScores()
   return
 
 def main():
