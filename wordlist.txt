@@ -5564,12 +5564,12 @@ alveated.
 alvelos.
 alveloz.
 alveola.
-alveolae.
-alveolar.
+alveolae!
+alveolar!
 alveolarly.
 alveolars.
 alveolary.
-alveolate.
+alveolate!
 alveolated.
 alveole.
 alveoli.
@@ -115327,6 +115327,7 @@ overadorned.
 overage.
 overages.
 overaggravate.
+overalert!
 overall.
 overalled.
 overalls.
@@ -138206,7 +138207,7 @@ retread.
 retreaded.
 retreads.
 retreat.
-retreatal.
+retreatal!
 retreatant!
 retreated.
 retreater!
@@ -164963,7 +164964,7 @@ teethy.
 teeting.
 teetotal.
 teetotaled.
-teetotaler.
+teetotaler!
 teetotalers.
 teetotalist.
 teetotalled.
@@ -181306,7 +181307,7 @@ valentine.
 valentinian.
 valentinite.
 valeral.
-valerate.
+valerate!
 valerates.
 valeria.
 valerian.
@@ -183851,7 +183852,7 @@ volva.
 volvas.
 volvate.
 volvell.
-volvelle.
+volvelle!
 volvent.
 volvocaceae.
 volvox.
