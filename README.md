@@ -21,12 +21,13 @@ Usage
 -----
 
 ```
-python blossom.py                  # prompt for a bank
-python blossom.py resanto          # play using a provided bank (center letter first)
-python blossom.py fast resanto     # play fast
-python blossom.py search           # interactive dictionary lookup/add
-python blossom.py search foo bar   # search specific words
-python blossom.py --help           # show all options
+python blossom.py play                  # prompt for a bank
+python blossom.py play resanto          # play using a provided bank (center letter first)
+python blossom.py play -f resanto       # play fast
+python blossom.py search                # interactive dictionary lookup/add
+python blossom.py search foo bar        # search specific words
+python blossom.py stats                 # show stats
+python blossom.py --help                # show all options
 ```
 
 Wordlists and tools
@@ -38,6 +39,7 @@ Wordlists and tools
 - `wordlist_edit.py` – lowercases words and strips ANSI color codes from
   `wordlist.txt`.
 
-`blossom.py` is the main program that orchestrates the game, handles dictionary
-search, and updates the wordlist.
+The code is organized as a package in the `blossom/` directory with modules for
+the command-line interface, game logic, and wordlist management.
+`blossom.py` is a small entry point that delegates to `blossom/cli.py`.
 
