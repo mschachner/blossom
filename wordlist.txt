@@ -4893,7 +4893,6 @@ allantois.
 allargando.
 allasch.
 allative.
-allatrate.
 allay.
 allayed.
 allayer.
@@ -5299,7 +5298,7 @@ aloe.
 aloed.
 aloedary.
 aloelike.
-aloeroot.
+aloeroot!
 aloes.
 aloesol.
 aloeswood.
@@ -5491,8 +5490,8 @@ altimeter.
 altin.
 altincar.
 altininck.
-altiplano!
 altiplanation!
+altiplano!
 altisonant.
 altissimo.
 altitonant.
@@ -91138,7 +91137,7 @@ lavacre.
 lavadero.
 lavage.
 lavages.
-lavalava.
+lavalava!
 lavalavas.
 lavalier.
 lavaliere.
@@ -91155,7 +91154,7 @@ lavant.
 lavaret.
 lavas.
 lavash.
-lavatera.
+lavatera!
 lavatic.
 lavation.
 lavational.
@@ -115543,7 +115542,6 @@ overedge.
 overedit.
 overeffort.
 overegg.
-overelate.
 overenter.
 overentreat.
 overentry.
@@ -115726,7 +115724,7 @@ overleaf.
 overlean.
 overleap.
 overlearn.
-overleave.
+overleave!
 overleaven.
 overleer.
 overleg.
@@ -116127,7 +116125,7 @@ overtrace.
 overtrade.
 overtraded.
 overtrader.
-overtravel.
+overtravel!
 overtread.
 overtrim.
 overtrimme.
@@ -132901,7 +132899,7 @@ rattlepate.
 rattlepated.
 rattler.
 rattleran.
-rattleroot.
+rattleroot!
 rattlers.
 rattlertree!
 rattles.
@@ -136012,7 +136010,6 @@ reletting.
 relevance.
 relevant.
 relevate.
-relevator.
 releve.
 relevel.
 releveling.
@@ -137157,7 +137154,7 @@ rerob.
 rerobe.
 reroll.
 rerolled.
-reroller.
+reroller!
 rerollers.
 rerolling.
 rerolls.
@@ -138138,7 +138135,6 @@ retled.
 retling.
 retoast.
 retold.
-retolerate.
 retomb.
 retonation.
 retook.
@@ -138257,7 +138253,6 @@ retro.
 retroact.
 retroacted.
 retroacts.
-retroalveolar.
 retrocaecal.
 retrocecal.
 retrocede.
@@ -138424,7 +138419,7 @@ reveilles.
 revel.
 revelant.
 revelative.
-revelator.
+revelator!
 reveled.
 reveler.
 revelers.
@@ -164972,7 +164967,7 @@ teetotaler.
 teetotalers.
 teetotalist.
 teetotalled.
-teetotaller.
+teetotaller!
 teetotally.
 teetotals.
 teetotum.
@@ -182278,8 +182273,7 @@ veratrin.
 veratrina.
 veratrine.
 veratrize.
-veratrol.
-veratrole.
+veratrole!
 veratrum.
 veratryl.
 veray.
