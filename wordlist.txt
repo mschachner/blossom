@@ -14416,6 +14416,7 @@ balau.
 balausta.
 balawa.
 balawu.
+balayage!
 balayeuse.
 balboa.
 balboas.
@@ -15015,7 +15016,7 @@ baptists.
 baptize.
 baptizee.
 bara.
-barabara.
+barabara!
 barabaras!
 barabora.
 barabra.
@@ -15434,7 +15435,7 @@ barratry.
 barre.
 barred.
 barrel.
-barrelage.
+barrelage!
 barreled.
 barreler.
 barrelet.
@@ -20121,7 +20122,7 @@ bladish.
 blady.
 blae.
 blaeberries.
-blaeberry.
+blaeberry!
 blaeness.
 blaenesses.
 blaff.
@@ -68550,7 +68551,7 @@ gjetost.
 gjetosts.
 glabella.
 glabellae!
-glabellar.
+glabellar!
 glabellum.
 glabrate.
 glace.
@@ -70265,7 +70266,7 @@ grabbing.
 grabbings.
 grabble.
 grabbled.
-grabbler.
+grabbler!
 grabblers.
 grabbles.
 grabbling.
@@ -89583,6 +89584,7 @@ labefact.
 labefied.
 labefy.
 label.
+labelable!
 labeled.
 labeler.
 labelers.
