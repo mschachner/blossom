@@ -3250,7 +3250,7 @@ aggravates.
 aggravating.
 aggravative.
 aggravator.
-aggregable.
+aggregable!
 aggregant.
 aggregate!
 aggregated.
@@ -3487,7 +3487,7 @@ agre.
 agreat.
 agree.
 agreeable.
-agreeably.
+agreeably!
 agreed.
 agreeing.
 agreement.
@@ -4909,7 +4909,7 @@ allegate.
 allegator.
 allegatum.
 allege.
-allegeable.
+allegeable!
 alleged.
 allegedly.
 allegement.
@@ -10097,7 +10097,6 @@ arginines.
 argiope.
 argive.
 argle.
-arglebargle.
 arglebargled.
 argled.
 argles.
@@ -14087,7 +14086,6 @@ bagful.
 bagfuls.
 baggage.
 baggageman.
-baggager.
 baggages.
 baggala.
 bagganet.
@@ -16090,7 +16088,7 @@ bayard.
 bayardly.
 bayards.
 bayberries.
-bayberry.
+bayberry!
 baybolt.
 baybush.
 baycuru.
@@ -16270,7 +16268,7 @@ bearance.
 bearbaiter.
 bearbane.
 bearberries.
-bearberry.
+bearberry!
 bearbind.
 bearbine.
 bearbush.
@@ -17060,7 +17058,7 @@ beggarer.
 beggaress.
 beggaries.
 beggaring.
-beggarly.
+beggarly!
 beggarman.
 beggars.
 beggarweed.
@@ -17438,7 +17436,6 @@ belk.
 belknap.
 bell.
 bella.
-bellabella.
 bellacoola.
 belladonna.
 bellbind.
@@ -20055,7 +20052,6 @@ blab.
 blabbed.
 blabber.
 blabbered.
-blabberer.
 blabbers.
 blabbing.
 blabby.
@@ -22545,7 +22541,7 @@ brabanter.
 brabantine.
 brabble.
 brabbled.
-brabbler.
+brabbler!
 brabblers.
 brabbles.
 brabbling.
@@ -66033,7 +66029,7 @@ gallantry.
 gallants.
 gallate.
 gallates.
-gallberry.
+gallberry!
 gallbladder.
 gallbush.
 galleass.
@@ -66153,8 +66149,6 @@ galluses.
 gallweed.
 gallwort.
 gally.
-gallybagger.
-gallybeggar.
 gallying.
 gallywasp.
 galoch.
@@ -66546,7 +66540,7 @@ garbell.
 garbill.
 garbing.
 garble.
-garbleable.
+garbleable!
 garbled.
 garbler.
 garblers.
@@ -68554,9 +68548,8 @@ gizzern.
 gjedost.
 gjetost.
 gjetosts.
-glabbella.
 glabella.
-glabellae.
+glabellae!
 glabellar.
 glabellum.
 glabrate.
@@ -70264,7 +70257,6 @@ graafian.
 graal.
 graals.
 grab.
-grabbable.
 grabbed.
 grabber.
 grabbers.
