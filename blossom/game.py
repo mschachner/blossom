@@ -177,7 +177,7 @@ def playBlossom(bank=None, fast=False):
                 word = blossomBetter(bank, dictionary, prevPlayed, i, specialLetter, score)
                 prevPlayed.append(word)
                 tprint(
-                    f"{'Okay, then instead ' if ouch else ''}I play: {dispWord(word, dictionary)}{' , a validated word!' if dictionary[word] else ''}"
+                    f"{'Okay, then instead ' if ouch else ''}I play: {dispWord(word, dictionary)}{', a validated word!' if dictionary[word] else ''}"
                 )
                 if dictionary[word]:
                     break
