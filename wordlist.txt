@@ -15439,7 +15439,6 @@ barrelage!
 barreled.
 barreler.
 barrelet.
-barreleye.
 barreleyes.
 barrelful.
 barrelhead.
@@ -70756,7 +70755,6 @@ grazing.
 grazings.
 grazioso.
 greable.
-greably.
 grease.
 greaseball.
 greased.
