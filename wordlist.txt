@@ -6681,6 +6681,7 @@ anana.
 ananaplas.
 ananaples.
 ananas.
+ananastasia!
 ananda.
 anandria.
 anandrous.
@@ -6819,6 +6820,7 @@ anatomist.
 anatomists.
 anatomization.
 anatomy.
+anatonosis!
 anatosaurus.
 anatox.
 anatoxin.
@@ -7581,13 +7583,16 @@ annually.
 annuals.
 annuary.
 annuation.
+annuations!
 annueler.
 annueller.
 annuent.
 annuisance.
-annuitant.
-annuitants.
+annuitant!
+annuitants!
 annuities.
+annuitisation!
+annuitisations!
 annuity.
 annul.
 annular.
@@ -8375,6 +8380,7 @@ antistater.
 antistatic.
 antistatism.
 antistatist.
+antistatists!
 antisteapsin.
 antistes.
 antisun.
@@ -82127,7 +82133,8 @@ insanify.
 insanitariness.
 insanitarinesses.
 insanitary.
-insanitation.
+insanitation!
+insanitations!
 insanities.
 insanity.
 insapient.
@@ -83155,8 +83162,9 @@ intuiting.
 intuition.
 intuitional.
 intuitionism.
-intuitionist.
+intuitionist!
 intuitionistic.
+intuitionists!
 intuitions.
 intuitive.
 intuitiveness.
@@ -109950,7 +109958,8 @@ nonunified.
 nonuniform.
 nonunion.
 nonunionism!
-nonunionist.
+nonunionist!
+nonunionists!
 nonunions.
 nonunique.
 nonuniqueness.
@@ -142920,7 +142929,8 @@ sanitated.
 sanitates.
 sanitating.
 sanitation.
-sanitationist.
+sanitationist!
+sanitationists!
 sanities.
 sanitisation.
 sanitise.
@@ -150831,6 +150841,8 @@ situated.
 situates.
 situating.
 situation.
+situationist!
+situationists!
 situations.
 situla.
 situlae.
@@ -164384,8 +164396,8 @@ tattooed.
 tattooer.
 tattooers.
 tattooing!
-tattooist.
-tattooists.
+tattooist!
+tattooists!
 tattooment.
 tattoos.
 tattva.
@@ -176923,6 +176935,7 @@ unionid.
 unionidae.
 unioniform.
 unionisation!
+unionisations!
 unionise.
 unionised.
 unionises.
@@ -176974,7 +176987,7 @@ unism.
 unisoil.
 unison.
 unisonal.
-unisonant.
+unisonant!
 unisonous.
 unisons.
 unispinose.
@@ -177001,6 +177014,7 @@ unitinerant.
 uniting.
 unitingly.
 unition.
+unitisation!
 unitism.
 unitistic.
 unitive.
