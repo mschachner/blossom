@@ -7553,7 +7553,7 @@ annotator.
 annotators.
 annotatory.
 annotine.
-annotinous.
+annotinous!
 annotto.
 announce.
 announced.
@@ -8413,7 +8413,6 @@ antitypic.
 antitypy.
 antiuating.
 antiunion.
-antiunionist.
 antiuratic.
 antiutilitarian.
 antivaccination.
@@ -8455,7 +8454,7 @@ antonella.
 antonia.
 antonina.
 antoniniani!
-antoninianus.
+antoninianus!
 antonio.
 antonomasia.
 antonomasy.
@@ -11394,8 +11393,8 @@ assassinate.
 assassinated.
 assassinates.
 assassinating.
-assassination.
-assassinations.
+assassination!
+assassinations!
 assassinative.
 assassinator.
 assassinatress.
@@ -82259,8 +82258,8 @@ insinuant.
 insinuate.
 insinuates.
 insinuating.
-insinuation.
-insinuations.
+insinuation!
+insinuations!
 insinuendo.
 insipid.
 insipidities.
@@ -82375,8 +82374,8 @@ instantiate.
 instantiated.
 instantiates.
 instantiating.
-instantiation.
-instantiations.
+instantiation!
+instantiations!
 instantly.
 instantness.
 instantnesses.
@@ -83213,7 +83212,6 @@ inurns.
 inusitate.
 inusitateness.
 inusitatenesses.
-inusitation.
 inust.
 inustion.
 inutile.
@@ -106469,8 +106467,8 @@ nasonite.
 nasopalatal.
 nasorostral.
 nasoscope.
-nasosinuitis.
-nasosinusitis.
+nasosinuitis!
+nasosinusitis!
 nasosubnasal.
 nasrol.
 nassa.
@@ -109288,7 +109286,6 @@ noninsertion.
 noninsistence.
 noninsistencies.
 noninsistent.
-noninstitution.
 nonintelligent.
 nonintent.
 noninterferer.
@@ -115049,7 +115046,7 @@ outstated.
 outstater.
 outstates.
 outstation.
-outstations.
+outstations!
 outstatistic.
 outstature.
 outstay.
@@ -164464,13 +164461,9 @@ tautomer.
 tautometer.
 tautonym.
 tautonymy.
-tautoousian.
-tautoousious.
 tautopody.
 tautotype.
 tautourea.
-tautousian.
-tautousious.
 tautozonal.
 tauts.
 tavast.
@@ -176929,7 +176922,7 @@ unionic.
 unionid.
 unionidae.
 unioniform.
-unionisation.
+unionisation!
 unionise.
 unionised.
 unionises.
@@ -178530,7 +178523,6 @@ unsanenesses.
 unsanguine.
 unsanguineness.
 unsanguinenesses.
-unsanitation.
 unsanity.
 unsapped.
 unsappy.
