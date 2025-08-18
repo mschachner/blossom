@@ -90,8 +90,14 @@ def showStats():
         scores = [line.strip() for line in f.readlines()]
     dictionary = loadDict()
     longestWord = max((word for word in dictionary if dictionary[word]), key=len)
-    print(f"Total words: {len(dictionary)}")
-    print(f"Validated words: {sum(1 for word in dictionary if dictionary[word])}")
+    totalWords = len(dictionary)
+    validatedWords = sum(1 for word in dictionary if dictionary[word])
+    totalPangrams = sum(1 for word in dictionary if len(set(word)) == 7)
+    validatedPangrams = sum(1 for word in dictionary if dictionary[word] and len(set(word)) == 7)
+    print(f"Total words: {totalWords}")
+    print(f"Validated words: {validatedWords} ({validatedWords/totalWords*100:.2f}%)")
+    print(f"Total pangrams: {totalPangrams}")
+    print(f"Validated pangrams: {validatedPangrams} ({validatedPangrams/totalPangrams*100:.2f}%)")
     print(
         f"Longest validated word: {dispWord(longestWord, dictionary)} ({len(longestWord)} letters)"
     )
