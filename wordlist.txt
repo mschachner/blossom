@@ -80617,6 +80617,7 @@ incidents.
 incienso.
 incinerate.
 incipience.
+incipiences!
 incipiencies!
 incipiency.
 incipient.
@@ -107256,6 +107257,7 @@ nepotic.
 nepotist.
 nepotists.
 nepouite.
+neppinesses!
 nepquite.
 neptune.
 neptunean.
@@ -108054,7 +108056,7 @@ ninefold.
 nineholes.
 ninepegs.
 ninepence.
-ninepences.
+ninepences!
 ninepenny.
 ninepin.
 ninepins.
@@ -108118,7 +108120,7 @@ nippier.
 nippiest.
 nippily.
 nippiness.
-nippinesses.
+nippinesses!
 nipping.
 nippingly.
 nippitate.
@@ -120390,8 +120392,8 @@ pepperers.
 peppergrass.
 pepperidge.
 pepperily.
-pepperiness.
-pepperinesses.
+pepperiness!
+pepperinesses!
 peppering.
 pepperish.
 peppermint.
@@ -120409,8 +120411,8 @@ peppier.
 peppiest.
 peppily.
 peppin.
-peppiness.
-peppinesses.
+peppiness!
+peppinesses!
 pepping.
 peppy.
 peps.
@@ -120500,7 +120502,9 @@ perches.
 percid.
 percidae.
 percipi.
-percipience.
+percipience!
+percipiences!
+percipiencies!
 percipiency.
 percipient.
 perclose.
@@ -127405,6 +127409,7 @@ prepotent.
 prepped.
 preppie.
 preppies.
+preppinesses!
 prepping.
 preppy.
 prepractice.
@@ -127545,6 +127550,7 @@ presbyters.
 presbytery.
 prescan.
 prescience!
+presciences!
 prescore.
 prescored.
 prescores.
@@ -133917,6 +133923,8 @@ recip.
 recipe.
 recipes.
 recipience.
+recipiences!
+recipiencies!
 recipiency.
 recipiend.
 recipient.
@@ -137496,6 +137504,7 @@ resinousnesses.
 resins.
 resiny.
 resipiscence!
+resipiscences!
 resist.
 resistant.
 resistante.
@@ -155605,7 +155614,8 @@ spinelle.
 spinelles.
 spinels.
 spines.
-spinescence.
+spinescence!
+spinescences!
 spinescent.
 spinet.
 spinets.
@@ -155614,8 +155624,8 @@ spinier.
 spiniest.
 spinifex.
 spinifexes.
-spininess.
-spininesses.
+spininess!
+spininesses!
 spinitis.
 spink.
 spinless.
@@ -155623,7 +155633,7 @@ spinnel.
 spinner.
 spinneret.
 spinnerette.
-spinneries.
+spinneries!
 spinners.
 spinnery.
 spinney.
