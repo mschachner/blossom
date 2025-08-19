@@ -39093,7 +39093,7 @@ creepies.
 creepiest.
 creepily.
 creepiness.
-creepinesses.
+creepinesses!
 creeping.
 creeps.
 creepy.
@@ -39170,7 +39170,7 @@ crepier.
 crepiest.
 crepine.
 crepiness.
-crepinesses.
+crepinesses!
 creping.
 crepis.
 crepitate.
@@ -39438,13 +39438,13 @@ crispiest.
 crispily.
 crispin.
 crispine.
-crispiness.
-crispinesses.
+crispiness!
+crispinesses!
 crisping.
 crispins.
 crisply.
 crispness.
-crispnesses.
+crispnesses!
 crisps.
 crispy.
 criss.
@@ -80617,7 +80617,7 @@ incidents.
 incienso.
 incinerate.
 incipience.
-incipiencies.
+incipiencies!
 incipiency.
 incipient.
 incipit.
@@ -108055,7 +108055,6 @@ nineholes.
 ninepegs.
 ninepence.
 ninepences.
-ninepennies.
 ninepenny.
 ninepin.
 ninepins.
@@ -122962,7 +122961,6 @@ pinioning.
 pinionless.
 pinionlike.
 pinions.
-pinipicrin.
 pinitannic.
 pinite.
 pinites.
@@ -126696,8 +126694,8 @@ precipitin.
 precis.
 precise.
 precised.
-preciseness.
-precisenesses.
+preciseness!
+precisenesses!
 preciser.
 precises.
 precisest.
@@ -127546,7 +127544,7 @@ presbyteress.
 presbyters.
 presbytery.
 prescan.
-prescience.
+prescience!
 prescore.
 prescored.
 prescores.
@@ -128220,7 +128218,7 @@ prissies.
 prissiest.
 prissily.
 prissiness.
-prissinesses.
+prissinesses!
 prissy.
 pristav.
 pristaw.
@@ -137497,7 +137495,7 @@ resinousness.
 resinousnesses.
 resins.
 resiny.
-resipiscence.
+resipiscence!
 resist.
 resistant.
 resistante.
@@ -153054,7 +153052,7 @@ snippier.
 snippiest.
 snippily.
 snippiness.
-snippinesses.
+snippinesses!
 snipping.
 snippish.
 snippy.
