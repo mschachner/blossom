@@ -72302,7 +72302,7 @@ gustier.
 gustiest.
 gustily.
 gustiness.
-gustinesses.
+gustinesses!
 gusting.
 gustless.
 gusto.
@@ -72329,7 +72329,7 @@ gutsier.
 gutsiest.
 gutsily.
 gutsiness.
-gutsinesses.
+gutsinesses!
 gutsy.
 gutt.
 gutta.
@@ -72357,7 +72357,7 @@ guttier.
 guttiest.
 guttifer.
 guttiness.
-guttinesses.
+guttinesses!
 gutting.
 guttle.
 guttled.
@@ -81570,7 +81570,7 @@ ingent.
 ingenu.
 ingenue.
 ingenues.
-ingenuities.
+ingenuities!
 ingenuity.
 ingenuous.
 ingenuousness.
@@ -82435,7 +82435,7 @@ instituted.
 instituter.
 instituters.
 institutes.
-instituting.
+instituting!
 institution.
 institutions.
 institutive.
@@ -82580,7 +82580,7 @@ intensative.
 intense.
 intensely.
 intenseness.
-intensenesses.
+intensenesses!
 intenser.
 intensest.
 intensified.
@@ -82611,7 +82611,7 @@ intentiveness.
 intentivenesses.
 intently.
 intentness.
-intentnesses.
+intentnesses!
 intents.
 inter.
 interacinar.
@@ -82950,8 +82950,6 @@ intestate.
 intestation.
 intestinal.
 intestine.
-intestineness.
-intestinenesses.
 intestines.
 intexine.
 intext.
@@ -158093,8 +158091,8 @@ stinginess.
 stinginesses.
 stinging.
 stingingly.
-stingingness.
-stingingnesses.
+stingingness!
+stingingnesses!
 stingless.
 stingo.
 stingos.
@@ -160452,7 +160450,7 @@ suggested.
 suggestedness.
 suggestednesses.
 suggester.
-suggesting.
+suggesting!
 suggestive.
 suggestment.
 suggestor.
@@ -165602,7 +165600,7 @@ tenselessness.
 tenselessnesses.
 tensely.
 tenseness.
-tensenesses.
+tensenesses!
 tenser.
 tenses.
 tensest.
@@ -172660,7 +172658,7 @@ tungos.
 tungs.
 tungstate.
 tungsten.
-tungstenite.
+tungstenite!
 tungstens.
 tungstic.
 tungstite.
@@ -176904,8 +176902,6 @@ unintent.
 unintentiveness.
 unintentivenesses.
 unintently.
-unintentness.
-unintentnesses.
 unintermittent.
 uninterred.
 unintimate.
@@ -178674,7 +178670,6 @@ unsensiblenesses.
 unsensing.
 unsensitise.
 unsensitised.
-unsensitising.
 unsensitive.
 unsensitiveness.
 unsensitivenesses.
@@ -179212,7 +179207,6 @@ unsugary.
 unsuggested.
 unsuggestedness.
 unsuggestednesses.
-unsuggesting.
 unsuit.
 unsuited.
 unsuitedness.
@@ -179369,7 +179363,6 @@ untenible.
 untense.
 untensely.
 untenseness.
-untensenesses.
 untensile.
 untensing.
 untent.
