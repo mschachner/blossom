@@ -57000,8 +57000,8 @@ eugenic.
 eugenics.
 eugenie.
 eugenism.
-eugenist.
-eugenists.
+eugenist!
+eugenists!
 eugenol.
 eugenols.
 eugeny.
@@ -67443,7 +67443,8 @@ genipapada.
 genipaps.
 genips.
 genista.
-genistein.
+genistein!
+genisteins!
 genistin.
 genit.
 genital.
@@ -71849,7 +71850,7 @@ guesten.
 guester.
 guesthouse.
 guesthouses.
-guesting.
+guesting!
 guestive.
 guestless.
 guests.
@@ -71976,7 +71977,8 @@ guitar.
 guitarist.
 guitarists.
 guitars.
-guitguit.
+guitguit!
+guitguits!
 guittonian.
 gujar.
 gujarati.
@@ -72139,6 +72141,7 @@ gunge.
 gunhouse.
 gunite.
 guniter.
+gunites!
 gunj.
 gunja.
 gunjah.
@@ -72285,7 +72288,7 @@ guslee.
 guss.
 gusset.
 gusseted.
-gusseting.
+gusseting!
 gussets.
 gussie.
 gussied.
@@ -110970,8 +110973,8 @@ nuttery.
 nuttier.
 nuttiest.
 nuttily.
-nuttiness.
-nuttinesses.
+nuttiness!
+nuttinesses!
 nutting.
 nuttish.
 nuttishness.
@@ -146823,6 +146826,7 @@ sensist.
 sensistic.
 sensitisation.
 sensitiser.
+sensitising!
 sensitive.
 sensitiveness.
 sensitivenesses.
@@ -147497,8 +147501,8 @@ setioerr.
 setline.
 setlines.
 setling.
-setness.
-setnesses.
+setness!
+setnesses!
 setnet.
 setoff.
 setoffs.
@@ -150593,7 +150597,8 @@ sinupallialia.
 sinus.
 sinusal.
 sinuses.
-sinusitis.
+sinusitis!
+sinusitises!
 sinuslike.
 sinusoid.
 sinusoids.
@@ -150759,6 +150764,7 @@ sisten.
 sistence.
 sistency.
 sistent.
+sistentes!
 sister.
 sistered.
 sisterin.
@@ -157530,6 +157536,7 @@ steenbras.
 steenbrass.
 steenie.
 steening.
+steenings!
 steenkirk.
 steenth.
 steep.
@@ -157593,6 +157600,7 @@ steid.
 steigh.
 stein.
 steinerian.
+steinings!
 steinkirk.
 steins.
 stekan.
@@ -157686,6 +157694,7 @@ stent.
 stenter.
 stenterer.
 stenting.
+stentings!
 stentmaster.
 stenton.
 stentor.
@@ -158087,8 +158096,8 @@ stingfish.
 stingier.
 stingiest.
 stingily.
-stinginess.
-stinginesses.
+stinginess!
+stinginesses!
 stinging.
 stingingly.
 stingingness!
@@ -160904,7 +160913,7 @@ sunscreen.
 sunseeker.
 sunset.
 sunsets.
-sunsetting.
+sunsetting!
 sunsetty.
 sunshade.
 sunshades.
@@ -165534,6 +165543,7 @@ tenne.
 tenner.
 tenners.
 tennessee.
+tennessine!
 tennis.
 tennises.
 tennist.
@@ -172659,9 +172669,11 @@ tungs.
 tungstate.
 tungsten.
 tungstenite!
+tungstenites!
 tungstens.
 tungstic.
-tungstite.
+tungstite!
+tungstites!
 tungstous.
 tungus.
 tungusian.
@@ -178702,7 +178714,8 @@ unserried.
 unserved.
 unset.
 unsets.
-unsetting.
+unsetting!
+unsettings!
 unsettle.
 unsettled.
 unsettledness.
@@ -180938,7 +180951,8 @@ usques.
 usself.
 ussels.
 usselven.
-ussingite.
+ussingite!
+ussingites!
 ussr.
 ustarana.
 uster.
