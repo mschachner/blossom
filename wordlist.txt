@@ -58496,7 +58496,7 @@ eyesight.
 eyesights.
 eyesome.
 eyesore.
-eyesores.
+eyesores!
 eyespot.
 eyespots.
 eyess.
@@ -87723,8 +87723,8 @@ keyster.
 keysters.
 keystone.
 keystones.
-keystroke.
-keystrokes.
+keystroke!
+keystrokes!
 keyway.
 keyways.
 keywd.
@@ -89039,8 +89039,6 @@ koodoos.
 kook.
 kooka.
 kookaburra.
-kookeree.
-kookery.
 kookie.
 kookier.
 kookiest.
@@ -89257,7 +89255,6 @@ kremlin.
 krems.
 kreng.
 krennerite.
-kreosote.
 krepi.
 krepis.
 kreplech.
@@ -116530,10 +116527,9 @@ oylet.
 oyster.
 oystered.
 oysterer.
-oysterers.
+oysterers!
 oysteries.
 oysterous.
-oysterroot.
 oysters.
 oysterseed.
 ozaena.
@@ -137602,7 +137598,7 @@ resorcins.
 resort.
 resorted.
 resorter.
-resorters.
+resorters!
 resorts.
 resound.
 resounded.
@@ -137777,7 +137773,7 @@ restoratory.
 restore.
 restored.
 restorer.
-restorers.
+restorers!
 restores.
 restow.
 restproof.
@@ -137811,7 +137807,6 @@ restrip.
 restrive.
 restriven.
 restrives.
-restroke.
 restroom.
 restrove.
 restruck.
@@ -147461,7 +147456,7 @@ sestertium.
 sestertius.
 sestet.
 sestets.
-sestetto.
+sestetto!
 sesti.
 sestia.
 sestiad.
@@ -158289,7 +158284,7 @@ stokesia.
 stokesias.
 stokesite.
 stoking.
-stokroos.
+stokroos!
 stokvis.
 stola.
 stolae.
@@ -158416,7 +158411,6 @@ stooging.
 stook.
 stooked.
 stooker.
-stookers.
 stookie.
 stooking.
 stooks.
@@ -158867,8 +158861,8 @@ stressing.
 stressless.
 stresslessness.
 stresslessnesses.
-stressor.
-stressors.
+stressor!
+stressors!
 stret.
 stretch.
 stretched.
@@ -159038,7 +159032,7 @@ stroil.
 stroke.
 stroked.
 stroker.
-strokers.
+strokers!
 strokes.
 stroky.
 strold.
@@ -169876,7 +169870,7 @@ totten.
 totter.
 tottered.
 totterer!
-totterers.
+totterers!
 tottergrass.
 totteriness.
 totterinesses.
