@@ -137765,6 +137765,7 @@ restlessness.
 restlessnesses.
 restock.
 restocks.
+restokes!
 restopper.
 restoral.
 restorals.
@@ -138151,8 +138152,8 @@ retorsion.
 retort.
 retortable.
 retorted.
-retorter.
-retorters.
+retorter!
+retorters!
 retorting.
 retortion.
 retortive.
@@ -138289,7 +138290,7 @@ retroreflector.
 retrorenal.
 retrorocket.
 retrorockets.
-retrorse.
+retrorse!
 retrorsely.
 retros.
 retroserrate.
@@ -140536,8 +140537,8 @@ roseolas.
 roseolous.
 roseous.
 roseries.
-roseroot.
-roseroots.
+roseroot!
+roseroots!
 rosery.
 roses.
 roset.
@@ -140547,6 +140548,8 @@ rosets.
 rosetta.
 rosette.
 rosetted.
+rosetter!
+rosetters!
 rosettes.
 rosetty.
 rosetum.
@@ -147457,6 +147460,7 @@ sestertius.
 sestet.
 sestets.
 sestetto!
+sestettos!
 sesti.
 sestia.
 sestiad.
@@ -154209,7 +154213,8 @@ soorah.
 soorawn.
 soord.
 sooreyn.
-soorkee.
+soorkee!
+soorkees!
 soorki.
 soorky.
 soorma.
@@ -158285,6 +158290,7 @@ stokesias.
 stokesite.
 stoking.
 stokroos!
+stokrooses!
 stokvis.
 stola.
 stolae.
@@ -159081,6 +159087,7 @@ stropper.
 stroppy.
 strops.
 strosser.
+strossers!
 stroth.
 strother.
 stroud.
@@ -169606,6 +169613,7 @@ torosities.
 torosity.
 toroth.
 torotoro!
+torotoros!
 torous.
 torpedo.
 torpedoed.
@@ -171964,8 +171972,8 @@ trotline.
 trotol.
 trots.
 trotted.
-trotter.
-trotters.
+trotter!
+trotters!
 trotteur.
 trottie.
 trotting.
