@@ -67,8 +67,8 @@ def getResponse(msg, valids):
 def sevenUniques(s):
     return len(s) == 7 and len(set(s)) == 7 and s.isalpha()
 
-def condMsg(cond, msg):
-    return msg if cond else ""
+def condMsg(cond, msg, elseMsg=""):
+    return msg if cond else elseMsg
 
 def plural(l):
     return condMsg(len(l) != 1, "s")

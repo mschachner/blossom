@@ -32,7 +32,7 @@ def updateWordlist(wordsToValidate, wordsToRemove):
 
     dictionary = loadDict()
     newLines = list(
-        word + ("!\n" if dictionary[word] or word in wordsToValidate else ".\n")
+        word + condMsg(dictionary[word] or word in wordsToValidate, "!\n", ".\n")
         for word in dictionary
         if word not in wordsToRemove
     )
