@@ -2,7 +2,7 @@ import os
 import subprocess
 from datetime import datetime
 
-from .utils import _tprint, dispWord, getResponse, getResponseBy, sevenUniques
+from .utils import _tprint, condMsg, dispWord, getResponse, getResponseBy, sevenUniques
 from .wordlist import loadDict, updateWordlist
 
 
@@ -86,7 +86,7 @@ def addGameScore(bank, score):
 
 def showStats():
     with open("scores.txt", "r") as f:
-        highestWordScore = f.readline().strip().split(" ")
+        highWord, highWordLetter, highWordScore = f.readline().strip().split(" ")
         scores = [line.strip() for line in f.readlines()]
     dictionary = loadDict()
     longestWord = max((word for word in dictionary if dictionary[word]), key=len)
@@ -94,26 +94,30 @@ def showStats():
     validatedWords = sum(1 for word in dictionary if dictionary[word])
     totalPangrams = sum(1 for word in dictionary if len(set(word)) == 7)
     validatedPangrams = sum(1 for word in dictionary if dictionary[word] and len(set(word)) == 7)
-    print(f"Total words: {totalWords}")
-    print(f"Validated words: {validatedWords} ({validatedWords/totalWords*100:.2f}%)")
-    print(f"Total pangrams: {totalPangrams}")
-    print(f"Validated pangrams: {validatedPangrams} ({validatedPangrams/totalPangrams*100:.2f}%)")
+    pad = 25  # Width for the first column
+    print(f"{'Banks played:':<{pad}} {len(scores)}")
+    print(f"{'Total words:':<{pad}} {totalWords}")
+    print(f"{'Validated words:':<{pad}} {validatedWords} ({validatedWords/totalWords*100:.2f}%)")
+    print(f"{'Total pangrams:':<{pad}} {totalPangrams}")
+    print(f"{'Validated pangrams:':<{pad}} {validatedPangrams} ({validatedPangrams/totalPangrams*100:.2f}%)")
     print(
-        f"Longest validated word: {dispWord(longestWord, dictionary)} ({len(longestWord)} letters)"
+        f"{'Longest validated word:':<{pad}} {dispWord(longestWord, dictionary)} ({len(longestWord)} letters)"
     )
     print(
-        f"Highest word score: {dispWord(highestWordScore[0], dictionary)} ({highestWordScore[1].upper()}), {highestWordScore[2]} points"
+        f"{'Highest word score:':<{pad}} {dispWord(highWord, dictionary)} ({highWordLetter.upper()}), {highWordScore} points"
     )
-    print(f"Banks played: {len(scores)}")
     print("Top scores:")
+    pad = max(len(sc.split(' ')[1]) for sc in scores)
     for i in range(min(10, len(scores))):
+        bk, sc, dt = scores[i].split(' ')
         print(
-            f"{i+1}.{'  ' if i < 9 else ' '}{scores[i].split(' ')[0]}: {scores[i].split(' ')[1].rjust(max(len(score.split(' ')[1]) for score in scores))} points, {scores[i].split(' ')[2]}"
+            f"{i+1}.{'  ' if i < 9 else ' '}{bk}: {sc.rjust(pad)} points, {dt}"
         )
+    print(f"Lowest score: {scores[-1].split(' ')[0]}, {scores[-1].split(' ')[1].rjust(pad)} points")
 
 
 def updateScores():
-    if getResponse("Update scores.txt? (yes/no)", ["yes", "no"]) == "no":
+    if getResponse("Push stats? (yes/no)", ["yes", "no"]) == "no":
         return
     subprocess.run(
         ["git", "add", "scores.txt"],
@@ -173,18 +177,14 @@ def playBlossom(bank=None, fast=False):
                     bank = bk[0] + "".join(sorted(list(bk)[1:]))
             tprint("Okay, let's play!")
         dictionary = loadDict(bank)
-        specialLetter = bank[1]
         for i in range(12):
-            if i > 0:
-                specialLetter = advanceSL(bank, specialLetter, prevPlayed[-1])
+            prefix = ""
+            specialLetter = advanceSL(bank, specialLetter, prevPlayed[-1]) if i > 0 else bank[1]
             tprint(f"---\nRound {i+1}. Special letter: {specialLetter.upper()}.\n")
-            ouch = False
             while True:
                 word = blossomBetter(bank, dictionary, prevPlayed, i, specialLetter, score)
                 prevPlayed.append(word)
-                tprint(
-                    f"{'Okay, then instead ' if ouch else ''}I play: {dispWord(word, dictionary)}{', a validated word!' if dictionary[word] else ''}"
-                )
+                tprint(f"{prefix}I play: {dispWord(word, dictionary)}{condMsg(dictionary[word], ', a validated word!')}")
                 if dictionary[word]:
                     break
                 match getResponse("Is that valid? (yes/no)", ["yes", "no", "quit"]):
@@ -193,15 +193,13 @@ def playBlossom(bank=None, fast=False):
                         break
                     case "no":
                         wordsToRemove.add(word)
-                        ouch = True
+                        prefix = "Okay, then instead "
                     case "quit":
                         return
             wordScore = scoreWord(bank, specialLetter, word)
             addWordScore(word, wordScore, specialLetter)
             score += wordScore
-            tprint(
-                f"{'Great! ' if not dictionary[word] else ''}We scored {wordScore} {'additional ' if i != 0 else ''}points{f', for a total of {score} points' if i != 0 else ''}."
-            )
+            tprint(f"{condMsg(not dictionary[word], 'Great! ')}We scored {wordScore} {condMsg(i != 0, 'additional ')}points{condMsg(i > 0, f', for a total of {score} points')}")
         tprint(
             f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points."
         )

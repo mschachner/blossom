@@ -1,7 +1,7 @@
 import subprocess
 from datetime import datetime
 
-from .utils import dispWord, getResponse
+from .utils import condMsg, dispWord, getResponse, plural
 
 
 def loadDict(bank=None):
@@ -52,35 +52,16 @@ def updateWordlist(wordsToValidate, wordsToRemove):
     )
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    if wordsToValidate and wordsToRemove:
-        summary = (
-            f"auto: updated wordlist.txt: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) != 1 else ''} "
-            f"and removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) != 1 else ''} at {timestamp}"
-        )
-    elif wordsToValidate:
-        summary = (
-            f"auto: updated wordlist.txt: validated {len(wordsToValidate)} word{'s' if len(wordsToValidate) != 1 else ''} "
-            f"at {timestamp}"
-        )
-    else:
-        summary = (
-            f"auto: updated wordlist.txt: removed {len(wordsToRemove)} word{'s' if len(wordsToRemove) != 1 else ''} "
-            f"at {timestamp}"
-        )
+    msgs = [
+        condMsg(wordsToValidate, f"validated {len(wordsToValidate)} word{plural(wordsToValidate)} at {timestamp}"),
+        condMsg(wordsToRemove,   f"removed   {len(wordsToRemove)}   word{plural(wordsToRemove)}   at {timestamp}"),
+        condMsg(wordsToValidate and wordsToRemove, "and")
+    ]
+    summary = "auto: updated wordlist.txt: " + " ".join(m for m in msgs if m)
 
-    filtered_validated = [w for w in sorted(wordsToValidate) if w.strip()]
-    filtered_removed = [w for w in sorted(wordsToRemove) if w.strip()]
-    body = (
-        "Validated words:\n" + "\n".join(filtered_validated) + "\n\n"
-        if filtered_validated
-        else ""
-    )
-    body += (
-        "Removed words:\n" + "\n".join(filtered_removed) + "\n\n"
-        if filtered_removed
-        else ""
-    )
-
+    body =  condMsg(wordsToValidate, "Validated words:\n" + "\n".join(wordsToValidate) + "\n\n")
+    body += condMsg(wordsToRemove,   "Removed words:\n"   + "\n".join(wordsToRemove)   + "\n\n")
+    
     subprocess.run(
         ["git", "commit", "-m", summary, "-m", body],
         check=True,
