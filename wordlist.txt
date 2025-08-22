@@ -3379,9 +3379,10 @@ agnamed.
 agnat.
 agnate.
 agnates.
-agnatha.
-agnathia.
-agnathic.
+agnatha!
+agnathan!
+agnathia!
+agnathic!
 agnatic.
 agnatical.
 agnation.
@@ -8031,6 +8032,7 @@ antiager.
 antiagglutinant.
 antiagglutinating.
 antiagglutinin.
+antiaging!
 antiaircraft.
 antialexin.
 antialien.
@@ -12381,6 +12383,7 @@ attila.
 attinge.
 attingence.
 attingent.
+attinging!
 attirail.
 attire.
 attired.
@@ -25296,7 +25299,7 @@ caam.
 caama.
 caaming.
 caapeba.
-caatinga.
+caatinga!
 caba.
 cabaa.
 cabaan.
@@ -69295,7 +69298,7 @@ gnat.
 gnateater.
 gnathal.
 gnathalgia.
-gnathic.
+gnathic!
 gnathion.
 gnathite.
 gnathitis.
@@ -164353,6 +164356,7 @@ tater.
 taters.
 tates.
 tath.
+tathagata!
 tathata.
 tatian.
 tatianist.
