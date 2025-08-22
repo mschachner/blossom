@@ -933,7 +933,7 @@ accidie.
 accidies.
 accinge.
 accinged.
-accinging.
+accinging!
 accipient.
 accipiter.
 accipitral.
@@ -12239,7 +12239,7 @@ attached.
 attacher.
 attachers.
 attaches.
-attaching.
+attaching!
 attachment.
 attack.
 attackable.
@@ -25512,7 +25512,7 @@ cachina.
 cachinate.
 caching.
 cachinnate.
-cachinnating.
+cachinnating!
 cachinnation.
 cachoeira.
 cacholong.
@@ -28676,7 +28676,7 @@ catchfly.
 catchie.
 catchier.
 catchiest.
-catching.
+catching!
 catchland.
 catchlight.
 catchment.
@@ -31572,7 +31572,7 @@ chitarra.
 chitchat.
 chitchats.
 chitchatted.
-chitchatting.
+chitchatting!
 chitchatty.
 chithe.
 chitimacha.
@@ -74037,7 +74037,7 @@ hatchettine.
 hatchettite.
 hatchety.
 hatchgate.
-hatching.
+hatching!
 hatchite.
 hatchman.
 hatchment.
@@ -76034,7 +76034,6 @@ highflier.
 highflying.
 highhanded.
 highhat.
-highhatting.
 highhole.
 highish.
 highjack.
@@ -81772,7 +81771,7 @@ initiary.
 initiate.
 initiated.
 initiates.
-initiating.
+initiating!
 initiation!
 initiations.
 initiative.
@@ -107807,7 +107806,7 @@ nictitant.
 nictitate.
 nictitated.
 nictitates.
-nictitating.
+nictitating!
 nidal.
 nidana.
 nidary.
@@ -163593,7 +163592,7 @@ tang.
 tanga.
 tangaloa.
 tangalung.
-tangantangan.
+tangantangan!
 tangaroa.
 tangaroan.
 tanged.
@@ -163614,7 +163613,7 @@ tangham.
 tanghan.
 tanghin.
 tanghinia.
-tanghinin.
+tanghinin!
 tangi.
 tangie.
 tangier.
@@ -166575,7 +166574,7 @@ thatched.
 thatcher.
 thatchers.
 thatches.
-thatching.
+thatching!
 thatchless.
 thatchwood.
 thatchy.
