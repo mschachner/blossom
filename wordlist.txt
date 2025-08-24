@@ -58518,8 +58518,8 @@ eyewear.
 eyewink.
 eyewinker.
 eyewinks.
-eyewitness.
-eyewitnesses.
+eyewitness!
+eyewitnesses!
 eyewort.
 eyey.
 eyght.
@@ -82584,7 +82584,7 @@ intensation.
 intensative.
 intense.
 intensely.
-intenseness.
+intenseness!
 intensenesses!
 intenser.
 intensest.
@@ -82594,7 +82594,7 @@ intensifiers.
 intensifies.
 intensify.
 intension.
-intensities.
+intensities!
 intensitive.
 intensity.
 intensive.
@@ -107605,7 +107605,7 @@ newsier.
 newsies.
 newsiest.
 newsiness.
-newsinesses.
+newsinesses!
 newsless.
 newslessness.
 newslessnesses.
@@ -150422,7 +150422,7 @@ sinesian.
 sinew.
 sinewed.
 sinewiness.
-sinewinesses.
+sinewinesses!
 sinewing.
 sinewless.
 sinewous.
@@ -161994,7 +161994,7 @@ swinely.
 swinepipe.
 swinery.
 swinestone.
-swinesty.
+swinesty!
 swiney.
 swing.
 swinge.
@@ -164936,7 +164936,6 @@ teensier.
 teensiest.
 teensy.
 teentsier.
-teentsiest.
 teentsy.
 teenty.
 teeny.
@@ -166176,7 +166175,7 @@ testify.
 testily.
 testimonies.
 testiness.
-testinesses.
+testinesses!
 testing.
 testings.
 testis.
@@ -173380,7 +173379,7 @@ twisters.
 twistical.
 twistily.
 twistiness.
-twistinesses.
+twistinesses!
 twisting.
 twistings.
 twistiways.
