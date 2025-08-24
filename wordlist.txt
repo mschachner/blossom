@@ -114064,7 +114064,6 @@ osteosteatoma.
 osteostixis.
 osteostomatous.
 osteostomous.
-osteosuture.
 osteotome.
 osteotomies.
 osteotomist.
@@ -114754,7 +114753,6 @@ outlove.
 outloved.
 outloves.
 outlung.
-outluster.
 outly.
 outman.
 outmans.
@@ -114961,7 +114959,7 @@ outserve.
 outserves.
 outset.
 outsets.
-outsettler.
+outsettler!
 outsheathe.
 outshift.
 outshifts.
@@ -115172,7 +115170,6 @@ outturn.
 outturned.
 outturns.
 outtwine.
-outusure.
 outvalue.
 outvaunt.
 outvaunts.
@@ -137572,9 +137569,9 @@ resoled.
 resoles.
 resoluble.
 resolute.
-resoluter.
-resolutes.
-resolutest.
+resoluter!
+resolutes!
+resolutest!
 resolve.
 resolved.
 resolver.
@@ -140365,7 +140362,6 @@ roost.
 roosted.
 rooster.
 roosterhood.
-roosterless.
 roosters.
 roosting.
 roosts.
@@ -158866,7 +158862,7 @@ stresser.
 stresses.
 stressful.
 stressing.
-stressless.
+stressless!
 stresslessness.
 stresslessnesses.
 stressor!
@@ -165206,7 +165202,7 @@ teletypist.
 teletypists.
 teleut.
 teleuto.
-teleutosorus.
+teleutosorus!
 teleview.
 televiewed.
 televiewer.
@@ -165272,7 +165268,7 @@ tellurite.
 tellurium.
 tellurize.
 tellurometer.
-tellurous.
+tellurous!
 tellus.
 telly.
 teloblast.
@@ -166044,7 +166040,7 @@ terrorize.
 terrorized.
 terrorizer.
 terrorizes.
-terrorless.
+terrorless!
 terrorproof.
 terrors.
 terrorsome.
@@ -169943,7 +169939,7 @@ touracos.
 tourbe.
 toured.
 tourelle.
-tourelles.
+tourelles!
 tourer.
 tourers.
 touret.
@@ -170920,7 +170916,7 @@ tressy.
 trest.
 trestle.
 trestles.
-trestletree.
+trestletree!
 trestlewise.
 tret.
 tretis.
@@ -172005,8 +172001,6 @@ troupes.
 trouse.
 trouser.
 trousered.
-trouserettes.
-trouserless.
 trousers.
 trouss.
 trousse.
