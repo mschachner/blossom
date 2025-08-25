@@ -80203,7 +80203,6 @@ impermixt.
 imperperia.
 impers.
 impertinent.
-imperverse.
 impery.
 impest.
 impester.
@@ -80320,7 +80319,7 @@ impressa.
 impressari.
 impressed.
 impresses.
-impressive.
+impressive!
 impressor.
 impressure.
 imprest.
@@ -83792,7 +83791,7 @@ irremediless.
 irrememberable.
 irremissible.
 irremission.
-irremissive.
+irremissive!
 irrenowned.
 irrepair.
 irrepairable.
@@ -83801,7 +83800,7 @@ irrepealable.
 irrepentant.
 irrepetant.
 irrepressible.
-irrepressive.
+irrepressive!
 irreption.
 irresilience.
 irresilient.
@@ -120872,7 +120871,7 @@ permiak.
 permian.
 permirific.
 permiss.
-permissive.
+permissive!
 permit.
 permits.
 permitted.
@@ -121117,7 +121116,7 @@ perverseness.
 perversenesses.
 perversite.
 perversities.
-perversive.
+perversive!
 pervert.
 perverted.
 perverter.
@@ -127114,7 +127113,6 @@ preimpart.
 preimperial.
 preimport.
 preimpose.
-preimpressive.
 preimprove.
 preincline.
 preindependence.
@@ -127504,7 +127502,6 @@ prerequired.
 preresemble.
 preresolve.
 preresort.
-prerespire.
 prerestrict.
 prereturn.
 prereveal.
@@ -127883,7 +127880,6 @@ previse.
 prevised.
 previses.
 previsit.
-previsive.
 previsor.
 previsors.
 previze.
@@ -136962,8 +136958,6 @@ repricing.
 reprieval.
 reprieve.
 reprieved.
-repriever.
-reprievers.
 reprieves.
 reprieving.
 reprime.
@@ -138525,7 +138519,7 @@ reversioner.
 reversions.
 reversis.
 reversist.
-reversive.
+reversive!
 reverso.
 reversos.
 revert.
@@ -146585,7 +146579,6 @@ semiserf.
 semiserious.
 semiservile.
 semises.
-semisevere.
 semisextile.
 semishade.
 semisheer.
