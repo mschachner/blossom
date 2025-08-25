@@ -199,7 +199,7 @@ def playBlossom(bank=None, fast=False):
             wordScore = scoreWord(bank, specialLetter, word)
             addWordScore(word, wordScore, specialLetter)
             score += wordScore
-            tprint(f"{condMsg(not dictionary[word], 'Great! ')}We scored {wordScore} {condMsg(i != 0, 'additional ')}points{condMsg(i > 0, f', for a total of {score} points')}")
+            tprint(f"{condMsg(not dictionary[word], 'Great! ')}We scored {wordScore} {condMsg(i != 0, 'additional ')}points{condMsg(i > 0, f', for a total of {score} points.')}")
         tprint(
             f"\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸\n\nGame over! We scored {score} points."
         )
