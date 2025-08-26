@@ -1628,8 +1628,8 @@ actinism.
 actinisms.
 actinistia.
 actinium.
-actinoid.
-actinoida.
+actinoid!
+actinoida!
 actinolitic.
 actinon.
 actinons.
@@ -2045,7 +2045,7 @@ adhocracy.
 adhort.
 adiabat.
 adiabatic.
-adiactinic.
+adiactinic!
 adiantum.
 adiaphon.
 adiaphonon.
@@ -6732,7 +6732,8 @@ ancillas.
 ancille.
 ancipital.
 ancle.
-ancodont.
+ancodont!
+ancodonta!
 ancoly.
 ancome.
 ancon.
@@ -6770,7 +6771,7 @@ andamento.
 andante.
 andantes.
 andantini.
-andantino.
+andantino!
 andantinos.
 andaqui.
 andaquian.
@@ -7100,6 +7101,7 @@ anhistic.
 anhungry.
 anhyd.
 aniba.
+anicanodonta!
 anicca.
 anice.
 aniconic.
@@ -7482,8 +7484,8 @@ anodize.
 anodized.
 anodizing.
 anodon.
-anodonta.
-anodontia.
+anodonta!
+anodontia!
 anodos.
 anodyne.
 anodynes.
@@ -8089,7 +8091,7 @@ antinosarian.
 antinous.
 antinuke.
 antiochian.
-antiodont.
+antiodont!
 antiope.
 antioptionist.
 antioxidant.
@@ -25973,6 +25975,7 @@ canacee.
 canacuas.
 canada.
 canadian.
+canadiana!
 canadianism.
 canadianisms.
 canadianize.
@@ -27954,9 +27957,9 @@ catastasis.
 catastate.
 catastatic.
 catathymic.
-catatonia.
+catatonia!
 catatonias.
-catatonic.
+catatonic!
 catatonics.
 catatony.
 catawba.
@@ -28115,6 +28118,7 @@ catiline.
 cating.
 cation.
 cationic.
+cationoid!
 cations.
 cativo.
 catjang.
@@ -33405,9 +33409,10 @@ cocci.
 coccic.
 coccid.
 coccidae.
-coccidia.
+coccidia!
 coccidial.
-coccidian.
+coccidian!
+coccidiida!
 coccidiidea.
 coccidioidal.
 coccidioides.
@@ -44590,8 +44595,8 @@ diacoele.
 diacoelia.
 diaconal.
 diaconia.
-diaconica.
-diaconicon.
+diaconica!
+diaconicon!
 diacope.
 diacrisis.
 diacritic.
@@ -44603,6 +44608,7 @@ diactinal.
 diactine.
 diactinic.
 diaculum.
+diadactic!
 diadelphia.
 diadem.
 diadema.
@@ -45560,7 +45566,7 @@ dimyary.
 dinah.
 dinamode.
 dinanderie.
-dinantian.
+dinantian!
 dinar.
 dinaric.
 dinars.
@@ -81142,7 +81148,7 @@ iodin.
 iodinate.
 iodinated.
 iodinating.
-iodination.
+iodination!
 iodine.
 iodines.
 iodinium.
@@ -103245,6 +103251,7 @@ natally.
 nataloin.
 natals.
 natant.
+natantia!
 natantly.
 nataraja.
 natation.
@@ -103272,7 +103279,7 @@ natica.
 naticidae.
 naticine.
 natick.
-naticoid.
+naticoid!
 nation.
 national.
 nationalist.
@@ -104461,7 +104468,7 @@ nicolo.
 nicols.
 nicotia.
 nicotian.
-nicotiana.
+nicotiana!
 nicotianin.
 nicotic.
 nicotin.
