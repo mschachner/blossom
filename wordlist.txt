@@ -1859,7 +1859,7 @@ addicent.
 addict.
 addicted.
 addicting.
-addiction.
+addiction!
 addictive.
 addicts.
 addie.
@@ -7935,7 +7935,7 @@ anticline.
 anticly.
 anticness.
 anticnesses.
-anticodon.
+anticodon!
 anticolic.
 anticontagion.
 anticor.
@@ -24913,7 +24913,6 @@ cacochymy.
 cacocnemia.
 cacodaemon.
 cacodemon.
-cacodontia.
 cacodorous.
 cacodoxian.
 cacodoxical.
@@ -34096,8 +34095,7 @@ coincides.
 coinciding.
 coinclination.
 coincline.
-coindicant.
-coindication.
+coindication!
 coined.
 coiner.
 coiners.
@@ -35189,7 +35187,7 @@ concisenesses.
 conciser.
 concisest.
 concision.
-concitation.
+concitation!
 concite.
 concitizen.
 conclamant.
@@ -35318,7 +35316,7 @@ condominiia.
 condominium.
 condoms.
 condonance.
-condonation.
+condonation!
 condone.
 condoned.
 condonement.
@@ -44976,7 +44974,7 @@ dictate.
 dictated.
 dictates.
 dictating.
-dictation.
+dictation!
 dictative.
 dictator.
 dictatrix.
@@ -78558,7 +78556,6 @@ incute.
 incutting.
 indaba.
 indabas.
-indaconitin.
 indagate.
 indagated.
 indagating.
@@ -78690,7 +78687,7 @@ indicanuria.
 indicate.
 indicated.
 indicating.
-indication.
+indication!
 indicavit.
 indice.
 indices.
@@ -81179,7 +81176,6 @@ iodopsin.
 iodopsins.
 iodoso.
 iodospongin.
-iodotannic.
 iodous.
 iodoxy.
 iodyrite.
@@ -105215,7 +105211,7 @@ nonactual.
 nonacute.
 nonadaptation.
 nonadaptor.
-nonaddict.
+nonaddict!
 nonaddress.
 nonaddresser.
 nonadecane.
@@ -105485,7 +105481,6 @@ nonconcurrent.
 nonconcurring.
 noncondescension.
 nonconditioned.
-noncondonation.
 nonconduction.
 nonconductor.
 nonconfession.
@@ -105598,8 +105593,7 @@ nondetest.
 nondetinet.
 nondevout.
 nondiagonal.
-nondictation.
-nondidactic.
+nondidactic!
 nondietetic.
 nondieting.
 nondiffidence.
@@ -105626,7 +105620,6 @@ nondo.
 nondoing.
 nondominant.
 nondomination.
-nondonation.
 nondormant.
 nondrinker.
 nondrinking.
@@ -107039,7 +107032,6 @@ notitia.
 notition.
 notochord.
 notocord.
-notodontian.
 notodontid.
 notodontidae.
 notodontoid.
@@ -110661,7 +110653,6 @@ otiant.
 otiatric.
 otiatrics.
 otiatry.
-oticodinia.
 otidae.
 otides.
 otidia.
@@ -164372,7 +164363,6 @@ tonometry.
 tonophant.
 tonoplast.
 tonoscope.
-tonotactic.
 tonotaxis.
 tonous.
 tonsil.
