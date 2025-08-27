@@ -3289,7 +3289,6 @@ aglets.
 agley.
 aglimmer.
 aglint.
-aglipayan.
 aglitter.
 aglobulia.
 aglossa.
@@ -6546,7 +6545,6 @@ anapaest.
 anapaests.
 anapaganize.
 anapaite.
-anapanapa.
 anapes.
 anapest.
 anapests.
@@ -8875,7 +8873,7 @@ appale.
 appall.
 appalled.
 appalling.
-appallingly.
+appallingly!
 appallment.
 appalls.
 appalment.
@@ -9052,8 +9050,7 @@ applique.
 applosion.
 applot.
 apply.
-applying.
-applyingly.
+applying!
 appmt.
 appoint.
 appointe.
@@ -13194,7 +13191,7 @@ ayahausca.
 ayahs.
 ayahuasca.
 ayahuca.
-ayapana.
+ayapana!
 ayatollah.
 ayatollahs.
 aydendron.
@@ -64204,7 +64201,7 @@ galahads.
 galahs.
 galanas.
 galanga.
-galangal.
+galangal!
 galangals.
 galangin.
 galant.
@@ -64387,7 +64384,7 @@ gallinazo.
 galline.
 galliney.
 galling.
-gallingly.
+gallingly!
 gallingness.
 gallingnesses.
 gallinula.
@@ -64681,7 +64678,6 @@ ganglial.
 gangliar.
 gangliate.
 ganglier.
-gangliglia.
 gangliglions.
 gangliitis.
 gangling.
@@ -64777,7 +64773,7 @@ gapes.
 gapeseed.
 gapeseeds.
 gaping.
-gapingly.
+gapingly!
 gapless.
 gaplessness.
 gaplessnesses.
@@ -66351,7 +66347,7 @@ gigglesome.
 gigglier.
 giggliest.
 giggling.
-gigglingly.
+gigglingly!
 gigglish.
 giggly.
 gighe.
@@ -87404,7 +87400,7 @@ lalls.
 lally.
 lallygag.
 lallygagged.
-lallygagging.
+lallygagging!
 lallygags.
 lalo.
 lalopathy.
@@ -104602,7 +104598,7 @@ niggler.
 nigglers.
 niggles.
 niggling.
-nigglingly.
+nigglingly!
 nigglings.
 niggly.
 niggot.
@@ -104798,7 +104794,7 @@ nippily.
 nippiness.
 nippinesses!
 nipping.
-nippingly.
+nippingly!
 nippitate.
 nippitato.
 nippitatum.
@@ -113243,8 +113239,6 @@ paesano.
 paga.
 pagador.
 pagan.
-paganalia.
-paganalian.
 pagandom.
 paganic.
 paganical.
@@ -113352,7 +113346,6 @@ paine.
 pained.
 painful.
 paining.
-painingly.
 painkilling.
 painless.
 painlessness.
@@ -118987,7 +118980,6 @@ pilies.
 pilifer.
 piliform.
 piligan.
-piliganin.
 piliganine.
 pilikai.
 pilikia.
@@ -120252,8 +120244,7 @@ playfolk.
 playful.
 playfully.
 playgirl.
-playing.
-playingly.
+playing!
 playland.
 playlands.
 playless.
@@ -120736,7 +120727,6 @@ plyer.
 plyers.
 plygain.
 plying.
-plyingly.
 plynlymmon.
 plywood.
 plywoods.
@@ -126712,7 +126702,6 @@ pyjamas.
 pyknic.
 pyknics.
 pylades.
-pylangial.
 pylar.
 pylic.
 pylon.
@@ -183590,7 +183579,7 @@ yappers.
 yappiness.
 yappinesses.
 yapping.
-yappingly.
+yappingly!
 yappish.
 yappy.
 yapster.
