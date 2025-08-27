@@ -67423,6 +67423,7 @@ gmelinite.
 gnabble.
 gnaeus.
 gnamma.
+gnapping!
 gnapweed.
 gnarl.
 gnarled.
@@ -87273,7 +87274,7 @@ lagger.
 laggers.
 laggin.
 lagging.
-laggingly.
+laggingly!
 laggings.
 laggins.
 laglast.
@@ -102760,7 +102761,7 @@ naggier.
 naggiest.
 naggin.
 nagging.
-naggingly.
+naggingly!
 naggingness.
 naggingnesses.
 naggish.
@@ -113640,6 +113641,7 @@ palliest.
 palliness.
 pallinesses.
 palling.
+pallingly!
 pallion.
 palliopedal.
 palliser.
@@ -119534,6 +119536,7 @@ pipping.
 pippins.
 pippirees!
 pipple.
+pippling!
 pippy.
 pipra.
 pipridae.
@@ -120725,7 +120728,7 @@ pluvine.
 pluvious.
 plyer.
 plyers.
-plygain.
+plygain!
 plying.
 plynlymmon.
 plywood.
@@ -126702,6 +126705,7 @@ pyjamas.
 pyknic.
 pyknics.
 pylades.
+pylangia!
 pylar.
 pylic.
 pylon.
@@ -183553,7 +183557,7 @@ yankton.
 yanktonai.
 yanky.
 yannam.
-yannigan.
+yannigan!
 yanqui.
 yanquis.
 yantra.
