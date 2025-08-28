@@ -42502,6 +42502,7 @@ defension.
 defensive.
 defensiveness.
 defensivenesses.
+defensives!
 defensor.
 defer.
 deferable.
@@ -46647,6 +46648,8 @@ disseise.
 disseised.
 disseisee.
 disseises.
+disseisin!
+disseisins!
 disseisor.
 disseisoress.
 disseize.
@@ -47044,6 +47047,7 @@ divinesse.
 divinest.
 diving.
 divinified.
+divinifies!
 divinify.
 divinifying.
 divining.
