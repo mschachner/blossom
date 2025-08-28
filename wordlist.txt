@@ -42499,9 +42499,9 @@ defenser.
 defenses.
 defensing.
 defension.
-defensive.
-defensiveness.
-defensivenesses.
+defensive!
+defensiveness!
+defensivenesses!
 defensives!
 defensor.
 defer.
@@ -43359,7 +43359,7 @@ dense.
 densely.
 densen.
 denseness.
-densenesses.
+densenesses!
 denser.
 densest.
 denshare.
@@ -47016,8 +47016,8 @@ dividant.
 divide.
 divided.
 dividedly.
-dividedness.
-dividednesses.
+dividedness!
+dividednesses!
 dividend.
 dividends.
 dividendus.
@@ -47038,7 +47038,7 @@ divine.
 divined.
 divinely.
 divineness.
-divinenesses.
+divinenesses!
 diviner.
 divineress.
 diviners.
@@ -47074,8 +47074,8 @@ divisionist.
 divisions.
 divisive.
 divisively.
-divisiveness.
-divisivenesses.
+divisiveness!
+divisivenesses!
 divisor.
 divisors.
 divisory.
@@ -78602,7 +78602,6 @@ indecl.
 indeed.
 indeedy.
 indef.
-indefensive.
 indeficiency.
 indeficient.
 indefinite.
@@ -178468,7 +178467,7 @@ vividialysis.
 vividity.
 vividly.
 vividness.
-vividnesses.
+vividnesses!
 vivific.
 vivifical.
 vivificant.
