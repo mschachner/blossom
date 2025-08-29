@@ -31594,7 +31594,6 @@ cichloid.
 cichoriaceae.
 cichorium.
 cicindela.
-cicindelid.
 cicindelidae.
 cicisbei.
 cicisbeism.
@@ -42055,8 +42054,6 @@ decidedly.
 decidedness.
 decidednesses.
 decidement.
-decidence.
-decidendi.
 decident.
 decider.
 deciders.
@@ -45039,7 +45036,7 @@ diddest.
 diddies.
 diddikai.
 diddle.
-diddled.
+diddled!
 diddler.
 diddlers.
 diddles.
@@ -53022,11 +53019,10 @@ enjoyers.
 enjoying.
 enjoyment.
 enjoys.
-enkennel.
 enkernel.
 enkidu.
 enkindle.
-enkindled.
+enkindled!
 enkindler.
 enkindles.
 enkindling.
@@ -78326,7 +78322,7 @@ inchoation.
 inchpin.
 inchurch.
 incide.
-incidence.
+incidence!
 incidency.
 incident.
 incidents.
@@ -78585,7 +78581,7 @@ indebtedness.
 indebtednesses.
 indebting.
 indebtment.
-indecence.
+indecence!
 indecencies.
 indecency.
 indecent.
@@ -78717,7 +78713,7 @@ indictment.
 indictor.
 indicts.
 indidicia.
-indienne.
+indienne!
 indies.
 indifference.
 indifferent.
@@ -84909,7 +84905,7 @@ kennel.
 kenneled.
 kenneling.
 kennell.
-kennelled.
+kennelled!
 kennelling.
 kennelly.
 kennelman.
@@ -85456,7 +85452,6 @@ killdeer.
 killdeers.
 killdees.
 killed.
-killeekillee.
 killeen.
 killer.
 killers.
@@ -88828,7 +88823,7 @@ lechosa.
 lechwe.
 lecidea.
 lecideaceae.
-lecideine.
+lecideine!
 lecidioid.
 lecithal.
 lecithic.
@@ -103581,7 +103576,7 @@ necklaced.
 necklaces.
 neckless.
 necklet.
-necklike.
+necklike!
 neckline.
 necklines.
 neckpiece.
@@ -103652,7 +103647,7 @@ needlecord.
 needled.
 needleful.
 needlefuls.
-needlelike.
+needlelike!
 needleman!
 needlemen!
 needler.
@@ -104424,14 +104419,13 @@ nici.
 nickar.
 nicked.
 nickel.
-nickeled.
+nickeled!
 nickelic.
-nickeline.
+nickeline!
 nickeling.
 nickelise.
 nickelize.
-nickelled.
-nickellike.
+nickelled!
 nickelling.
 nickels.
 nicker.
