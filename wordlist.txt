@@ -32729,7 +32729,7 @@ clinid.
 clinium.
 clink.
 clinkant.
-clinked.
+clinked!
 clinker.
 clinkerer.
 clinking.
@@ -78275,6 +78275,7 @@ incavern.
 incavo.
 incede.
 incend.
+incended!
 incendium.
 incense.
 incensed.
@@ -84680,7 +84681,7 @@ keck.
 kecked.
 kecking.
 keckle.
-keckled.
+keckled!
 keckles.
 keckling.
 kecks.
@@ -84707,7 +84708,7 @@ keech.
 keef.
 keefs.
 keek.
-keeked.
+keeked!
 keeker.
 keekers.
 keeking.
@@ -84902,7 +84903,7 @@ kenned.
 kennedy.
 kennedya.
 kennel.
-kenneled.
+kenneled!
 kenneling.
 kennell.
 kennelled!
@@ -85653,7 +85654,7 @@ kinkiness.
 kinkinesses.
 kinking.
 kinkle.
-kinkled.
+kinkled!
 kinkly.
 kinks.
 kinksbush.
@@ -86039,7 +86040,7 @@ kneestone.
 kneiffia.
 kneippism.
 knell.
-knelled.
+knelled!
 knelling.
 knells.
 knelt.
@@ -86059,6 +86060,7 @@ knickknacket.
 knickknackish.
 knickknacks.
 knickknacky.
+knickline!
 knicknack.
 knickpoint.
 knife.
@@ -89819,7 +89821,7 @@ licareol.
 licca.
 licence.
 licenceable.
-licenced.
+licenced!
 licencee.
 licencees.
 licencer.
@@ -104420,7 +104422,7 @@ nickar.
 nicked.
 nickel.
 nickeled!
-nickelic.
+nickelic!
 nickeline!
 nickeling.
 nickelise.
