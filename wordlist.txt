@@ -1123,7 +1123,6 @@ acestoma.
 aceta.
 acetable.
 acetabula.
-acetacetic.
 acetal.
 acetaldol.
 acetalize.
@@ -1646,7 +1645,7 @@ actions.
 actious.
 actium.
 activate.
-activated.
+activated!
 activates.
 activating.
 activation.
@@ -1860,7 +1859,7 @@ addict.
 addicted.
 addicting.
 addiction!
-addictive.
+addictive!
 addicts.
 addie.
 addiment.
@@ -2361,7 +2360,7 @@ advantaged.
 advantaging.
 advect.
 advected.
-advective.
+advective!
 advects.
 advehent.
 advena.
@@ -28418,7 +28417,7 @@ cavings.
 cavish.
 cavitary.
 cavitate.
-cavitated.
+cavitated!
 cavitates.
 cavitating.
 cavitation.
@@ -41580,8 +41579,8 @@ deaconess.
 deaconesses.
 deaconhood.
 deacons.
-deactivate.
-deactivated.
+deactivate!
+deactivated!
 dead.
 deadbeat.
 deadbeats.
@@ -42288,9 +42287,9 @@ dedendum.
 dedicant.
 dedicate.
 dedicated.
-dedicatee.
+dedicatee!
 dedicates.
-dedicative.
+dedicative!
 dedimus.
 dedit.
 deditician.
@@ -44977,7 +44976,7 @@ dictated.
 dictates.
 dictating.
 dictation!
-dictative.
+dictative!
 dictator.
 dictatrix.
 dictery.
@@ -45019,7 +45018,7 @@ didactician.
 didacticism.
 didacticity.
 didactics.
-didactive.
+didactive!
 didacts.
 didactyl.
 didal.
