@@ -28421,7 +28421,7 @@ cavitated!
 cavitates.
 cavitating.
 cavitation.
-cavitied.
+cavitied!
 cavities.
 cavity.
 caviya.
@@ -176693,7 +176693,7 @@ vaticanal.
 vaticanic.
 vaticanical.
 vaticanist.
-vaticide.
+vaticide!
 vaticinal.
 vaticinant.
 vaticinate.
@@ -177623,6 +177623,7 @@ viatic.
 viatica.
 viatical.
 viaticals.
+viaticated!
 viaticum.
 viator.
 viatorial.
